@@ -77,6 +77,7 @@
     , sql_custom_endpoint : Optional Text
     , storage_custom_endpoint : Optional Text
     , storage_transfer_custom_endpoint : Optional Text
+    , tags_custom_endpoint : Optional Text
     , tpu_custom_endpoint : Optional Text
     , user_project_override : Optional Bool
     , vpc_access_custom_endpoint : Optional Text
@@ -165,6 +166,7 @@
   , sql_custom_endpoint = None Text
   , storage_custom_endpoint = None Text
   , storage_transfer_custom_endpoint = None Text
+  , tags_custom_endpoint = None Text
   , tpu_custom_endpoint = None Text
   , user_project_override = None Bool
   , vpc_access_custom_endpoint = None Text

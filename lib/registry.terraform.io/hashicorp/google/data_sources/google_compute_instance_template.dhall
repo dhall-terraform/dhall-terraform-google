@@ -50,6 +50,7 @@
               , name : Text
               , network : Text
               , network_ip : Text
+              , nic_type : Text
               , subnetwork : Text
               , subnetwork_project : Text
               }
@@ -131,6 +132,7 @@
             , name : Text
             , network : Text
             , network_ip : Text
+            , nic_type : Text
             , subnetwork : Text
             , subnetwork_project : Text
             }

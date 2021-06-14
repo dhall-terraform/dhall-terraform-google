@@ -17,6 +17,7 @@
               , mode : Optional Text
               }
           )
+    , maintenance_window : Optional (List { start_time : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -41,6 +42,7 @@
             , mode : Optional Text
             }
         )
+  , maintenance_window = None (List { start_time : Text })
   , timeouts =
       None
         { create : Optional Text

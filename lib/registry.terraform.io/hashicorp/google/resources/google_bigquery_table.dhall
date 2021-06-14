@@ -52,6 +52,7 @@
                   Optional
                     ( List
                         { mode : Optional Text
+                        , require_partition_filter : Optional Bool
                         , source_uri_prefix : Optional Text
                         }
                     )
@@ -136,6 +137,7 @@
                 Optional
                   ( List
                       { mode : Optional Text
+                      , require_partition_filter : Optional Bool
                       , source_uri_prefix : Optional Text
                       }
                   )

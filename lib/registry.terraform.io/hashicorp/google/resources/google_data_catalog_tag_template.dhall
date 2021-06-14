@@ -8,7 +8,8 @@
     , tag_template_id : Text
     , fields :
         List
-          { display_name : Optional Text
+          { description : Optional Text
+          , display_name : Optional Text
           , field_id : Text
           , is_required : Optional Bool
           , name : Optional Text

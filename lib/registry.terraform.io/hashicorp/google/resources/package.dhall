@@ -17,6 +17,7 @@
 , google_active_directory_domain = ./google_active_directory_domain.dhall
 , google_active_directory_domain_trust =
     ./google_active_directory_domain_trust.dhall
+, google_apigee_envgroup_attachment = ./google_apigee_envgroup_attachment.dhall
 , google_apigee_envgroup = ./google_apigee_envgroup.dhall
 , google_apigee_environment = ./google_apigee_environment.dhall
 , google_apigee_instance_attachment = ./google_apigee_instance_attachment.dhall
@@ -573,6 +574,15 @@
     ./google_storage_object_access_control.dhall
 , google_storage_object_acl = ./google_storage_object_acl.dhall
 , google_storage_transfer_job = ./google_storage_transfer_job.dhall
+, google_tags_tag_binding = ./google_tags_tag_binding.dhall
+, google_tags_tag_key = ./google_tags_tag_key.dhall
+, google_tags_tag_key_iam_binding = ./google_tags_tag_key_iam_binding.dhall
+, google_tags_tag_key_iam_member = ./google_tags_tag_key_iam_member.dhall
+, google_tags_tag_key_iam_policy = ./google_tags_tag_key_iam_policy.dhall
+, google_tags_tag_value = ./google_tags_tag_value.dhall
+, google_tags_tag_value_iam_binding = ./google_tags_tag_value_iam_binding.dhall
+, google_tags_tag_value_iam_member = ./google_tags_tag_value_iam_member.dhall
+, google_tags_tag_value_iam_policy = ./google_tags_tag_value_iam_policy.dhall
 , google_tpu_node = ./google_tpu_node.dhall
 , google_vpc_access_connector = ./google_vpc_access_connector.dhall
 , google_workflows_workflow = ./google_workflows_workflow.dhall
