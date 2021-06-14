@@ -65,13 +65,14 @@
 , google_kms_crypto_key = ./google_kms_crypto_key.dhall
 , google_kms_crypto_key_version = ./google_kms_crypto_key_version.dhall
 , google_kms_key_ring = ./google_kms_key_ring.dhall
-, google_kms_secret_asymmetric = ./google_kms_secret_asymmetric.dhall
 , google_kms_secret_ciphertext = ./google_kms_secret_ciphertext.dhall
 , google_kms_secret = ./google_kms_secret.dhall
 , google_monitoring_app_engine_service =
     ./google_monitoring_app_engine_service.dhall
 , google_monitoring_cluster_istio_service =
     ./google_monitoring_cluster_istio_service.dhall
+, google_monitoring_istio_canonical_service =
+    ./google_monitoring_istio_canonical_service.dhall
 , google_monitoring_mesh_istio_service =
     ./google_monitoring_mesh_istio_service.dhall
 , google_monitoring_notification_channel =

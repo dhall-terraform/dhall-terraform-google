@@ -3,6 +3,7 @@
     , datapath_provider : Optional Text
     , default_max_pods_per_node : Optional Natural
     , description : Optional Text
+    , enable_autopilot : Optional Bool
     , enable_binary_authorization : Optional Bool
     , enable_intranode_visibility : Optional Bool
     , enable_kubernetes_alpha : Optional Bool
@@ -21,9 +22,11 @@
     , monitoring_service : Optional Text
     , name : Text
     , network : Optional Text
+    , networking_mode : Optional Text
     , node_locations : Optional (List Text)
     , node_version : Optional Text
     , operation : Optional Text
+    , private_ipv6_google_access : Optional Text
     , project : Optional Text
     , remove_default_node_pool : Optional Bool
     , resource_labels : Optional (List { mapKey : Text, mapValue : Text })
@@ -252,6 +255,7 @@
   , datapath_provider = None Text
   , default_max_pods_per_node = None Natural
   , description = None Text
+  , enable_autopilot = None Bool
   , enable_binary_authorization = None Bool
   , enable_intranode_visibility = None Bool
   , enable_kubernetes_alpha = None Bool
@@ -269,9 +273,11 @@
   , min_master_version = None Text
   , monitoring_service = None Text
   , network = None Text
+  , networking_mode = None Text
   , node_locations = None (List Text)
   , node_version = None Text
   , operation = None Text
+  , private_ipv6_google_access = None Text
   , project = None Text
   , remove_default_node_pool = None Bool
   , resource_labels = None (List { mapKey : Text, mapValue : Text })

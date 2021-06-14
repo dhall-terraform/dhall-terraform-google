@@ -30,6 +30,7 @@
     , default_max_pods_per_node : Optional Natural
     , default_snat_status : Optional (List { disabled : Bool })
     , description : Optional Text
+    , enable_autopilot : Optional Bool
     , enable_binary_authorization : Optional Bool
     , enable_intranode_visibility : Optional Bool
     , enable_kubernetes_alpha : Optional Bool
@@ -90,6 +91,7 @@
     , name : Text
     , network : Optional Text
     , network_policy : Optional (List { enabled : Bool, provider : Text })
+    , networking_mode : Optional Text
     , node_config :
         Optional
           ( List
@@ -172,6 +174,7 @@
               , public_endpoint : Text
               }
           )
+    , private_ipv6_google_access : Optional Text
     , project : Optional Text
     , release_channel : Optional (List { channel : Text })
     , remove_default_node_pool : Optional Bool
@@ -220,6 +223,7 @@
   , default_max_pods_per_node = None Natural
   , default_snat_status = None (List { disabled : Bool })
   , description = None Text
+  , enable_autopilot = None Bool
   , enable_binary_authorization = None Bool
   , enable_intranode_visibility = None Bool
   , enable_kubernetes_alpha = None Bool
@@ -274,6 +278,7 @@
   , monitoring_service = None Text
   , network = None Text
   , network_policy = None (List { enabled : Bool, provider : Text })
+  , networking_mode = None Text
   , node_config =
       None
         ( List
@@ -356,6 +361,7 @@
             , public_endpoint : Text
             }
         )
+  , private_ipv6_google_access = None Text
   , project = None Text
   , release_channel = None (List { channel : Text })
   , remove_default_node_pool = None Bool
