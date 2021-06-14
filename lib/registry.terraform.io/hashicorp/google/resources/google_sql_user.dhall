@@ -1,5 +1,6 @@
 { Type =
-    { host : Optional Text
+    { deletion_policy : Optional Text
+    , host : Optional Text
     , id : Optional Text
     , instance : Text
     , name : Text
@@ -13,7 +14,8 @@
           }
     }
 , default =
-  { host = None Text
+  { deletion_policy = None Text
+  , host = None Text
   , id = None Text
   , password = None Text
   , project = None Text

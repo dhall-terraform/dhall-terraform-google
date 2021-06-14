@@ -7,6 +7,9 @@
 , google_client_config = ./google_client_config.dhall
 , google_client_openid_userinfo = ./google_client_openid_userinfo.dhall
 , google_cloudfunctions_function = ./google_cloudfunctions_function.dhall
+, google_cloud_identity_group_memberships =
+    ./google_cloud_identity_group_memberships.dhall
+, google_cloud_identity_groups = ./google_cloud_identity_groups.dhall
 , google_cloud_run_service = ./google_cloud_run_service.dhall
 , google_composer_image_versions = ./google_composer_image_versions.dhall
 , google_compute_address = ./google_compute_address.dhall

@@ -1,6 +1,8 @@
 { Type =
     { billing_account : Text
+    , description : Optional Text
     , destination : Text
+    , disabled : Optional Bool
     , filter : Optional Text
     , id : Optional Text
     , name : Text
@@ -17,7 +19,9 @@
           )
     }
 , default =
-  { filter = None Text
+  { description = None Text
+  , disabled = None Bool
+  , filter = None Text
   , id = None Text
   , writer_identity = None Text
   , bigquery_options = None (List { use_partitioned_tables : Bool })

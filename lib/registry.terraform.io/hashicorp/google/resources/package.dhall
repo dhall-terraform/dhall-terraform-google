@@ -81,6 +81,9 @@
     ./google_cloudfunctions_function_iam_member.dhall
 , google_cloudfunctions_function_iam_policy =
     ./google_cloudfunctions_function_iam_policy.dhall
+, google_cloud_identity_group = ./google_cloud_identity_group.dhall
+, google_cloud_identity_group_membership =
+    ./google_cloud_identity_group_membership.dhall
 , google_cloudiot_device = ./google_cloudiot_device.dhall
 , google_cloudiot_registry = ./google_cloudiot_registry.dhall
 , google_cloud_run_domain_mapping = ./google_cloud_run_domain_mapping.dhall

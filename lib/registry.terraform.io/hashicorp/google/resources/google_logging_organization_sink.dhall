@@ -1,5 +1,7 @@
 { Type =
-    { destination : Text
+    { description : Optional Text
+    , destination : Text
+    , disabled : Optional Bool
     , filter : Optional Text
     , id : Optional Text
     , include_children : Optional Bool
@@ -18,7 +20,9 @@
           )
     }
 , default =
-  { filter = None Text
+  { description = None Text
+  , disabled = None Bool
+  , filter = None Text
   , id = None Text
   , include_children = None Bool
   , writer_identity = None Text

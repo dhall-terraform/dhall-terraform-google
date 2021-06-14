@@ -81,6 +81,14 @@
               { daily_maintenance_window :
                   Optional
                     (List { duration : Optional Text, start_time : Text })
+              , maintenance_exclusion :
+                  Optional
+                    ( List
+                        { end_time : Text
+                        , exclusion_name : Text
+                        , start_time : Text
+                        }
+                    )
               , recurring_window :
                   Optional
                     ( List
@@ -313,6 +321,14 @@
         ( List
             { daily_maintenance_window :
                 Optional (List { duration : Optional Text, start_time : Text })
+            , maintenance_exclusion :
+                Optional
+                  ( List
+                      { end_time : Text
+                      , exclusion_name : Text
+                      , start_time : Text
+                      }
+                  )
             , recurring_window :
                 Optional
                   ( List

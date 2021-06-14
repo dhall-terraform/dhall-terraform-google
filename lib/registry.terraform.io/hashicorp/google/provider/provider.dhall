@@ -13,6 +13,7 @@
     , cloud_billing_custom_endpoint : Optional Text
     , cloud_build_custom_endpoint : Optional Text
     , cloud_functions_custom_endpoint : Optional Text
+    , cloud_identity_custom_endpoint : Optional Text
     , cloud_iot_custom_endpoint : Optional Text
     , cloud_run_custom_endpoint : Optional Text
     , cloud_scheduler_custom_endpoint : Optional Text
@@ -94,6 +95,7 @@
   , cloud_billing_custom_endpoint = None Text
   , cloud_build_custom_endpoint = None Text
   , cloud_functions_custom_endpoint = None Text
+  , cloud_identity_custom_endpoint = None Text
   , cloud_iot_custom_endpoint = None Text
   , cloud_run_custom_endpoint = None Text
   , cloud_scheduler_custom_endpoint = None Text

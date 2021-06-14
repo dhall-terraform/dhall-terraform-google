@@ -56,6 +56,7 @@
           )
     , creation_timestamp : Optional Text
     , custom_request_headers : Optional (List Text)
+    , custom_response_headers : Optional (List Text)
     , description : Optional Text
     , enable_cdn : Optional Bool
     , fingerprint : Optional Text
@@ -155,6 +156,7 @@
         )
   , creation_timestamp = None Text
   , custom_request_headers = None (List Text)
+  , custom_response_headers = None (List Text)
   , description = None Text
   , enable_cdn = None Bool
   , fingerprint = None Text

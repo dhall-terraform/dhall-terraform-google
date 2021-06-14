@@ -55,6 +55,12 @@
           ( List
               { daily_maintenance_window :
                   List { duration : Text, start_time : Text }
+              , maintenance_exclusion :
+                  List
+                    { end_time : Text
+                    , exclusion_name : Text
+                    , start_time : Text
+                    }
               , recurring_window :
                   List { end_time : Text, recurrence : Text, start_time : Text }
               }
@@ -235,6 +241,9 @@
         ( List
             { daily_maintenance_window :
                 List { duration : Text, start_time : Text }
+            , maintenance_exclusion :
+                List
+                  { end_time : Text, exclusion_name : Text, start_time : Text }
             , recurring_window :
                 List { end_time : Text, recurrence : Text, start_time : Text }
             }
