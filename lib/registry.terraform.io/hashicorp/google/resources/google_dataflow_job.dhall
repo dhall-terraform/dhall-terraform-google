@@ -19,6 +19,7 @@
     , template_gcs_path : Text
     , type : Optional Text
     , zone : Optional Text
+    , timeouts : Optional { update : Optional Text }
     }
 , default =
   { additional_experiments = None (List Text)
@@ -38,5 +39,6 @@
   , subnetwork = None Text
   , type = None Text
   , zone = None Text
+  , timeouts = None { update : Optional Text }
   }
 }

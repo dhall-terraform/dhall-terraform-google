@@ -8,6 +8,107 @@
     , name : Text
     , project : Optional Text
     , self_link : Optional Text
+    , default_route_action :
+        Optional
+          ( List
+              { cors_policy :
+                  Optional
+                    ( List
+                        { allow_credentials : Optional Bool
+                        , allow_headers : Optional (List Text)
+                        , allow_methods : Optional (List Text)
+                        , allow_origin_regexes : Optional (List Text)
+                        , allow_origins : Optional (List Text)
+                        , disabled : Optional Bool
+                        , expose_headers : Optional (List Text)
+                        , max_age : Optional Natural
+                        }
+                    )
+              , fault_injection_policy :
+                  Optional
+                    ( List
+                        { abort :
+                            Optional
+                              ( List
+                                  { http_status : Optional Natural
+                                  , percentage : Optional Natural
+                                  }
+                              )
+                        , delay :
+                            Optional
+                              ( List
+                                  { percentage : Optional Natural
+                                  , fixed_delay :
+                                      Optional
+                                        ( List
+                                            { nanos : Optional Natural
+                                            , seconds : Optional Text
+                                            }
+                                        )
+                                  }
+                              )
+                        }
+                    )
+              , request_mirror_policy :
+                  Optional (List { backend_service : Text })
+              , retry_policy :
+                  Optional
+                    ( List
+                        { num_retries : Optional Natural
+                        , retry_conditions : Optional (List Text)
+                        , per_try_timeout :
+                            Optional
+                              ( List
+                                  { nanos : Optional Natural
+                                  , seconds : Optional Text
+                                  }
+                              )
+                        }
+                    )
+              , timeout :
+                  Optional
+                    (List { nanos : Optional Natural, seconds : Optional Text })
+              , url_rewrite :
+                  Optional
+                    ( List
+                        { host_rewrite : Optional Text
+                        , path_prefix_rewrite : Optional Text
+                        }
+                    )
+              , weighted_backend_services :
+                  Optional
+                    ( List
+                        { backend_service : Optional Text
+                        , weight : Optional Natural
+                        , header_action :
+                            Optional
+                              ( List
+                                  { request_headers_to_remove :
+                                      Optional (List Text)
+                                  , response_headers_to_remove :
+                                      Optional (List Text)
+                                  , request_headers_to_add :
+                                      Optional
+                                        ( List
+                                            { header_name : Optional Text
+                                            , header_value : Optional Text
+                                            , replace : Optional Bool
+                                            }
+                                        )
+                                  , response_headers_to_add :
+                                      Optional
+                                        ( List
+                                            { header_name : Optional Text
+                                            , header_value : Optional Text
+                                            , replace : Optional Bool
+                                            }
+                                        )
+                                  }
+                              )
+                        }
+                    )
+              }
+          )
     , default_url_redirect :
         Optional
           ( List
@@ -56,6 +157,115 @@
               { default_service : Optional Text
               , description : Optional Text
               , name : Text
+              , default_route_action :
+                  Optional
+                    ( List
+                        { cors_policy :
+                            Optional
+                              ( List
+                                  { allow_credentials : Optional Bool
+                                  , allow_headers : Optional (List Text)
+                                  , allow_methods : Optional (List Text)
+                                  , allow_origin_regexes : Optional (List Text)
+                                  , allow_origins : Optional (List Text)
+                                  , disabled : Optional Bool
+                                  , expose_headers : Optional (List Text)
+                                  , max_age : Optional Natural
+                                  }
+                              )
+                        , fault_injection_policy :
+                            Optional
+                              ( List
+                                  { abort :
+                                      Optional
+                                        ( List
+                                            { http_status : Optional Natural
+                                            , percentage : Optional Natural
+                                            }
+                                        )
+                                  , delay :
+                                      Optional
+                                        ( List
+                                            { percentage : Optional Natural
+                                            , fixed_delay :
+                                                Optional
+                                                  ( List
+                                                      { nanos : Optional Natural
+                                                      , seconds : Optional Text
+                                                      }
+                                                  )
+                                            }
+                                        )
+                                  }
+                              )
+                        , request_mirror_policy :
+                            Optional (List { backend_service : Text })
+                        , retry_policy :
+                            Optional
+                              ( List
+                                  { num_retries : Optional Natural
+                                  , retry_conditions : Optional (List Text)
+                                  , per_try_timeout :
+                                      Optional
+                                        ( List
+                                            { nanos : Optional Natural
+                                            , seconds : Optional Text
+                                            }
+                                        )
+                                  }
+                              )
+                        , timeout :
+                            Optional
+                              ( List
+                                  { nanos : Optional Natural
+                                  , seconds : Optional Text
+                                  }
+                              )
+                        , url_rewrite :
+                            Optional
+                              ( List
+                                  { host_rewrite : Optional Text
+                                  , path_prefix_rewrite : Optional Text
+                                  }
+                              )
+                        , weighted_backend_services :
+                            Optional
+                              ( List
+                                  { backend_service : Optional Text
+                                  , weight : Optional Natural
+                                  , header_action :
+                                      Optional
+                                        ( List
+                                            { request_headers_to_remove :
+                                                Optional (List Text)
+                                            , response_headers_to_remove :
+                                                Optional (List Text)
+                                            , request_headers_to_add :
+                                                Optional
+                                                  ( List
+                                                      { header_name :
+                                                          Optional Text
+                                                      , header_value :
+                                                          Optional Text
+                                                      , replace : Optional Bool
+                                                      }
+                                                  )
+                                            , response_headers_to_add :
+                                                Optional
+                                                  ( List
+                                                      { header_name :
+                                                          Optional Text
+                                                      , header_value :
+                                                          Optional Text
+                                                      , replace : Optional Bool
+                                                      }
+                                                  )
+                                            }
+                                        )
+                                  }
+                              )
+                        }
+                    )
               , default_url_redirect :
                   Optional
                     ( List
@@ -460,6 +670,106 @@
   , map_id = None Natural
   , project = None Text
   , self_link = None Text
+  , default_route_action =
+      None
+        ( List
+            { cors_policy :
+                Optional
+                  ( List
+                      { allow_credentials : Optional Bool
+                      , allow_headers : Optional (List Text)
+                      , allow_methods : Optional (List Text)
+                      , allow_origin_regexes : Optional (List Text)
+                      , allow_origins : Optional (List Text)
+                      , disabled : Optional Bool
+                      , expose_headers : Optional (List Text)
+                      , max_age : Optional Natural
+                      }
+                  )
+            , fault_injection_policy :
+                Optional
+                  ( List
+                      { abort :
+                          Optional
+                            ( List
+                                { http_status : Optional Natural
+                                , percentage : Optional Natural
+                                }
+                            )
+                      , delay :
+                          Optional
+                            ( List
+                                { percentage : Optional Natural
+                                , fixed_delay :
+                                    Optional
+                                      ( List
+                                          { nanos : Optional Natural
+                                          , seconds : Optional Text
+                                          }
+                                      )
+                                }
+                            )
+                      }
+                  )
+            , request_mirror_policy : Optional (List { backend_service : Text })
+            , retry_policy :
+                Optional
+                  ( List
+                      { num_retries : Optional Natural
+                      , retry_conditions : Optional (List Text)
+                      , per_try_timeout :
+                          Optional
+                            ( List
+                                { nanos : Optional Natural
+                                , seconds : Optional Text
+                                }
+                            )
+                      }
+                  )
+            , timeout :
+                Optional
+                  (List { nanos : Optional Natural, seconds : Optional Text })
+            , url_rewrite :
+                Optional
+                  ( List
+                      { host_rewrite : Optional Text
+                      , path_prefix_rewrite : Optional Text
+                      }
+                  )
+            , weighted_backend_services :
+                Optional
+                  ( List
+                      { backend_service : Optional Text
+                      , weight : Optional Natural
+                      , header_action :
+                          Optional
+                            ( List
+                                { request_headers_to_remove :
+                                    Optional (List Text)
+                                , response_headers_to_remove :
+                                    Optional (List Text)
+                                , request_headers_to_add :
+                                    Optional
+                                      ( List
+                                          { header_name : Optional Text
+                                          , header_value : Optional Text
+                                          , replace : Optional Bool
+                                          }
+                                      )
+                                , response_headers_to_add :
+                                    Optional
+                                      ( List
+                                          { header_name : Optional Text
+                                          , header_value : Optional Text
+                                          , replace : Optional Bool
+                                          }
+                                      )
+                                }
+                            )
+                      }
+                  )
+            }
+        )
   , default_url_redirect =
       None
         ( List
@@ -508,6 +818,115 @@
             { default_service : Optional Text
             , description : Optional Text
             , name : Text
+            , default_route_action :
+                Optional
+                  ( List
+                      { cors_policy :
+                          Optional
+                            ( List
+                                { allow_credentials : Optional Bool
+                                , allow_headers : Optional (List Text)
+                                , allow_methods : Optional (List Text)
+                                , allow_origin_regexes : Optional (List Text)
+                                , allow_origins : Optional (List Text)
+                                , disabled : Optional Bool
+                                , expose_headers : Optional (List Text)
+                                , max_age : Optional Natural
+                                }
+                            )
+                      , fault_injection_policy :
+                          Optional
+                            ( List
+                                { abort :
+                                    Optional
+                                      ( List
+                                          { http_status : Optional Natural
+                                          , percentage : Optional Natural
+                                          }
+                                      )
+                                , delay :
+                                    Optional
+                                      ( List
+                                          { percentage : Optional Natural
+                                          , fixed_delay :
+                                              Optional
+                                                ( List
+                                                    { nanos : Optional Natural
+                                                    , seconds : Optional Text
+                                                    }
+                                                )
+                                          }
+                                      )
+                                }
+                            )
+                      , request_mirror_policy :
+                          Optional (List { backend_service : Text })
+                      , retry_policy :
+                          Optional
+                            ( List
+                                { num_retries : Optional Natural
+                                , retry_conditions : Optional (List Text)
+                                , per_try_timeout :
+                                    Optional
+                                      ( List
+                                          { nanos : Optional Natural
+                                          , seconds : Optional Text
+                                          }
+                                      )
+                                }
+                            )
+                      , timeout :
+                          Optional
+                            ( List
+                                { nanos : Optional Natural
+                                , seconds : Optional Text
+                                }
+                            )
+                      , url_rewrite :
+                          Optional
+                            ( List
+                                { host_rewrite : Optional Text
+                                , path_prefix_rewrite : Optional Text
+                                }
+                            )
+                      , weighted_backend_services :
+                          Optional
+                            ( List
+                                { backend_service : Optional Text
+                                , weight : Optional Natural
+                                , header_action :
+                                    Optional
+                                      ( List
+                                          { request_headers_to_remove :
+                                              Optional (List Text)
+                                          , response_headers_to_remove :
+                                              Optional (List Text)
+                                          , request_headers_to_add :
+                                              Optional
+                                                ( List
+                                                    { header_name :
+                                                        Optional Text
+                                                    , header_value :
+                                                        Optional Text
+                                                    , replace : Optional Bool
+                                                    }
+                                                )
+                                          , response_headers_to_add :
+                                              Optional
+                                                ( List
+                                                    { header_name :
+                                                        Optional Text
+                                                    , header_value :
+                                                        Optional Text
+                                                    , replace : Optional Bool
+                                                    }
+                                                )
+                                          }
+                                      )
+                                }
+                            )
+                      }
+                  )
             , default_url_redirect :
                 Optional
                   ( List

@@ -19,6 +19,12 @@
     ./google_app_engine_standard_app_version.dhall
 , google_bigquery_dataset_access = ./google_bigquery_dataset_access.dhall
 , google_bigquery_dataset = ./google_bigquery_dataset.dhall
+, google_bigquery_dataset_iam_binding =
+    ./google_bigquery_dataset_iam_binding.dhall
+, google_bigquery_dataset_iam_member =
+    ./google_bigquery_dataset_iam_member.dhall
+, google_bigquery_dataset_iam_policy =
+    ./google_bigquery_dataset_iam_policy.dhall
 , google_bigquery_data_transfer_config =
     ./google_bigquery_data_transfer_config.dhall
 , google_bigquery_job = ./google_bigquery_job.dhall
@@ -185,6 +191,7 @@
     ./google_data_catalog_entry_group_iam_member.dhall
 , google_data_catalog_entry_group_iam_policy =
     ./google_data_catalog_entry_group_iam_policy.dhall
+, google_data_catalog_tag = ./google_data_catalog_tag.dhall
 , google_data_catalog_tag_template = ./google_data_catalog_tag_template.dhall
 , google_dataflow_job = ./google_dataflow_job.dhall
 , google_dataproc_autoscaling_policy =
@@ -344,6 +351,8 @@
 , google_monitoring_slo = ./google_monitoring_slo.dhall
 , google_monitoring_uptime_check_config =
     ./google_monitoring_uptime_check_config.dhall
+, google_network_management_connectivity_test =
+    ./google_network_management_connectivity_test.dhall
 , google_organization_iam_audit_config =
     ./google_organization_iam_audit_config.dhall
 , google_organization_iam_binding = ./google_organization_iam_binding.dhall

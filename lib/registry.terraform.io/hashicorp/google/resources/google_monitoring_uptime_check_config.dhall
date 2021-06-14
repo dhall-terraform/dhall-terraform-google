@@ -8,7 +8,8 @@
     , selected_regions : Optional (List Text)
     , timeout : Text
     , uptime_check_id : Optional Text
-    , content_matchers : Optional (List { content : Text })
+    , content_matchers :
+        Optional (List { content : Text, matcher : Optional Text })
     , http_check :
         Optional
           ( List
@@ -55,7 +56,7 @@
   , project = None Text
   , selected_regions = None (List Text)
   , uptime_check_id = None Text
-  , content_matchers = None (List { content : Text })
+  , content_matchers = None (List { content : Text, matcher : Optional Text })
   , http_check =
       None
         ( List
