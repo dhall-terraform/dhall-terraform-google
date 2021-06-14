@@ -6,6 +6,8 @@
     , project : Optional Text
     , message_storage_policy :
         Optional (List { allowed_persistence_regions : List Text })
+    , schema_settings :
+        Optional (List { encoding : Optional Text, schema : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -20,6 +22,7 @@
   , project = None Text
   , message_storage_policy =
       None (List { allowed_persistence_regions : List Text })
+  , schema_settings = None (List { encoding : Optional Text, schema : Text })
   , timeouts =
       None
         { create : Optional Text

@@ -494,6 +494,7 @@
     ./google_project_usage_export_bucket.dhall
 , google_pubsub_lite_subscription = ./google_pubsub_lite_subscription.dhall
 , google_pubsub_lite_topic = ./google_pubsub_lite_topic.dhall
+, google_pubsub_schema = ./google_pubsub_schema.dhall
 , google_pubsub_subscription = ./google_pubsub_subscription.dhall
 , google_pubsub_subscription_iam_binding =
     ./google_pubsub_subscription_iam_binding.dhall

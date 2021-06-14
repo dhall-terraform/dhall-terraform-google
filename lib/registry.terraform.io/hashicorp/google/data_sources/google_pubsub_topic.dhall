@@ -6,6 +6,7 @@
         Optional (List { allowed_persistence_regions : List Text })
     , name : Text
     , project : Optional Text
+    , schema_settings : Optional (List { encoding : Text, schema : Text })
     }
 , default =
   { id = None Text
@@ -14,5 +15,6 @@
   , message_storage_policy =
       None (List { allowed_persistence_regions : List Text })
   , project = None Text
+  , schema_settings = None (List { encoding : Text, schema : Text })
   }
 }
