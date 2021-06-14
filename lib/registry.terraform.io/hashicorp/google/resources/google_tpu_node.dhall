@@ -11,7 +11,7 @@
     , service_account : Optional Text
     , tensorflow_version : Text
     , use_service_networking : Optional Bool
-    , zone : Text
+    , zone : Optional Text
     , scheduling_config : Optional (List { preemptible : Bool })
     , timeouts :
         Optional
@@ -30,6 +30,7 @@
   , project = None Text
   , service_account = None Text
   , use_service_networking = None Bool
+  , zone = None Text
   , scheduling_config = None (List { preemptible : Bool })
   , timeouts =
       None

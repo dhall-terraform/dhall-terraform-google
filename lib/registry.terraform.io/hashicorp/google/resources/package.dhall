@@ -6,6 +6,8 @@
     ./google_access_context_manager_access_levels.dhall
 , google_access_context_manager_access_policy =
     ./google_access_context_manager_access_policy.dhall
+, google_access_context_manager_gcp_user_access_binding =
+    ./google_access_context_manager_gcp_user_access_binding.dhall
 , google_access_context_manager_service_perimeter =
     ./google_access_context_manager_service_perimeter.dhall
 , google_access_context_manager_service_perimeter_resource =
@@ -15,6 +17,7 @@
 , google_active_directory_domain = ./google_active_directory_domain.dhall
 , google_active_directory_domain_trust =
     ./google_active_directory_domain_trust.dhall
+, google_apigee_organization = ./google_apigee_organization.dhall
 , google_app_engine_application = ./google_app_engine_application.dhall
 , google_app_engine_application_url_dispatch_rules =
     ./google_app_engine_application_url_dispatch_rules.dhall

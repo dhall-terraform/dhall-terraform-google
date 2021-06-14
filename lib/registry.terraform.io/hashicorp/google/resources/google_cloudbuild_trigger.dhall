@@ -116,6 +116,29 @@
                     }
               }
           )
+    , github :
+        Optional
+          ( List
+              { name : Optional Text
+              , owner : Optional Text
+              , pull_request :
+                  Optional
+                    ( List
+                        { branch : Text
+                        , comment_control : Optional Text
+                        , invert_regex : Optional Bool
+                        }
+                    )
+              , push :
+                  Optional
+                    ( List
+                        { branch : Optional Text
+                        , invert_regex : Optional Bool
+                        , tag : Optional Text
+                        }
+                    )
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -246,6 +269,29 @@
                   , wait_for : Optional (List Text)
                   , volumes : Optional (List { name : Text, path : Text })
                   }
+            }
+        )
+  , github =
+      None
+        ( List
+            { name : Optional Text
+            , owner : Optional Text
+            , pull_request :
+                Optional
+                  ( List
+                      { branch : Text
+                      , comment_control : Optional Text
+                      , invert_regex : Optional Bool
+                      }
+                  )
+            , push :
+                Optional
+                  ( List
+                      { branch : Optional Text
+                      , invert_regex : Optional Bool
+                      , tag : Optional Text
+                      }
+                  )
             }
         )
   , timeouts =

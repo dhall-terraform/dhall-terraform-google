@@ -27,6 +27,7 @@
 , google_compute_instance_group = ./google_compute_instance_group.dhall
 , google_compute_instance_serial_port =
     ./google_compute_instance_serial_port.dhall
+, google_compute_instance_template = ./google_compute_instance_template.dhall
 , google_compute_lb_ip_ranges = ./google_compute_lb_ip_ranges.dhall
 , google_compute_network = ./google_compute_network.dhall
 , google_compute_network_endpoint_group =

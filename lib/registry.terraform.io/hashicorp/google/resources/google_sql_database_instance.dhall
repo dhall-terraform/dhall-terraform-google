@@ -42,6 +42,14 @@
               , verify_server_certificate : Optional Bool
               }
           )
+    , restore_backup_context :
+        Optional
+          ( List
+              { backup_run_id : Natural
+              , instance_id : Optional Text
+              , project : Optional Text
+              }
+          )
     , settings :
         List
           { activation_policy : Optional Text
@@ -147,6 +155,14 @@
             , ssl_cipher : Optional Text
             , username : Optional Text
             , verify_server_certificate : Optional Bool
+            }
+        )
+  , restore_backup_context =
+      None
+        ( List
+            { backup_run_id : Natural
+            , instance_id : Optional Text
+            , project : Optional Text
             }
         )
   , timeouts =

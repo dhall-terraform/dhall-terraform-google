@@ -6,7 +6,7 @@
     , name : Text
     , network : Text
     , project : Optional Text
-    , region : Text
+    , region : Optional Text
     , self_link : Optional Text
     , state : Optional Text
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
@@ -16,6 +16,7 @@
   , max_throughput = None Natural
   , min_throughput = None Natural
   , project = None Text
+  , region = None Text
   , self_link = None Text
   , state = None Text
   , timeouts = None { create : Optional Text, delete : Optional Text }

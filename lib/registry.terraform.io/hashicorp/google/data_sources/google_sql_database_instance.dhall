@@ -29,6 +29,9 @@
               , verify_server_certificate : Bool
               }
           )
+    , restore_backup_context :
+        Optional
+          (List { backup_run_id : Natural, instance_id : Text, project : Text })
     , root_password : Optional Text
     , self_link : Optional Text
     , server_ca_cert :
@@ -111,6 +114,9 @@
             , verify_server_certificate : Bool
             }
         )
+  , restore_backup_context =
+      None
+        (List { backup_run_id : Natural, instance_id : Text, project : Text })
   , root_password = None Text
   , self_link = None Text
   , server_ca_cert =

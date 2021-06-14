@@ -1,5 +1,6 @@
 { Type =
     { id : Optional Text
+    , keepers : Optional (List { mapKey : Text, mapValue : Text })
     , key_algorithm : Optional Text
     , name : Optional Text
     , private_key : Optional Text
@@ -13,6 +14,7 @@
     }
 , default =
   { id = None Text
+  , keepers = None (List { mapKey : Text, mapValue : Text })
   , key_algorithm = None Text
   , name = None Text
   , private_key = None Text
