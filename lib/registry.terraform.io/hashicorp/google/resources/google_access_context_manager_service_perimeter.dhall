@@ -7,6 +7,22 @@
     , perimeter_type : Optional Text
     , title : Text
     , update_time : Optional Text
+    , use_explicit_dry_run_spec : Optional Bool
+    , spec :
+        Optional
+          ( List
+              { access_levels : Optional (List Text)
+              , resources : Optional (List Text)
+              , restricted_services : Optional (List Text)
+              , vpc_accessible_services :
+                  Optional
+                    ( List
+                        { allowed_services : Optional (List Text)
+                        , enable_restriction : Optional Bool
+                        }
+                    )
+              }
+          )
     , status :
         Optional
           ( List
@@ -35,6 +51,22 @@
   , id = None Text
   , perimeter_type = None Text
   , update_time = None Text
+  , use_explicit_dry_run_spec = None Bool
+  , spec =
+      None
+        ( List
+            { access_levels : Optional (List Text)
+            , resources : Optional (List Text)
+            , restricted_services : Optional (List Text)
+            , vpc_accessible_services :
+                Optional
+                  ( List
+                      { allowed_services : Optional (List Text)
+                      , enable_restriction : Optional Bool
+                      }
+                  )
+            }
+        )
   , status =
       None
         ( List

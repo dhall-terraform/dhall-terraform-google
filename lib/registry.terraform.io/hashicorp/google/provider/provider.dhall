@@ -38,6 +38,7 @@
     , logging_custom_endpoint : Optional Text
     , ml_engine_custom_endpoint : Optional Text
     , monitoring_custom_endpoint : Optional Text
+    , os_login_custom_endpoint : Optional Text
     , project : Optional Text
     , pubsub_custom_endpoint : Optional Text
     , redis_custom_endpoint : Optional Text
@@ -105,6 +106,7 @@
   , logging_custom_endpoint = None Text
   , ml_engine_custom_endpoint = None Text
   , monitoring_custom_endpoint = None Text
+  , os_login_custom_endpoint = None Text
   , project = None Text
   , pubsub_custom_endpoint = None Text
   , redis_custom_endpoint = None Text

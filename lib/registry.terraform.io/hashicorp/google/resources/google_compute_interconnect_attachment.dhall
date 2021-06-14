@@ -21,7 +21,12 @@
     , state : Optional Text
     , type : Optional Text
     , vlan_tag8021q : Optional Natural
-    , timeouts : Optional { create : Optional Text, delete : Optional Text }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { admin_enabled = None Bool
@@ -44,6 +49,11 @@
   , state = None Text
   , type = None Text
   , vlan_tag8021q = None Natural
-  , timeouts = None { create : Optional Text, delete : Optional Text }
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , update : Optional Text
+        }
   }
 }

@@ -17,6 +17,7 @@
     ./google_app_engine_service_split_traffic.dhall
 , google_app_engine_standard_app_version =
     ./google_app_engine_standard_app_version.dhall
+, google_bigquery_dataset_access = ./google_bigquery_dataset_access.dhall
 , google_bigquery_dataset = ./google_bigquery_dataset.dhall
 , google_bigquery_data_transfer_config =
     ./google_bigquery_data_transfer_config.dhall
@@ -182,6 +183,7 @@
 , google_deployment_manager_deployment =
     ./google_deployment_manager_deployment.dhall
 , google_dialogflow_agent = ./google_dialogflow_agent.dhall
+, google_dialogflow_intent = ./google_dialogflow_intent.dhall
 , google_dns_managed_zone = ./google_dns_managed_zone.dhall
 , google_dns_record_set = ./google_dns_record_set.dhall
 , google_endpoints_service = ./google_endpoints_service.dhall
@@ -288,6 +290,7 @@
 , google_organization_iam_member = ./google_organization_iam_member.dhall
 , google_organization_iam_policy = ./google_organization_iam_policy.dhall
 , google_organization_policy = ./google_organization_policy.dhall
+, google_os_login_ssh_public_key = ./google_os_login_ssh_public_key.dhall
 , google_project = ./google_project.dhall
 , google_project_iam_audit_config = ./google_project_iam_audit_config.dhall
 , google_project_iam_binding = ./google_project_iam_binding.dhall
