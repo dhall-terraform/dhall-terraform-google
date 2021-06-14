@@ -61,6 +61,7 @@
         Optional
           ( List
               { automatic_restart : Bool
+              , min_node_cpus : Natural
               , node_affinities :
                   List { key : Text, operator : Text, values : List Text }
               , on_host_maintenance : Text
@@ -142,6 +143,7 @@
       None
         ( List
             { automatic_restart : Bool
+            , min_node_cpus : Natural
             , node_affinities :
                 List { key : Text, operator : Text, values : List Text }
             , on_host_maintenance : Text

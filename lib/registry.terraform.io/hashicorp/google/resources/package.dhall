@@ -297,6 +297,7 @@
     ./google_endpoints_service_iam_member.dhall
 , google_endpoints_service_iam_policy =
     ./google_endpoints_service_iam_policy.dhall
+, google_eventarc_trigger = ./google_eventarc_trigger.dhall
 , google_filestore_instance = ./google_filestore_instance.dhall
 , google_firestore_document = ./google_firestore_document.dhall
 , google_firestore_index = ./google_firestore_index.dhall
