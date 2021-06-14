@@ -10,6 +10,15 @@
     , timeout_sec : Optional Natural
     , type : Optional Text
     , unhealthy_threshold : Optional Natural
+    , grpc_health_check :
+        Optional
+          ( List
+              { grpc_service_name : Optional Text
+              , port : Optional Natural
+              , port_name : Optional Text
+              , port_specification : Optional Text
+              }
+          )
     , http2_health_check :
         Optional
           ( List
@@ -86,6 +95,15 @@
   , timeout_sec = None Natural
   , type = None Text
   , unhealthy_threshold = None Natural
+  , grpc_health_check =
+      None
+        ( List
+            { grpc_service_name : Optional Text
+            , port : Optional Natural
+            , port_name : Optional Text
+            , port_specification : Optional Text
+            }
+        )
   , http2_health_check =
       None
         ( List

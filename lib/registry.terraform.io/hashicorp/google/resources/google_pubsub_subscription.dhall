@@ -1,5 +1,6 @@
 { Type =
     { ack_deadline_seconds : Optional Natural
+    , enable_message_ordering : Optional Bool
     , filter : Optional Text
     , id : Optional Text
     , labels : Optional (List { mapKey : Text, mapValue : Text })
@@ -40,6 +41,7 @@
     }
 , default =
   { ack_deadline_seconds = None Natural
+  , enable_message_ordering = None Bool
   , filter = None Text
   , id = None Text
   , labels = None (List { mapKey : Text, mapValue : Text })

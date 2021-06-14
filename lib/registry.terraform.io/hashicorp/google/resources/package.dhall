@@ -1,12 +1,18 @@
 { google_access_context_manager_access_level =
     ./google_access_context_manager_access_level.dhall
+, google_access_context_manager_access_levels =
+    ./google_access_context_manager_access_levels.dhall
 , google_access_context_manager_access_policy =
     ./google_access_context_manager_access_policy.dhall
 , google_access_context_manager_service_perimeter =
     ./google_access_context_manager_service_perimeter.dhall
 , google_access_context_manager_service_perimeter_resource =
     ./google_access_context_manager_service_perimeter_resource.dhall
+, google_access_context_manager_service_perimeters =
+    ./google_access_context_manager_service_perimeters.dhall
 , google_active_directory_domain = ./google_active_directory_domain.dhall
+, google_active_directory_domain_trust =
+    ./google_active_directory_domain_trust.dhall
 , google_app_engine_application = ./google_app_engine_application.dhall
 , google_app_engine_application_url_dispatch_rules =
     ./google_app_engine_application_url_dispatch_rules.dhall
@@ -30,6 +36,9 @@
     ./google_bigquery_data_transfer_config.dhall
 , google_bigquery_job = ./google_bigquery_job.dhall
 , google_bigquery_table = ./google_bigquery_table.dhall
+, google_bigquery_table_iam_binding = ./google_bigquery_table_iam_binding.dhall
+, google_bigquery_table_iam_member = ./google_bigquery_table_iam_member.dhall
+, google_bigquery_table_iam_policy = ./google_bigquery_table_iam_policy.dhall
 , google_bigtable_app_profile = ./google_bigtable_app_profile.dhall
 , google_bigtable_gc_policy = ./google_bigtable_gc_policy.dhall
 , google_bigtable_instance = ./google_bigtable_instance.dhall
@@ -231,6 +240,8 @@
     ./google_endpoints_service_iam_policy.dhall
 , google_filestore_instance = ./google_filestore_instance.dhall
 , google_firestore_index = ./google_firestore_index.dhall
+, google_folder_access_approval_settings =
+    ./google_folder_access_approval_settings.dhall
 , google_folder = ./google_folder.dhall
 , google_folder_iam_audit_config = ./google_folder_iam_audit_config.dhall
 , google_folder_iam_binding = ./google_folder_iam_binding.dhall
@@ -372,6 +383,8 @@
     ./google_monitoring_uptime_check_config.dhall
 , google_network_management_connectivity_test =
     ./google_network_management_connectivity_test.dhall
+, google_organization_access_approval_settings =
+    ./google_organization_access_approval_settings.dhall
 , google_organization_iam_audit_config =
     ./google_organization_iam_audit_config.dhall
 , google_organization_iam_binding = ./google_organization_iam_binding.dhall
@@ -382,6 +395,8 @@
 , google_organization_policy = ./google_organization_policy.dhall
 , google_os_config_patch_deployment = ./google_os_config_patch_deployment.dhall
 , google_os_login_ssh_public_key = ./google_os_login_ssh_public_key.dhall
+, google_project_access_approval_settings =
+    ./google_project_access_approval_settings.dhall
 , google_project = ./google_project.dhall
 , google_project_iam_audit_config = ./google_project_iam_audit_config.dhall
 , google_project_iam_binding = ./google_project_iam_binding.dhall

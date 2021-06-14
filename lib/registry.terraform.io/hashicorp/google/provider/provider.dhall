@@ -1,5 +1,6 @@
 { Type =
-    { access_context_manager_custom_endpoint : Optional Text
+    { access_approval_custom_endpoint : Optional Text
+    , access_context_manager_custom_endpoint : Optional Text
     , access_token : Optional Text
     , active_directory_custom_endpoint : Optional Text
     , app_engine_custom_endpoint : Optional Text
@@ -75,7 +76,8 @@
           (List { enable_batching : Optional Bool, send_after : Optional Text })
     }
 , default =
-  { access_context_manager_custom_endpoint = None Text
+  { access_approval_custom_endpoint = None Text
+  , access_context_manager_custom_endpoint = None Text
   , access_token = None Text
   , active_directory_custom_endpoint = None Text
   , app_engine_custom_endpoint = None Text
