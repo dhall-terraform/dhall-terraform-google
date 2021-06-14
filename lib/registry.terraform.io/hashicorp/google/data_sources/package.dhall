@@ -11,6 +11,7 @@
     ./google_cloud_identity_group_memberships.dhall
 , google_cloud_identity_groups = ./google_cloud_identity_groups.dhall
 , google_cloud_run_service = ./google_cloud_run_service.dhall
+, google_composer_environment = ./google_composer_environment.dhall
 , google_composer_image_versions = ./google_composer_image_versions.dhall
 , google_compute_address = ./google_compute_address.dhall
 , google_compute_backend_bucket = ./google_compute_backend_bucket.dhall
@@ -36,6 +37,7 @@
 , google_compute_regions = ./google_compute_regions.dhall
 , google_compute_region_ssl_certificate =
     ./google_compute_region_ssl_certificate.dhall
+, google_compute_resource_policy = ./google_compute_resource_policy.dhall
 , google_compute_router = ./google_compute_router.dhall
 , google_compute_ssl_certificate = ./google_compute_ssl_certificate.dhall
 , google_compute_ssl_policy = ./google_compute_ssl_policy.dhall
@@ -63,6 +65,10 @@
 , google_kms_secret = ./google_kms_secret.dhall
 , google_monitoring_app_engine_service =
     ./google_monitoring_app_engine_service.dhall
+, google_monitoring_cluster_istio_service =
+    ./google_monitoring_cluster_istio_service.dhall
+, google_monitoring_mesh_istio_service =
+    ./google_monitoring_mesh_istio_service.dhall
 , google_monitoring_notification_channel =
     ./google_monitoring_notification_channel.dhall
 , google_monitoring_uptime_check_ips =

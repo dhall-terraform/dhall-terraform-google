@@ -7,7 +7,8 @@
     , name : Text
     , project : Optional Text
     , self_link : Optional Text
-    , cdn_policy : Optional (List { signed_url_cache_max_age_sec : Natural })
+    , cdn_policy :
+        Optional (List { signed_url_cache_max_age_sec : Optional Natural })
     , timeouts :
         Optional
           { create : Optional Text
@@ -22,7 +23,7 @@
   , id = None Text
   , project = None Text
   , self_link = None Text
-  , cdn_policy = None (List { signed_url_cache_max_age_sec : Natural })
+  , cdn_policy = None (List { signed_url_cache_max_age_sec : Optional Natural })
   , timeouts =
       None
         { create : Optional Text

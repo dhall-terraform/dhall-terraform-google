@@ -148,6 +148,8 @@
 , google_compute_instance_template = ./google_compute_instance_template.dhall
 , google_compute_interconnect_attachment =
     ./google_compute_interconnect_attachment.dhall
+, google_compute_managed_ssl_certificate =
+    ./google_compute_managed_ssl_certificate.dhall
 , google_compute_network = ./google_compute_network.dhall
 , google_compute_network_endpoint = ./google_compute_network_endpoint.dhall
 , google_compute_network_endpoint_group =

@@ -33,6 +33,7 @@
               , max_unavailable_percent : Optional Natural
               , min_ready_sec : Optional Natural
               , minimal_action : Text
+              , replacement_method : Optional Text
               , type : Text
               }
           )
@@ -77,6 +78,7 @@
             , max_unavailable_percent : Optional Natural
             , min_ready_sec : Optional Natural
             , minimal_action : Text
+            , replacement_method : Optional Text
             , type : Text
             }
         )
