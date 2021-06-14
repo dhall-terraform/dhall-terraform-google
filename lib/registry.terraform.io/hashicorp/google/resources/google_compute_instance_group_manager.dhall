@@ -15,6 +15,8 @@
     , auto_healing_policies :
         Optional (List { health_check : Text, initial_delay_sec : Natural })
     , named_port : Optional (List { name : Text, port : Natural })
+    , stateful_disk :
+        Optional (List { delete_rule : Optional Text, device_name : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -57,6 +59,8 @@
   , auto_healing_policies =
       None (List { health_check : Text, initial_delay_sec : Natural })
   , named_port = None (List { name : Text, port : Natural })
+  , stateful_disk =
+      None (List { delete_rule : Optional Text, device_name : Text })
   , timeouts =
       None
         { create : Optional Text

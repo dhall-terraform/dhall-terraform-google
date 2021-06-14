@@ -5,6 +5,7 @@
 , google_client_config = ./google_client_config.dhall
 , google_client_openid_userinfo = ./google_client_openid_userinfo.dhall
 , google_cloudfunctions_function = ./google_cloudfunctions_function.dhall
+, google_cloud_run_service = ./google_cloud_run_service.dhall
 , google_composer_image_versions = ./google_composer_image_versions.dhall
 , google_compute_address = ./google_compute_address.dhall
 , google_compute_backend_bucket = ./google_compute_backend_bucket.dhall
@@ -13,6 +14,8 @@
     ./google_compute_default_service_account.dhall
 , google_compute_forwarding_rule = ./google_compute_forwarding_rule.dhall
 , google_compute_global_address = ./google_compute_global_address.dhall
+, google_compute_global_forwarding_rule =
+    ./google_compute_global_forwarding_rule.dhall
 , google_compute_image = ./google_compute_image.dhall
 , google_compute_instance = ./google_compute_instance.dhall
 , google_compute_instance_group = ./google_compute_instance_group.dhall
@@ -65,6 +68,7 @@
 , google_project_organization_policy =
     ./google_project_organization_policy.dhall
 , google_projects = ./google_projects.dhall
+, google_pubsub_topic = ./google_pubsub_topic.dhall
 , google_redis_instance = ./google_redis_instance.dhall
 , google_secret_manager_secret_version =
     ./google_secret_manager_secret_version.dhall

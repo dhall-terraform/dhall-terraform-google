@@ -6,7 +6,12 @@
     , name : Text
     , project : Optional Text
     , alternative_name_server_config :
-        Optional (List { target_name_servers : List { ipv4_address : Text } })
+        Optional
+          ( List
+              { target_name_servers :
+                  List { forwarding_path : Optional Text, ipv4_address : Text }
+              }
+          )
     , networks : Optional (List { network_url : Text })
     , timeouts :
         Optional
@@ -22,7 +27,12 @@
   , id = None Text
   , project = None Text
   , alternative_name_server_config =
-      None (List { target_name_servers : List { ipv4_address : Text } })
+      None
+        ( List
+            { target_name_servers :
+                List { forwarding_path : Optional Text, ipv4_address : Text }
+            }
+        )
   , networks = None (List { network_url : Text })
   , timeouts =
       None

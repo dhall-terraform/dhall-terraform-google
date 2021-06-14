@@ -56,6 +56,14 @@
                     )
               }
           )
+    , materialized_view :
+        Optional
+          ( List
+              { enable_refresh : Optional Bool
+              , query : Text
+              , refresh_interval_ms : Optional Natural
+              }
+          )
     , range_partitioning :
         Optional
           ( List
@@ -129,6 +137,14 @@
                       , source_uri_prefix : Optional Text
                       }
                   )
+            }
+        )
+  , materialized_view =
+      None
+        ( List
+            { enable_refresh : Optional Bool
+            , query : Text
+            , refresh_interval_ms : Optional Natural
             }
         )
   , range_partitioning =

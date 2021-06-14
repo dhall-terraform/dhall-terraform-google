@@ -4,7 +4,7 @@
     , creation_timestamp : Optional Text
     , description : Optional Text
     , fingerprint : Optional Text
-    , health_checks : List Text
+    , health_checks : Optional (List Text)
     , id : Optional Text
     , load_balancing_scheme : Optional Text
     , locality_lb_policy : Optional Text
@@ -109,6 +109,7 @@
   , creation_timestamp = None Text
   , description = None Text
   , fingerprint = None Text
+  , health_checks = None (List Text)
   , id = None Text
   , load_balancing_scheme = None Text
   , locality_lb_policy = None Text

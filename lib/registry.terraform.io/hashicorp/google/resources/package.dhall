@@ -49,6 +49,9 @@
 , google_bigtable_instance_iam_policy =
     ./google_bigtable_instance_iam_policy.dhall
 , google_bigtable_table = ./google_bigtable_table.dhall
+, google_bigtable_table_iam_binding = ./google_bigtable_table_iam_binding.dhall
+, google_bigtable_table_iam_member = ./google_bigtable_table_iam_member.dhall
+, google_bigtable_table_iam_policy = ./google_bigtable_table_iam_policy.dhall
 , google_billing_account_iam_binding =
     ./google_billing_account_iam_binding.dhall
 , google_billing_account_iam_member = ./google_billing_account_iam_member.dhall
@@ -145,6 +148,8 @@
     ./google_compute_network_peering_routes_config.dhall
 , google_compute_node_group = ./google_compute_node_group.dhall
 , google_compute_node_template = ./google_compute_node_template.dhall
+, google_compute_per_instance_config =
+    ./google_compute_per_instance_config.dhall
 , google_compute_project_default_network_tier =
     ./google_compute_project_default_network_tier.dhall
 , google_compute_project_metadata = ./google_compute_project_metadata.dhall
@@ -166,6 +171,8 @@
     ./google_compute_region_health_check.dhall
 , google_compute_region_instance_group_manager =
     ./google_compute_region_instance_group_manager.dhall
+, google_compute_region_per_instance_config =
+    ./google_compute_region_per_instance_config.dhall
 , google_compute_region_ssl_certificate =
     ./google_compute_region_ssl_certificate.dhall
 , google_compute_region_target_http_proxy =
