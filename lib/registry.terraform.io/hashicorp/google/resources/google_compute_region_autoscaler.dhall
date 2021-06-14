@@ -23,6 +23,19 @@
                     , type : Optional Text
                     }
                 )
+          , scale_in_control :
+              Optional
+                ( List
+                    { time_window_sec : Optional Natural
+                    , max_scaled_in_replicas :
+                        Optional
+                          ( List
+                              { fixed : Optional Natural
+                              , percent : Optional Natural
+                              }
+                          )
+                    }
+                )
           }
     , timeouts :
         Optional
