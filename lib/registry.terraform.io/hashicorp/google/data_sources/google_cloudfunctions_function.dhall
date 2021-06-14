@@ -1,5 +1,7 @@
 { Type =
     { available_memory_mb : Optional Natural
+    , build_environment_variables :
+        Optional (List { mapKey : Text, mapValue : Text })
     , description : Optional Text
     , entry_point : Optional Text
     , environment_variables : Optional (List { mapKey : Text, mapValue : Text })
@@ -31,6 +33,7 @@
     }
 , default =
   { available_memory_mb = None Natural
+  , build_environment_variables = None (List { mapKey : Text, mapValue : Text })
   , description = None Text
   , entry_point = None Text
   , environment_variables = None (List { mapKey : Text, mapValue : Text })

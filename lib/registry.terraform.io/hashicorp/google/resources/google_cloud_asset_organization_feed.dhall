@@ -7,6 +7,15 @@
     , id : Optional Text
     , name : Optional Text
     , org_id : Text
+    , condition :
+        Optional
+          ( List
+              { description : Optional Text
+              , expression : Text
+              , location : Optional Text
+              , title : Optional Text
+              }
+          )
     , feed_output_config : List { pubsub_destination : List { topic : Text } }
     , timeouts :
         Optional
@@ -21,6 +30,15 @@
   , content_type = None Text
   , id = None Text
   , name = None Text
+  , condition =
+      None
+        ( List
+            { description : Optional Text
+            , expression : Text
+            , location : Optional Text
+            , title : Optional Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

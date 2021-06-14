@@ -8,6 +8,7 @@
     , name : Text
     , network : Text
     , private_ip_google_access : Optional Bool
+    , private_ipv6_google_access : Optional Text
     , project : Optional Text
     , region : Optional Text
     , secondary_ip_range :
@@ -37,6 +38,7 @@
   , gateway_address = None Text
   , id = None Text
   , private_ip_google_access = None Bool
+  , private_ipv6_google_access = None Text
   , project = None Text
   , region = None Text
   , secondary_ip_range = None (List { ip_cidr_range : Text, range_name : Text })

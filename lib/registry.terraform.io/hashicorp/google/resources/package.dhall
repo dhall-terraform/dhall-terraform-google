@@ -177,6 +177,8 @@
     ./google_compute_region_health_check.dhall
 , google_compute_region_instance_group_manager =
     ./google_compute_region_instance_group_manager.dhall
+, google_compute_region_network_endpoint_group =
+    ./google_compute_region_network_endpoint_group.dhall
 , google_compute_region_per_instance_config =
     ./google_compute_region_per_instance_config.dhall
 , google_compute_region_ssl_certificate =
@@ -333,6 +335,9 @@
     ./google_iap_app_engine_version_iam_policy.dhall
 , google_iap_brand = ./google_iap_brand.dhall
 , google_iap_client = ./google_iap_client.dhall
+, google_iap_tunnel_iam_binding = ./google_iap_tunnel_iam_binding.dhall
+, google_iap_tunnel_iam_member = ./google_iap_tunnel_iam_member.dhall
+, google_iap_tunnel_iam_policy = ./google_iap_tunnel_iam_policy.dhall
 , google_iap_tunnel_instance_iam_binding =
     ./google_iap_tunnel_instance_iam_binding.dhall
 , google_iap_tunnel_instance_iam_member =

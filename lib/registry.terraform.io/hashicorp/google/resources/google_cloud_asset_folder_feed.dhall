@@ -8,6 +8,15 @@
     , folder_id : Optional Text
     , id : Optional Text
     , name : Optional Text
+    , condition :
+        Optional
+          ( List
+              { description : Optional Text
+              , expression : Text
+              , location : Optional Text
+              , title : Optional Text
+              }
+          )
     , feed_output_config : List { pubsub_destination : List { topic : Text } }
     , timeouts :
         Optional
@@ -23,6 +32,15 @@
   , folder_id = None Text
   , id = None Text
   , name = None Text
+  , condition =
+      None
+        ( List
+            { description : Optional Text
+            , expression : Text
+            , location : Optional Text
+            , title : Optional Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

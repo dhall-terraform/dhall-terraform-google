@@ -11,6 +11,31 @@
               , exclude_info_types : Optional Bool
               , include_quote : Optional Bool
               , min_likelihood : Optional Text
+              , custom_info_types :
+                  Optional
+                    ( List
+                        { exclusion_type : Optional Text
+                        , likelihood : Optional Text
+                        , dictionary :
+                            Optional
+                              ( List
+                                  { cloud_storage_path :
+                                      Optional (List { path : Text })
+                                  , word_list :
+                                      Optional (List { words : List Text })
+                                  }
+                              )
+                        , info_type : List { name : Text }
+                        , regex :
+                            Optional
+                              ( List
+                                  { group_indexes : Optional (List Natural)
+                                  , pattern : Text
+                                  }
+                              )
+                        , stored_type : Optional (List { name : Text })
+                        }
+                    )
               , info_types : Optional (List { name : Text })
               , limits :
                   Optional
@@ -113,6 +138,31 @@
             , exclude_info_types : Optional Bool
             , include_quote : Optional Bool
             , min_likelihood : Optional Text
+            , custom_info_types :
+                Optional
+                  ( List
+                      { exclusion_type : Optional Text
+                      , likelihood : Optional Text
+                      , dictionary :
+                          Optional
+                            ( List
+                                { cloud_storage_path :
+                                    Optional (List { path : Text })
+                                , word_list :
+                                    Optional (List { words : List Text })
+                                }
+                            )
+                      , info_type : List { name : Text }
+                      , regex :
+                          Optional
+                            ( List
+                                { group_indexes : Optional (List Natural)
+                                , pattern : Text
+                                }
+                            )
+                      , stored_type : Optional (List { name : Text })
+                      }
+                  )
             , info_types : Optional (List { name : Text })
             , limits :
                 Optional

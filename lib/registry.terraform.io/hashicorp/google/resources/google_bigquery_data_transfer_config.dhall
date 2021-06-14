@@ -12,6 +12,15 @@
     , project : Optional Text
     , schedule : Optional Text
     , service_account_name : Optional Text
+    , email_preferences : Optional (List { enable_failure_email : Bool })
+    , schedule_options :
+        Optional
+          ( List
+              { disable_auto_scheduling : Optional Bool
+              , end_time : Optional Text
+              , start_time : Optional Text
+              }
+          )
     , sensitive_params : Optional (List { secret_access_key : Text })
     , timeouts :
         Optional
@@ -30,6 +39,15 @@
   , project = None Text
   , schedule = None Text
   , service_account_name = None Text
+  , email_preferences = None (List { enable_failure_email : Bool })
+  , schedule_options =
+      None
+        ( List
+            { disable_auto_scheduling : Optional Bool
+            , end_time : Optional Text
+            , start_time : Optional Text
+            }
+        )
   , sensitive_params = None (List { secret_access_key : Text })
   , timeouts =
       None

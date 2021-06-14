@@ -6,6 +6,7 @@
     , purpose : Optional Text
     , rotation_period : Optional Text
     , self_link : Optional Text
+    , skip_initial_version_creation : Optional Bool
     , timeouts :
         Optional
           { create : Optional Text
@@ -21,6 +22,7 @@
   , purpose = None Text
   , rotation_period = None Text
   , self_link = None Text
+  , skip_initial_version_creation = None Bool
   , timeouts =
       None
         { create : Optional Text

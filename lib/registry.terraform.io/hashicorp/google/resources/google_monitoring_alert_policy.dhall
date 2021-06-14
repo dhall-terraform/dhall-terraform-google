@@ -36,6 +36,20 @@
                           )
                     }
                 )
+          , condition_monitoring_query_language :
+              Optional
+                ( List
+                    { duration : Text
+                    , query : Text
+                    , trigger :
+                        Optional
+                          ( List
+                              { count : Optional Natural
+                              , percent : Optional Natural
+                              }
+                          )
+                    }
+                )
           , condition_threshold :
               Optional
                 ( List
