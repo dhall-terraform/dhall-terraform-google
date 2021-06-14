@@ -14,7 +14,8 @@
               { location : Optional (List Text)
               , method : Optional (List Text)
               , version : Optional (List Text)
-              , latency : List { threshold : Text }
+              , availability : Optional (List { enabled : Optional Bool })
+              , latency : Optional (List { threshold : Text })
               }
           )
     , request_based_sli :
@@ -126,7 +127,8 @@
             { location : Optional (List Text)
             , method : Optional (List Text)
             , version : Optional (List Text)
-            , latency : List { threshold : Text }
+            , availability : Optional (List { enabled : Optional Bool })
+            , latency : Optional (List { threshold : Text })
             }
         )
   , request_based_sli =
