@@ -1,14 +1,13 @@
 { Type =
-    { description : Optional Text
+    { creation_timestamp : Optional Text
+    , description : Optional Text
     , id : Optional Text
-    , instances : Optional (List Text)
     , name : Text
-    , network : Optional Text
     , project : Optional Text
+    , proxy_id : Optional Natural
+    , region : Optional Text
     , self_link : Optional Text
-    , size : Optional Natural
-    , zone : Optional Text
-    , named_port : Optional (List { name : Text, port : Natural })
+    , url_map : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -17,15 +16,13 @@
           }
     }
 , default =
-  { description = None Text
+  { creation_timestamp = None Text
+  , description = None Text
   , id = None Text
-  , instances = None (List Text)
-  , network = None Text
   , project = None Text
+  , proxy_id = None Natural
+  , region = None Text
   , self_link = None Text
-  , size = None Natural
-  , zone = None Text
-  , named_port = None (List { name : Text, port : Natural })
   , timeouts =
       None
         { create : Optional Text

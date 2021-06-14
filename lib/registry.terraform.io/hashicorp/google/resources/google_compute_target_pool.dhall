@@ -10,6 +10,12 @@
     , region : Optional Text
     , self_link : Optional Text
     , session_affinity : Optional Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { backup_pool = None Text
@@ -22,5 +28,11 @@
   , region = None Text
   , self_link = None Text
   , session_affinity = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , update : Optional Text
+        }
   }
 }

@@ -3,7 +3,8 @@
     , addons_config :
         Optional
           ( List
-              { horizontal_pod_autoscaling : List { disabled : Bool }
+              { cloudrun_config : List { disabled : Bool }
+              , horizontal_pod_autoscaling : List { disabled : Bool }
               , http_load_balancing : List { disabled : Bool }
               , kubernetes_dashboard : List { disabled : Bool }
               , network_policy_config : List { disabled : Bool }
@@ -31,6 +32,7 @@
     , enable_intranode_visibility : Optional Bool
     , enable_kubernetes_alpha : Optional Bool
     , enable_legacy_abac : Optional Bool
+    , enable_shielded_nodes : Optional Bool
     , enable_tpu : Optional Bool
     , endpoint : Optional Text
     , id : Optional Text
@@ -145,6 +147,7 @@
                     , workload_metadata_config : List { node_metadata : Text }
                     }
               , node_count : Natural
+              , node_locations : List Text
               , upgrade_settings :
                   List { max_surge : Natural, max_unavailable : Natural }
               , version : Text
@@ -186,7 +189,8 @@
   , addons_config =
       None
         ( List
-            { horizontal_pod_autoscaling : List { disabled : Bool }
+            { cloudrun_config : List { disabled : Bool }
+            , horizontal_pod_autoscaling : List { disabled : Bool }
             , http_load_balancing : List { disabled : Bool }
             , kubernetes_dashboard : List { disabled : Bool }
             , network_policy_config : List { disabled : Bool }
@@ -211,6 +215,7 @@
   , enable_intranode_visibility = None Bool
   , enable_kubernetes_alpha = None Bool
   , enable_legacy_abac = None Bool
+  , enable_shielded_nodes = None Bool
   , enable_tpu = None Bool
   , endpoint = None Text
   , id = None Text
@@ -322,6 +327,7 @@
                   , workload_metadata_config : List { node_metadata : Text }
                   }
             , node_count : Natural
+            , node_locations : List Text
             , upgrade_settings :
                 List { max_surge : Natural, max_unavailable : Natural }
             , version : Text

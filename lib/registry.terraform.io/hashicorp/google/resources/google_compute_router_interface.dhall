@@ -7,6 +7,7 @@
     , region : Optional Text
     , router : Text
     , vpn_tunnel : Optional Text
+    , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
   { id = None Text
@@ -15,5 +16,6 @@
   , project = None Text
   , region = None Text
   , vpn_tunnel = None Text
+  , timeouts = None { create : Optional Text, delete : Optional Text }
   }
 }

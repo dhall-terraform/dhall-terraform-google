@@ -7,6 +7,7 @@
     , enable_intranode_visibility : Optional Bool
     , enable_kubernetes_alpha : Optional Bool
     , enable_legacy_abac : Optional Bool
+    , enable_shielded_nodes : Optional Bool
     , enable_tpu : Optional Bool
     , endpoint : Optional Text
     , id : Optional Text
@@ -33,7 +34,8 @@
     , addons_config :
         Optional
           ( List
-              { horizontal_pod_autoscaling : Optional (List { disabled : Bool })
+              { cloudrun_config : Optional (List { disabled : Bool })
+              , horizontal_pod_autoscaling : Optional (List { disabled : Bool })
               , http_load_balancing : Optional (List { disabled : Bool })
               , kubernetes_dashboard :
                   Optional (List { disabled : Optional Bool })
@@ -151,6 +153,7 @@
               , name : Optional Text
               , name_prefix : Optional Text
               , node_count : Optional Natural
+              , node_locations : Optional (List Text)
               , version : Optional Text
               , autoscaling :
                   Optional
@@ -228,6 +231,7 @@
         Optional
           { create : Optional Text
           , delete : Optional Text
+          , read : Optional Text
           , update : Optional Text
           }
     , vertical_pod_autoscaling : Optional (List { enabled : Bool })
@@ -241,6 +245,7 @@
   , enable_intranode_visibility = None Bool
   , enable_kubernetes_alpha = None Bool
   , enable_legacy_abac = None Bool
+  , enable_shielded_nodes = None Bool
   , enable_tpu = None Bool
   , endpoint = None Text
   , id = None Text
@@ -266,7 +271,8 @@
   , addons_config =
       None
         ( List
-            { horizontal_pod_autoscaling : Optional (List { disabled : Bool })
+            { cloudrun_config : Optional (List { disabled : Bool })
+            , horizontal_pod_autoscaling : Optional (List { disabled : Bool })
             , http_load_balancing : Optional (List { disabled : Bool })
             , kubernetes_dashboard :
                 Optional (List { disabled : Optional Bool })
@@ -379,6 +385,7 @@
             , name : Optional Text
             , name_prefix : Optional Text
             , node_count : Optional Natural
+            , node_locations : Optional (List Text)
             , version : Optional Text
             , autoscaling :
                 Optional
@@ -453,6 +460,7 @@
       None
         { create : Optional Text
         , delete : Optional Text
+        , read : Optional Text
         , update : Optional Text
         }
   , vertical_pod_autoscaling = None (List { enabled : Bool })

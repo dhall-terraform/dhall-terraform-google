@@ -8,6 +8,7 @@
     , peer_network : Text
     , state : Optional Text
     , state_details : Optional Text
+    , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
   { auto_create_routes = None Bool
@@ -16,5 +17,6 @@
   , import_custom_routes = None Bool
   , state = None Text
   , state_details = None Text
+  , timeouts = None { create : Optional Text, delete : Optional Text }
   }
 }

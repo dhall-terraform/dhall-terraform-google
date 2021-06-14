@@ -80,6 +80,7 @@
               , enable_vtpm : Optional Bool
               }
           )
+    , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
   { can_ip_forward = None Bool
@@ -145,5 +146,6 @@
             , enable_vtpm : Optional Bool
             }
         )
+  , timeouts = None { create : Optional Text, delete : Optional Text }
   }
 }

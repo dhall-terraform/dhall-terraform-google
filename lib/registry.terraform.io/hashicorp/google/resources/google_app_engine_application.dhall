@@ -22,6 +22,7 @@
               , oauth2_client_secret_sha256 : Optional Text
               }
           )
+    , timeouts : Optional { create : Optional Text, update : Optional Text }
     }
 , default =
   { app_id = None Text
@@ -46,5 +47,6 @@
             , oauth2_client_secret_sha256 : Optional Text
             }
         )
+  , timeouts = None { create : Optional Text, update : Optional Text }
   }
 }

@@ -10,6 +10,7 @@
     , project : Optional Text
     , server_ca_cert : Optional Text
     , sha1_fingerprint : Optional Text
+    , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
   { cert = None Text
@@ -21,5 +22,6 @@
   , project = None Text
   , server_ca_cert = None Text
   , sha1_fingerprint = None Text
+  , timeouts = None { create : Optional Text, delete : Optional Text }
   }
 }

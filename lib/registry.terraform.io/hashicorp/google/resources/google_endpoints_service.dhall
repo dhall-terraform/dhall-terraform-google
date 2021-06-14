@@ -23,6 +23,12 @@
     , project : Optional Text
     , protoc_output_base64 : Optional Text
     , service_name : Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { apis =
@@ -48,5 +54,11 @@
   , openapi_config = None Text
   , project = None Text
   , protoc_output_base64 = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , update : Optional Text
+        }
   }
 }

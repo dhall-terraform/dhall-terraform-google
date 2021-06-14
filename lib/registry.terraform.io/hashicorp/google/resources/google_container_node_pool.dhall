@@ -8,6 +8,7 @@
     , name : Optional Text
     , name_prefix : Optional Text
     , node_count : Optional Natural
+    , node_locations : Optional (List Text)
     , project : Optional Text
     , region : Optional Text
     , version : Optional Text
@@ -66,6 +67,7 @@
   , name = None Text
   , name_prefix = None Text
   , node_count = None Natural
+  , node_locations = None (List Text)
   , project = None Text
   , region = None Text
   , version = None Text
