@@ -181,6 +181,7 @@
               , enable_resource_consumption_metering : Bool
               }
           )
+    , self_link : Optional Text
     , services_ipv4_cidr : Optional Text
     , subnetwork : Optional Text
     , vertical_pod_autoscaling : Optional (List { enabled : Bool })
@@ -364,6 +365,7 @@
             , enable_resource_consumption_metering : Bool
             }
         )
+  , self_link = None Text
   , services_ipv4_cidr = None Text
   , subnetwork = None Text
   , vertical_pod_autoscaling = None (List { enabled : Bool })

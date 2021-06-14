@@ -28,6 +28,7 @@
     , region : Optional Text
     , remove_default_node_pool : Optional Bool
     , resource_labels : Optional (List { mapKey : Text, mapValue : Text })
+    , self_link : Optional Text
     , services_ipv4_cidr : Optional Text
     , subnetwork : Optional Text
     , zone : Optional Text
@@ -269,6 +270,7 @@
   , region = None Text
   , remove_default_node_pool = None Bool
   , resource_labels = None (List { mapKey : Text, mapValue : Text })
+  , self_link = None Text
   , services_ipv4_cidr = None Text
   , subnetwork = None Text
   , zone = None Text

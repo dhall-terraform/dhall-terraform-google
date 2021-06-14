@@ -13,10 +13,24 @@
     , source_disk : Text
     , source_disk_link : Optional Text
     , storage_bytes : Optional Natural
+    , storage_locations : Optional (List Text)
     , zone : Optional Text
     , snapshot_encryption_key :
-        Optional (List { raw_key : Text, sha256 : Optional Text })
-    , source_disk_encryption_key : Optional (List { raw_key : Optional Text })
+        Optional
+          ( List
+              { kms_key_self_link : Optional Text
+              , kms_key_service_account : Optional Text
+              , raw_key : Optional Text
+              , sha256 : Optional Text
+              }
+          )
+    , source_disk_encryption_key :
+        Optional
+          ( List
+              { kms_key_service_account : Optional Text
+              , raw_key : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -37,10 +51,22 @@
   , snapshot_id = None Natural
   , source_disk_link = None Text
   , storage_bytes = None Natural
+  , storage_locations = None (List Text)
   , zone = None Text
   , snapshot_encryption_key =
-      None (List { raw_key : Text, sha256 : Optional Text })
-  , source_disk_encryption_key = None (List { raw_key : Optional Text })
+      None
+        ( List
+            { kms_key_self_link : Optional Text
+            , kms_key_service_account : Optional Text
+            , raw_key : Optional Text
+            , sha256 : Optional Text
+            }
+        )
+  , source_disk_encryption_key =
+      None
+        ( List
+            { kms_key_service_account : Optional Text, raw_key : Optional Text }
+        )
   , timeouts =
       None
         { create : Optional Text
