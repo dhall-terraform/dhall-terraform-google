@@ -1,5 +1,6 @@
 { Type =
     { ddl : Optional (List Text)
+    , deletion_protection : Optional Bool
     , id : Optional Text
     , instance : Text
     , name : Text
@@ -14,6 +15,7 @@
     }
 , default =
   { ddl = None (List Text)
+  , deletion_protection = None Bool
   , id = None Text
   , project = None Text
   , state = None Text

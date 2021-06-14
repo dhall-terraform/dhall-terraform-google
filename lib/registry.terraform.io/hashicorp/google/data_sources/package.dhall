@@ -79,6 +79,7 @@
 , google_service_account = ./google_service_account.dhall
 , google_service_account_id_token = ./google_service_account_id_token.dhall
 , google_service_account_key = ./google_service_account_key.dhall
+, google_spanner_instance = ./google_spanner_instance.dhall
 , google_sql_ca_certs = ./google_sql_ca_certs.dhall
 , google_sql_database_instance = ./google_sql_database_instance.dhall
 , google_storage_bucket_object = ./google_storage_bucket_object.dhall

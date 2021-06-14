@@ -1,4 +1,6 @@
-{ google_access_context_manager_access_level =
+{ google_access_context_manager_access_level_condition =
+    ./google_access_context_manager_access_level_condition.dhall
+, google_access_context_manager_access_level =
     ./google_access_context_manager_access_level.dhall
 , google_access_context_manager_access_levels =
     ./google_access_context_manager_access_levels.dhall
@@ -35,6 +37,7 @@
 , google_bigquery_data_transfer_config =
     ./google_bigquery_data_transfer_config.dhall
 , google_bigquery_job = ./google_bigquery_job.dhall
+, google_bigquery_routine = ./google_bigquery_routine.dhall
 , google_bigquery_table = ./google_bigquery_table.dhall
 , google_bigquery_table_iam_binding = ./google_bigquery_table_iam_binding.dhall
 , google_bigquery_table_iam_member = ./google_bigquery_table_iam_member.dhall
@@ -106,6 +109,8 @@
 , google_compute_disk_iam_policy = ./google_compute_disk_iam_policy.dhall
 , google_compute_disk_resource_policy_attachment =
     ./google_compute_disk_resource_policy_attachment.dhall
+, google_compute_external_vpn_gateway =
+    ./google_compute_external_vpn_gateway.dhall
 , google_compute_firewall = ./google_compute_firewall.dhall
 , google_compute_forwarding_rule = ./google_compute_forwarding_rule.dhall
 , google_compute_global_address = ./google_compute_global_address.dhall
@@ -115,6 +120,7 @@
     ./google_compute_global_network_endpoint.dhall
 , google_compute_global_network_endpoint_group =
     ./google_compute_global_network_endpoint_group.dhall
+, google_compute_ha_vpn_gateway = ./google_compute_ha_vpn_gateway.dhall
 , google_compute_health_check = ./google_compute_health_check.dhall
 , google_compute_http_health_check = ./google_compute_http_health_check.dhall
 , google_compute_https_health_check = ./google_compute_https_health_check.dhall

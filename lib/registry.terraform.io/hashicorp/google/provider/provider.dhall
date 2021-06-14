@@ -42,6 +42,8 @@
     , iam_custom_endpoint : Optional Text
     , iap_custom_endpoint : Optional Text
     , identity_platform_custom_endpoint : Optional Text
+    , impersonate_service_account : Optional Text
+    , impersonate_service_account_delegates : Optional (List Text)
     , kms_custom_endpoint : Optional Text
     , logging_custom_endpoint : Optional Text
     , ml_engine_custom_endpoint : Optional Text
@@ -121,6 +123,8 @@
   , iam_custom_endpoint = None Text
   , iap_custom_endpoint = None Text
   , identity_platform_custom_endpoint = None Text
+  , impersonate_service_account = None Text
+  , impersonate_service_account_delegates = None (List Text)
   , kms_custom_endpoint = None Text
   , logging_custom_endpoint = None Text
   , ml_engine_custom_endpoint = None Text

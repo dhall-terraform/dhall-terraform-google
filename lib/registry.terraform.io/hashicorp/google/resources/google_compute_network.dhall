@@ -4,6 +4,7 @@
     , description : Optional Text
     , gateway_ipv4 : Optional Text
     , id : Optional Text
+    , mtu : Optional Natural
     , name : Text
     , project : Optional Text
     , routing_mode : Optional Text
@@ -21,6 +22,7 @@
   , description = None Text
   , gateway_ipv4 = None Text
   , id = None Text
+  , mtu = None Natural
   , project = None Text
   , routing_mode = None Text
   , self_link = None Text
