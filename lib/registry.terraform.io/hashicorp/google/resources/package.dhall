@@ -195,6 +195,7 @@
     ./google_compute_subnetwork_iam_member.dhall
 , google_compute_subnetwork_iam_policy =
     ./google_compute_subnetwork_iam_policy.dhall
+, google_compute_target_grpc_proxy = ./google_compute_target_grpc_proxy.dhall
 , google_compute_target_http_proxy = ./google_compute_target_http_proxy.dhall
 , google_compute_target_https_proxy = ./google_compute_target_https_proxy.dhall
 , google_compute_target_instance = ./google_compute_target_instance.dhall

@@ -35,7 +35,11 @@
     , addons_config :
         Optional
           ( List
-              { cloudrun_config : Optional (List { disabled : Bool })
+              { cloudrun_config :
+                  Optional
+                    ( List
+                        { disabled : Bool, load_balancer_type : Optional Text }
+                    )
               , horizontal_pod_autoscaling : Optional (List { disabled : Bool })
               , http_load_balancing : Optional (List { disabled : Bool })
               , kubernetes_dashboard :
@@ -277,7 +281,9 @@
   , addons_config =
       None
         ( List
-            { cloudrun_config : Optional (List { disabled : Bool })
+            { cloudrun_config :
+                Optional
+                  (List { disabled : Bool, load_balancer_type : Optional Text })
             , horizontal_pod_autoscaling : Optional (List { disabled : Bool })
             , http_load_balancing : Optional (List { disabled : Bool })
             , kubernetes_dashboard :

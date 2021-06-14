@@ -1,6 +1,7 @@
 { Type =
     { description : Optional Text
     , dns_name : Text
+    , force_destroy : Optional Bool
     , id : Optional Text
     , labels : Optional (List { mapKey : Text, mapValue : Text })
     , name : Text
@@ -44,6 +45,7 @@
     }
 , default =
   { description = None Text
+  , force_destroy = None Bool
   , id = None Text
   , labels = None (List { mapKey : Text, mapValue : Text })
   , name_servers = None (List Text)

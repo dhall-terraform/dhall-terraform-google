@@ -21,6 +21,47 @@
                   Optional (List { mapKey : Text, mapValue : Text })
               , tags : Optional (List Text)
               , timeout : Optional Text
+              , artifacts :
+                  Optional
+                    ( List
+                        { images : Optional (List Text)
+                        , objects :
+                            Optional
+                              ( List
+                                  { location : Optional Text
+                                  , paths : Optional (List Text)
+                                  , timing :
+                                      Optional
+                                        ( List
+                                            { end_time : Text
+                                            , start_time : Text
+                                            }
+                                        )
+                                  }
+                              )
+                        }
+                    )
+              , options :
+                  Optional
+                    ( List
+                        { disk_size_gb : Optional Natural
+                        , dynamic_substitutions : Optional Bool
+                        , env : Optional (List Text)
+                        , log_streaming_option : Optional Text
+                        , logging : Optional Text
+                        , machine_type : Optional Text
+                        , requested_verify_option : Optional Text
+                        , secret_env : Optional (List Text)
+                        , source_provenance_hash : Optional (List Text)
+                        , substitution_option : Optional Text
+                        , worker_pool : Optional Text
+                        , volumes :
+                            Optional
+                              ( List
+                                  { name : Optional Text, path : Optional Text }
+                              )
+                        }
+                    )
               , secret :
                   Optional
                     ( List
@@ -116,6 +157,45 @@
             , substitutions : Optional (List { mapKey : Text, mapValue : Text })
             , tags : Optional (List Text)
             , timeout : Optional Text
+            , artifacts :
+                Optional
+                  ( List
+                      { images : Optional (List Text)
+                      , objects :
+                          Optional
+                            ( List
+                                { location : Optional Text
+                                , paths : Optional (List Text)
+                                , timing :
+                                    Optional
+                                      ( List
+                                          { end_time : Text, start_time : Text }
+                                      )
+                                }
+                            )
+                      }
+                  )
+            , options :
+                Optional
+                  ( List
+                      { disk_size_gb : Optional Natural
+                      , dynamic_substitutions : Optional Bool
+                      , env : Optional (List Text)
+                      , log_streaming_option : Optional Text
+                      , logging : Optional Text
+                      , machine_type : Optional Text
+                      , requested_verify_option : Optional Text
+                      , secret_env : Optional (List Text)
+                      , source_provenance_hash : Optional (List Text)
+                      , substitution_option : Optional Text
+                      , worker_pool : Optional Text
+                      , volumes :
+                          Optional
+                            ( List
+                                { name : Optional Text, path : Optional Text }
+                            )
+                      }
+                  )
             , secret :
                 Optional
                   ( List

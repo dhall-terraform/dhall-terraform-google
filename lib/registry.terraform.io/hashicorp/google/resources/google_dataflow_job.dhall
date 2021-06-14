@@ -17,6 +17,8 @@
     , subnetwork : Optional Text
     , temp_gcs_location : Text
     , template_gcs_path : Text
+    , transform_name_mapping :
+        Optional (List { mapKey : Text, mapValue : Text })
     , type : Optional Text
     , zone : Optional Text
     , timeouts : Optional { update : Optional Text }
@@ -37,6 +39,7 @@
   , service_account_email = None Text
   , state = None Text
   , subnetwork = None Text
+  , transform_name_mapping = None (List { mapKey : Text, mapValue : Text })
   , type = None Text
   , zone = None Text
   , timeouts = None { update : Optional Text }

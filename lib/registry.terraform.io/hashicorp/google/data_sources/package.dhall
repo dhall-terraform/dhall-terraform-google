@@ -26,6 +26,8 @@
 , google_compute_region_instance_group =
     ./google_compute_region_instance_group.dhall
 , google_compute_regions = ./google_compute_regions.dhall
+, google_compute_region_ssl_certificate =
+    ./google_compute_region_ssl_certificate.dhall
 , google_compute_router = ./google_compute_router.dhall
 , google_compute_ssl_certificate = ./google_compute_ssl_certificate.dhall
 , google_compute_ssl_policy = ./google_compute_ssl_policy.dhall
