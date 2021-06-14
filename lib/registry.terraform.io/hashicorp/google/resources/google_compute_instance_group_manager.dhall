@@ -6,6 +6,7 @@
     , instance_group : Optional Text
     , instance_template : Optional Text
     , name : Text
+    , operation : Optional Text
     , project : Optional Text
     , self_link : Optional Text
     , target_pools : Optional (List Text)
@@ -49,6 +50,7 @@
   , id = None Text
   , instance_group = None Text
   , instance_template = None Text
+  , operation = None Text
   , project = None Text
   , self_link = None Text
   , target_pools = None (List Text)

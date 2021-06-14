@@ -169,6 +169,15 @@
               , weekly : Optional (List { day_of_week : Text })
               }
           )
+    , rollout :
+        Optional
+          ( List
+              { mode : Text
+              , disruption_budget :
+                  List
+                    { fixed : Optional Natural, percentage : Optional Natural }
+              }
+          )
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
@@ -329,6 +338,14 @@
                   }
             , time_zone : List { id : Text, version : Optional Text }
             , weekly : Optional (List { day_of_week : Text })
+            }
+        )
+  , rollout =
+      None
+        ( List
+            { mode : Text
+            , disruption_budget :
+                List { fixed : Optional Natural, percentage : Optional Natural }
             }
         )
   , timeouts = None { create : Optional Text, delete : Optional Text }

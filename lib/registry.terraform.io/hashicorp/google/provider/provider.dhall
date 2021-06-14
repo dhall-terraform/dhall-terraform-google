@@ -7,6 +7,7 @@
     , big_query_custom_endpoint : Optional Text
     , bigquery_data_transfer_custom_endpoint : Optional Text
     , bigtable_custom_endpoint : Optional Text
+    , billing_project : Optional Text
     , binary_authorization_custom_endpoint : Optional Text
     , cloud_asset_custom_endpoint : Optional Text
     , cloud_billing_custom_endpoint : Optional Text
@@ -24,6 +25,7 @@
     , container_custom_endpoint : Optional Text
     , credentials : Optional Text
     , data_catalog_custom_endpoint : Optional Text
+    , data_loss_prevention_custom_endpoint : Optional Text
     , dataflow_custom_endpoint : Optional Text
     , dataproc_beta_custom_endpoint : Optional Text
     , dataproc_custom_endpoint : Optional Text
@@ -84,6 +86,7 @@
   , big_query_custom_endpoint = None Text
   , bigquery_data_transfer_custom_endpoint = None Text
   , bigtable_custom_endpoint = None Text
+  , billing_project = None Text
   , binary_authorization_custom_endpoint = None Text
   , cloud_asset_custom_endpoint = None Text
   , cloud_billing_custom_endpoint = None Text
@@ -101,6 +104,7 @@
   , container_custom_endpoint = None Text
   , credentials = None Text
   , data_catalog_custom_endpoint = None Text
+  , data_loss_prevention_custom_endpoint = None Text
   , dataflow_custom_endpoint = None Text
   , dataproc_beta_custom_endpoint = None Text
   , dataproc_custom_endpoint = None Text

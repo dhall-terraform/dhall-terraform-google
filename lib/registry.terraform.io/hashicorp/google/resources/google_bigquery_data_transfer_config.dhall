@@ -12,6 +12,7 @@
     , project : Optional Text
     , schedule : Optional Text
     , service_account_name : Optional Text
+    , sensitive_params : Optional (List { secret_access_key : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -29,6 +30,7 @@
   , project = None Text
   , schedule = None Text
   , service_account_name = None Text
+  , sensitive_params = None (List { secret_access_key : Text })
   , timeouts =
       None
         { create : Optional Text

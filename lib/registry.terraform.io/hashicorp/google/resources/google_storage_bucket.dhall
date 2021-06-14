@@ -10,6 +10,7 @@
     , requester_pays : Optional Bool
     , self_link : Optional Text
     , storage_class : Optional Text
+    , uniform_bucket_level_access : Optional Bool
     , url : Optional Text
     , cors :
         Optional
@@ -61,6 +62,7 @@
   , requester_pays = None Bool
   , self_link = None Text
   , storage_class = None Text
+  , uniform_bucket_level_access = None Bool
   , url = None Text
   , cors =
       None

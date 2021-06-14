@@ -22,6 +22,7 @@
         Optional
           ( List
               { kms_key_self_link : Optional Text
+              , kms_key_service_account : Optional Text
               , raw_key : Optional Text
               , sha256 : Optional Text
               }
@@ -30,6 +31,7 @@
         Optional
           ( List
               { kms_key_self_link : Optional Text
+              , kms_key_service_account : Optional Text
               , raw_key : Optional Text
               , sha256 : Optional Text
               }
@@ -38,6 +40,7 @@
         Optional
           ( List
               { kms_key_self_link : Optional Text
+              , kms_key_service_account : Optional Text
               , raw_key : Optional Text
               , sha256 : Optional Text
               }
@@ -72,6 +75,7 @@
       None
         ( List
             { kms_key_self_link : Optional Text
+            , kms_key_service_account : Optional Text
             , raw_key : Optional Text
             , sha256 : Optional Text
             }
@@ -80,6 +84,7 @@
       None
         ( List
             { kms_key_self_link : Optional Text
+            , kms_key_service_account : Optional Text
             , raw_key : Optional Text
             , sha256 : Optional Text
             }
@@ -88,6 +93,7 @@
       None
         ( List
             { kms_key_self_link : Optional Text
+            , kms_key_service_account : Optional Text
             , raw_key : Optional Text
             , sha256 : Optional Text
             }

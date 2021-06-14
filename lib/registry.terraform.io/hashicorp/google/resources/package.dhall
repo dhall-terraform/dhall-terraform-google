@@ -221,6 +221,12 @@
 , google_data_catalog_tag = ./google_data_catalog_tag.dhall
 , google_data_catalog_tag_template = ./google_data_catalog_tag_template.dhall
 , google_dataflow_job = ./google_dataflow_job.dhall
+, google_data_loss_prevention_inspect_template =
+    ./google_data_loss_prevention_inspect_template.dhall
+, google_data_loss_prevention_job_trigger =
+    ./google_data_loss_prevention_job_trigger.dhall
+, google_data_loss_prevention_stored_info_type =
+    ./google_data_loss_prevention_stored_info_type.dhall
 , google_dataproc_autoscaling_policy =
     ./google_dataproc_autoscaling_policy.dhall
 , google_dataproc_cluster = ./google_dataproc_cluster.dhall
