@@ -23,6 +23,7 @@
 , google_compute_global_address = ./google_compute_global_address.dhall
 , google_compute_global_forwarding_rule =
     ./google_compute_global_forwarding_rule.dhall
+, google_compute_ha_vpn_gateway = ./google_compute_ha_vpn_gateway.dhall
 , google_compute_health_check = ./google_compute_health_check.dhall
 , google_compute_image = ./google_compute_image.dhall
 , google_compute_instance = ./google_compute_instance.dhall

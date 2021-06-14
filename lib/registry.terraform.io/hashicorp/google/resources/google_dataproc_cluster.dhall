@@ -25,6 +25,14 @@
                         , subnetwork : Optional Text
                         , tags : Optional (List Text)
                         , zone : Optional Text
+                        , shielded_instance_config :
+                            Optional
+                              ( List
+                                  { enable_integrity_monitoring : Optional Bool
+                                  , enable_secure_boot : Optional Bool
+                                  , enable_vtpm : Optional Bool
+                                  }
+                              )
                         }
                     )
               , initialization_action :
@@ -165,6 +173,14 @@
                       , subnetwork : Optional Text
                       , tags : Optional (List Text)
                       , zone : Optional Text
+                      , shielded_instance_config :
+                          Optional
+                            ( List
+                                { enable_integrity_monitoring : Optional Bool
+                                , enable_secure_boot : Optional Bool
+                                , enable_vtpm : Optional Bool
+                                }
+                            )
                       }
                   )
             , initialization_action :

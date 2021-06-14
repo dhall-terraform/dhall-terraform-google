@@ -27,7 +27,8 @@
           )
     , service_account_email_address : Optional Text
     , clone :
-        Optional (List { point_in_time : Text, source_instance_name : Text })
+        Optional
+          (List { point_in_time : Optional Text, source_instance_name : Text })
     , replica_configuration :
         Optional
           ( List
@@ -162,7 +163,8 @@
             }
         )
   , service_account_email_address = None Text
-  , clone = None (List { point_in_time : Text, source_instance_name : Text })
+  , clone =
+      None (List { point_in_time : Optional Text, source_instance_name : Text })
   , replica_configuration =
       None
         ( List

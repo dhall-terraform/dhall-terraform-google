@@ -281,6 +281,7 @@
 , google_dataproc_job_iam_binding = ./google_dataproc_job_iam_binding.dhall
 , google_dataproc_job_iam_member = ./google_dataproc_job_iam_member.dhall
 , google_dataproc_job_iam_policy = ./google_dataproc_job_iam_policy.dhall
+, google_dataproc_workflow_template = ./google_dataproc_workflow_template.dhall
 , google_datastore_index = ./google_datastore_index.dhall
 , google_deployment_manager_deployment =
     ./google_deployment_manager_deployment.dhall

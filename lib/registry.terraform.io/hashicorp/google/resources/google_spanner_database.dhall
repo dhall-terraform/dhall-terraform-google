@@ -6,6 +6,7 @@
     , name : Text
     , project : Optional Text
     , state : Optional Text
+    , encryption_config : Optional (List { kms_key_name : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -19,6 +20,7 @@
   , id = None Text
   , project = None Text
   , state = None Text
+  , encryption_config = None (List { kms_key_name : Text })
   , timeouts =
       None
         { create : Optional Text
