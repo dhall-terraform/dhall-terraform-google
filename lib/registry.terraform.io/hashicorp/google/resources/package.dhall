@@ -21,6 +21,7 @@
 , google_bigquery_dataset = ./google_bigquery_dataset.dhall
 , google_bigquery_data_transfer_config =
     ./google_bigquery_data_transfer_config.dhall
+, google_bigquery_job = ./google_bigquery_job.dhall
 , google_bigquery_table = ./google_bigquery_table.dhall
 , google_bigtable_app_profile = ./google_bigtable_app_profile.dhall
 , google_bigtable_gc_policy = ./google_bigtable_gc_policy.dhall

@@ -68,6 +68,7 @@
               }
           )
     , project : Optional Text
+    , resource_policies : Optional (List Text)
     , scheduling :
         Optional
           ( List
@@ -163,6 +164,7 @@
             }
         )
   , project = None Text
+  , resource_policies = None (List Text)
   , scheduling =
       None
         ( List

@@ -4,6 +4,14 @@
     , project : Optional Text
     , region : Optional Text
     , self_link : Optional Text
+    , group_placement_policy :
+        Optional
+          ( List
+              { availability_domain_count : Optional Natural
+              , collocation : Optional Text
+              , vm_count : Optional Natural
+              }
+          )
     , snapshot_schedule_policy :
         Optional
           ( List
@@ -48,6 +56,14 @@
   , project = None Text
   , region = None Text
   , self_link = None Text
+  , group_placement_policy =
+      None
+        ( List
+            { availability_domain_count : Optional Natural
+            , collocation : Optional Text
+            , vm_count : Optional Natural
+            }
+        )
   , snapshot_schedule_policy =
       None
         ( List

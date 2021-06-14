@@ -31,6 +31,7 @@
     , min_cpu_platform : Optional Text
     , name : Text
     , project : Optional Text
+    , resource_policies : Optional (List Text)
     , scratch_disk : Optional (List { interface : Text })
     , self_link : Optional Text
     , service_account : Optional (List { email : Text, scopes : List Text })
@@ -141,6 +142,7 @@
   , metadata_startup_script = None Text
   , min_cpu_platform = None Text
   , project = None Text
+  , resource_policies = None (List Text)
   , scratch_disk = None (List { interface : Text })
   , self_link = None Text
   , service_account = None (List { email : Text, scopes : List Text })

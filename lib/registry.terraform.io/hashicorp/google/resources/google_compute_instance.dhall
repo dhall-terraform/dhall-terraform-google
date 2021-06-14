@@ -20,6 +20,7 @@
     , min_cpu_platform : Optional Text
     , name : Text
     , project : Optional Text
+    , resource_policies : Optional (List Text)
     , self_link : Optional Text
     , tags : Optional (List Text)
     , tags_fingerprint : Optional Text
@@ -127,6 +128,7 @@
   , metadata_startup_script = None Text
   , min_cpu_platform = None Text
   , project = None Text
+  , resource_policies = None (List Text)
   , self_link = None Text
   , tags = None (List Text)
   , tags_fingerprint = None Text
