@@ -79,6 +79,7 @@
           , delete : Optional Text
           , update : Optional Text
           }
+    , vpc_access_connector : Optional (List { name : Text })
     }
 , default =
   { delete_service_on_destroy = None Bool
@@ -146,5 +147,6 @@
         , delete : Optional Text
         , update : Optional Text
         }
+  , vpc_access_connector = None (List { name : Text })
   }
 }

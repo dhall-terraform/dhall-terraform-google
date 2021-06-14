@@ -18,8 +18,10 @@
         Optional
           ( List
               { aggregation_interval : Optional Text
+              , filter_expr : Optional Text
               , flow_sampling : Optional Natural
               , metadata : Optional Text
+              , metadata_fields : Optional (List Text)
               }
           )
     , timeouts :
@@ -45,8 +47,10 @@
       None
         ( List
             { aggregation_interval : Optional Text
+            , filter_expr : Optional Text
             , flow_sampling : Optional Natural
             , metadata : Optional Text
+            , metadata_fields : Optional (List Text)
             }
         )
   , timeouts =

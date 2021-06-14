@@ -98,6 +98,9 @@
 , google_compute_backend_service_signed_url_key =
     ./google_compute_backend_service_signed_url_key.dhall
 , google_compute_disk = ./google_compute_disk.dhall
+, google_compute_disk_iam_binding = ./google_compute_disk_iam_binding.dhall
+, google_compute_disk_iam_member = ./google_compute_disk_iam_member.dhall
+, google_compute_disk_iam_policy = ./google_compute_disk_iam_policy.dhall
 , google_compute_disk_resource_policy_attachment =
     ./google_compute_disk_resource_policy_attachment.dhall
 , google_compute_firewall = ./google_compute_firewall.dhall
@@ -113,6 +116,9 @@
 , google_compute_http_health_check = ./google_compute_http_health_check.dhall
 , google_compute_https_health_check = ./google_compute_https_health_check.dhall
 , google_compute_image = ./google_compute_image.dhall
+, google_compute_image_iam_binding = ./google_compute_image_iam_binding.dhall
+, google_compute_image_iam_member = ./google_compute_image_iam_member.dhall
+, google_compute_image_iam_policy = ./google_compute_image_iam_policy.dhall
 , google_compute_instance = ./google_compute_instance.dhall
 , google_compute_instance_from_template =
     ./google_compute_instance_from_template.dhall
@@ -148,6 +154,12 @@
 , google_compute_region_backend_service =
     ./google_compute_region_backend_service.dhall
 , google_compute_region_disk = ./google_compute_region_disk.dhall
+, google_compute_region_disk_iam_binding =
+    ./google_compute_region_disk_iam_binding.dhall
+, google_compute_region_disk_iam_member =
+    ./google_compute_region_disk_iam_member.dhall
+, google_compute_region_disk_iam_policy =
+    ./google_compute_region_disk_iam_policy.dhall
 , google_compute_region_disk_resource_policy_attachment =
     ./google_compute_region_disk_resource_policy_attachment.dhall
 , google_compute_region_health_check =

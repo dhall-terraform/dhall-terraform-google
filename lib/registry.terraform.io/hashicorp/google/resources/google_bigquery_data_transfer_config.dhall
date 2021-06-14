@@ -7,6 +7,7 @@
     , id : Optional Text
     , location : Optional Text
     , name : Optional Text
+    , notification_pubsub_topic : Optional Text
     , params : List { mapKey : Text, mapValue : Text }
     , project : Optional Text
     , schedule : Optional Text
@@ -24,6 +25,7 @@
   , id = None Text
   , location = None Text
   , name = None Text
+  , notification_pubsub_topic = None Text
   , project = None Text
   , schedule = None Text
   , service_account_name = None Text

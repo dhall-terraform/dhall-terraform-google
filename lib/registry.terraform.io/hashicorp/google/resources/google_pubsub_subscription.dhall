@@ -32,6 +32,13 @@
                     )
               }
           )
+    , retry_policy :
+        Optional
+          ( List
+              { maximum_backoff : Optional Text
+              , minimum_backoff : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -68,6 +75,11 @@
                       { audience : Optional Text, service_account_email : Text }
                   )
             }
+        )
+  , retry_policy =
+      None
+        ( List
+            { maximum_backoff : Optional Text, minimum_backoff : Optional Text }
         )
   , timeouts =
       None
