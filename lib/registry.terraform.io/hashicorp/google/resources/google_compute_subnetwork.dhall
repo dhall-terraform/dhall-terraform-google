@@ -1,7 +1,6 @@
 { Type =
     { creation_timestamp : Optional Text
     , description : Optional Text
-    , enable_flow_logs : Optional Bool
     , fingerprint : Optional Text
     , gateway_address : Optional Text
     , id : Optional Text
@@ -34,7 +33,6 @@
 , default =
   { creation_timestamp = None Text
   , description = None Text
-  , enable_flow_logs = None Bool
   , fingerprint = None Text
   , gateway_address = None Text
   , id = None Text

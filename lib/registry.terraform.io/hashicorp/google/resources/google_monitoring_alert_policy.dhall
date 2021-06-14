@@ -5,7 +5,6 @@
     , display_name : Text
     , enabled : Optional Bool
     , id : Optional Text
-    , labels : Optional (List Text)
     , name : Optional Text
     , notification_channels : Optional (List Text)
     , project : Optional Text
@@ -86,7 +85,6 @@
   { creation_record = None (List { mutate_time : Text, mutated_by : Text })
   , enabled = None Bool
   , id = None Text
-  , labels = None (List Text)
   , name = None Text
   , notification_channels = None (List Text)
   , project = None Text

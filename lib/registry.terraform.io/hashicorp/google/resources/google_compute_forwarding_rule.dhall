@@ -7,7 +7,6 @@
     , id : Optional Text
     , ip_address : Optional Text
     , ip_protocol : Optional Text
-    , ip_version : Optional Text
     , load_balancing_scheme : Optional Text
     , name : Text
     , network : Optional Text
@@ -37,7 +36,6 @@
   , id = None Text
   , ip_address = None Text
   , ip_protocol = None Text
-  , ip_version = None Text
   , load_balancing_scheme = None Text
   , network = None Text
   , network_tier = None Text

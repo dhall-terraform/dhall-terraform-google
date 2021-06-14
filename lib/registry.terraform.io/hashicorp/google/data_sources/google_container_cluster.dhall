@@ -1,13 +1,11 @@
 { Type =
-    { additional_zones : Optional (List Text)
-    , addons_config :
+    { addons_config :
         Optional
           ( List
               { cloudrun_config :
                   List { disabled : Bool, load_balancer_type : Text }
               , horizontal_pod_autoscaling : List { disabled : Bool }
               , http_load_balancing : List { disabled : Bool }
-              , kubernetes_dashboard : List { disabled : Bool }
               , network_policy_config : List { disabled : Bool }
               }
           )
@@ -45,10 +43,8 @@
           ( List
               { cluster_ipv4_cidr_block : Text
               , cluster_secondary_range_name : Text
-              , node_ipv4_cidr_block : Text
               , services_ipv4_cidr_block : Text
               , services_secondary_range_name : Text
-              , subnetwork_name : Text
               }
           )
     , label_fingerprint : Optional Text
@@ -100,7 +96,6 @@
               , min_cpu_platform : Text
               , oauth_scopes : List Text
               , preemptible : Bool
-              , sandbox_config : List { sandbox_type : Text }
               , service_account : Text
               , shielded_instance_config :
                   List
@@ -137,7 +132,6 @@
                     , min_cpu_platform : Text
                     , oauth_scopes : List Text
                     , preemptible : Bool
-                    , sandbox_config : List { sandbox_type : Text }
                     , service_account : Text
                     , shielded_instance_config :
                         List
@@ -170,7 +164,6 @@
               }
           )
     , project : Optional Text
-    , region : Optional Text
     , release_channel : Optional (List { channel : Text })
     , remove_default_node_pool : Optional Bool
     , resource_labels : Optional (List { mapKey : Text, mapValue : Text })
@@ -187,18 +180,15 @@
     , subnetwork : Optional Text
     , vertical_pod_autoscaling : Optional (List { enabled : Bool })
     , workload_identity_config : Optional (List { identity_namespace : Text })
-    , zone : Optional Text
     }
 , default =
-  { additional_zones = None (List Text)
-  , addons_config =
+  { addons_config =
       None
         ( List
             { cloudrun_config :
                 List { disabled : Bool, load_balancer_type : Text }
             , horizontal_pod_autoscaling : List { disabled : Bool }
             , http_load_balancing : List { disabled : Bool }
-            , kubernetes_dashboard : List { disabled : Bool }
             , network_policy_config : List { disabled : Bool }
             }
         )
@@ -233,10 +223,8 @@
         ( List
             { cluster_ipv4_cidr_block : Text
             , cluster_secondary_range_name : Text
-            , node_ipv4_cidr_block : Text
             , services_ipv4_cidr_block : Text
             , services_secondary_range_name : Text
-            , subnetwork_name : Text
             }
         )
   , label_fingerprint = None Text
@@ -285,7 +273,6 @@
             , min_cpu_platform : Text
             , oauth_scopes : List Text
             , preemptible : Bool
-            , sandbox_config : List { sandbox_type : Text }
             , service_account : Text
             , shielded_instance_config :
                 List
@@ -322,7 +309,6 @@
                   , min_cpu_platform : Text
                   , oauth_scopes : List Text
                   , preemptible : Bool
-                  , sandbox_config : List { sandbox_type : Text }
                   , service_account : Text
                   , shielded_instance_config :
                       List
@@ -355,7 +341,6 @@
             }
         )
   , project = None Text
-  , region = None Text
   , release_channel = None (List { channel : Text })
   , remove_default_node_pool = None Bool
   , resource_labels = None (List { mapKey : Text, mapValue : Text })
@@ -372,6 +357,5 @@
   , subnetwork = None Text
   , vertical_pod_autoscaling = None (List { enabled : Bool })
   , workload_identity_config = None (List { identity_namespace : Text })
-  , zone = None Text
   }
 }

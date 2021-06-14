@@ -4,14 +4,12 @@
     , fingerprint : Optional Text
     , id : Optional Text
     , instance_group : Optional Text
-    , instance_template : Optional Text
     , name : Text
     , operation : Optional Text
     , project : Optional Text
     , self_link : Optional Text
     , target_pools : Optional (List Text)
     , target_size : Optional Natural
-    , update_strategy : Optional Text
     , wait_for_instances : Optional Bool
     , zone : Optional Text
     , auto_healing_policies :
@@ -49,13 +47,11 @@
   , fingerprint = None Text
   , id = None Text
   , instance_group = None Text
-  , instance_template = None Text
   , operation = None Text
   , project = None Text
   , self_link = None Text
   , target_pools = None (List Text)
   , target_size = None Natural
-  , update_strategy = None Text
   , wait_for_instances = None Bool
   , zone = None Text
   , auto_healing_policies =

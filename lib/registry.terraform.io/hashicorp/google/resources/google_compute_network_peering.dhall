@@ -1,6 +1,5 @@
 { Type =
-    { auto_create_routes : Optional Bool
-    , export_custom_routes : Optional Bool
+    { export_custom_routes : Optional Bool
     , export_subnet_routes_with_public_ip : Optional Bool
     , id : Optional Text
     , import_custom_routes : Optional Bool
@@ -13,8 +12,7 @@
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
-  { auto_create_routes = None Bool
-  , export_custom_routes = None Bool
+  { export_custom_routes = None Bool
   , export_subnet_routes_with_public_ip = None Bool
   , id = None Text
   , import_custom_routes = None Bool

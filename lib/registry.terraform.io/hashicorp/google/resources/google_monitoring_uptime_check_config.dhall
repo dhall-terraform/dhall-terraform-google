@@ -1,7 +1,6 @@
 { Type =
     { display_name : Text
     , id : Optional Text
-    , is_internal : Optional Bool
     , name : Optional Text
     , period : Optional Text
     , project : Optional Text
@@ -25,16 +24,6 @@
               , auth_info : Optional (List { password : Text, username : Text })
               }
           )
-    , internal_checkers :
-        Optional
-          ( List
-              { display_name : Optional Text
-              , gcp_zone : Optional Text
-              , name : Optional Text
-              , network : Optional Text
-              , peer_project_id : Optional Text
-              }
-          )
     , monitored_resource :
         Optional
           ( List
@@ -53,7 +42,6 @@
     }
 , default =
   { id = None Text
-  , is_internal = None Bool
   , name = None Text
   , period = None Text
   , project = None Text
@@ -73,16 +61,6 @@
             , use_ssl : Optional Bool
             , validate_ssl : Optional Bool
             , auth_info : Optional (List { password : Text, username : Text })
-            }
-        )
-  , internal_checkers =
-      None
-        ( List
-            { display_name : Optional Text
-            , gcp_zone : Optional Text
-            , name : Optional Text
-            , network : Optional Text
-            , peer_project_id : Optional Text
             }
         )
   , monitored_resource =

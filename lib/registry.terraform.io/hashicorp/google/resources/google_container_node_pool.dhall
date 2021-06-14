@@ -10,9 +10,7 @@
     , node_count : Optional Natural
     , node_locations : Optional (List Text)
     , project : Optional Text
-    , region : Optional Text
     , version : Optional Text
-    , zone : Optional Text
     , autoscaling :
         Optional (List { max_node_count : Natural, min_node_count : Natural })
     , management :
@@ -37,7 +35,6 @@
               , tags : Optional (List Text)
               , taint :
                   Optional (List { effect : Text, key : Text, value : Text })
-              , sandbox_config : Optional (List { sandbox_type : Text })
               , shielded_instance_config :
                   Optional
                     ( List
@@ -69,9 +66,7 @@
   , node_count = None Natural
   , node_locations = None (List Text)
   , project = None Text
-  , region = None Text
   , version = None Text
-  , zone = None Text
   , autoscaling =
       None (List { max_node_count : Natural, min_node_count : Natural })
   , management =
@@ -95,7 +90,6 @@
             , tags : Optional (List Text)
             , taint :
                 Optional (List { effect : Text, key : Text, value : Text })
-            , sandbox_config : Optional (List { sandbox_type : Text })
             , shielded_instance_config :
                 Optional
                   ( List

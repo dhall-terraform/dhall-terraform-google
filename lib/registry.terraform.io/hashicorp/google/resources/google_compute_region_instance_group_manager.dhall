@@ -5,14 +5,12 @@
     , fingerprint : Optional Text
     , id : Optional Text
     , instance_group : Optional Text
-    , instance_template : Optional Text
     , name : Text
     , project : Optional Text
     , region : Text
     , self_link : Optional Text
     , target_pools : Optional (List Text)
     , target_size : Optional Natural
-    , update_strategy : Optional Text
     , wait_for_instances : Optional Bool
     , auto_healing_policies :
         Optional (List { health_check : Text, initial_delay_sec : Natural })
@@ -51,12 +49,10 @@
   , fingerprint = None Text
   , id = None Text
   , instance_group = None Text
-  , instance_template = None Text
   , project = None Text
   , self_link = None Text
   , target_pools = None (List Text)
   , target_size = None Natural
-  , update_strategy = None Text
   , wait_for_instances = None Bool
   , auto_healing_policies =
       None (List { health_check : Text, initial_delay_sec : Natural })

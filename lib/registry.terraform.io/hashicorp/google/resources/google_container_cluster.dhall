@@ -1,6 +1,5 @@
 { Type =
-    { additional_zones : Optional (List Text)
-    , cluster_ipv4_cidr : Optional Text
+    { cluster_ipv4_cidr : Optional Text
     , default_max_pods_per_node : Optional Natural
     , description : Optional Text
     , enable_binary_authorization : Optional Bool
@@ -25,13 +24,11 @@
     , node_version : Optional Text
     , operation : Optional Text
     , project : Optional Text
-    , region : Optional Text
     , remove_default_node_pool : Optional Bool
     , resource_labels : Optional (List { mapKey : Text, mapValue : Text })
     , self_link : Optional Text
     , services_ipv4_cidr : Optional Text
     , subnetwork : Optional Text
-    , zone : Optional Text
     , addons_config :
         Optional
           ( List
@@ -42,8 +39,6 @@
                     )
               , horizontal_pod_autoscaling : Optional (List { disabled : Bool })
               , http_load_balancing : Optional (List { disabled : Bool })
-              , kubernetes_dashboard :
-                  Optional (List { disabled : Optional Bool })
               , network_policy_config : Optional (List { disabled : Bool })
               }
           )
@@ -76,10 +71,8 @@
           ( List
               { cluster_ipv4_cidr_block : Optional Text
               , cluster_secondary_range_name : Optional Text
-              , node_ipv4_cidr_block : Optional Text
               , services_ipv4_cidr_block : Optional Text
               , services_secondary_range_name : Optional Text
-              , subnetwork_name : Optional Text
               }
           )
     , maintenance_policy :
@@ -139,7 +132,6 @@
               , tags : Optional (List Text)
               , taint :
                   Optional (List { effect : Text, key : Text, value : Text })
-              , sandbox_config : Optional (List { sandbox_type : Text })
               , shielded_instance_config :
                   Optional
                     ( List
@@ -196,8 +188,6 @@
                         , taint :
                             Optional
                               (List { effect : Text, key : Text, value : Text })
-                        , sandbox_config :
-                            Optional (List { sandbox_type : Text })
                         , shielded_instance_config :
                             Optional
                               ( List
@@ -246,8 +236,7 @@
     , workload_identity_config : Optional (List { identity_namespace : Text })
     }
 , default =
-  { additional_zones = None (List Text)
-  , cluster_ipv4_cidr = None Text
+  { cluster_ipv4_cidr = None Text
   , default_max_pods_per_node = None Natural
   , description = None Text
   , enable_binary_authorization = None Bool
@@ -271,13 +260,11 @@
   , node_version = None Text
   , operation = None Text
   , project = None Text
-  , region = None Text
   , remove_default_node_pool = None Bool
   , resource_labels = None (List { mapKey : Text, mapValue : Text })
   , self_link = None Text
   , services_ipv4_cidr = None Text
   , subnetwork = None Text
-  , zone = None Text
   , addons_config =
       None
         ( List
@@ -286,8 +273,6 @@
                   (List { disabled : Bool, load_balancer_type : Optional Text })
             , horizontal_pod_autoscaling : Optional (List { disabled : Bool })
             , http_load_balancing : Optional (List { disabled : Bool })
-            , kubernetes_dashboard :
-                Optional (List { disabled : Optional Bool })
             , network_policy_config : Optional (List { disabled : Bool })
             }
         )
@@ -319,10 +304,8 @@
         ( List
             { cluster_ipv4_cidr_block : Optional Text
             , cluster_secondary_range_name : Optional Text
-            , node_ipv4_cidr_block : Optional Text
             , services_ipv4_cidr_block : Optional Text
             , services_secondary_range_name : Optional Text
-            , subnetwork_name : Optional Text
             }
         )
   , maintenance_policy =
@@ -377,7 +360,6 @@
             , tags : Optional (List Text)
             , taint :
                 Optional (List { effect : Text, key : Text, value : Text })
-            , sandbox_config : Optional (List { sandbox_type : Text })
             , shielded_instance_config :
                 Optional
                   ( List
@@ -432,7 +414,6 @@
                       , taint :
                           Optional
                             (List { effect : Text, key : Text, value : Text })
-                      , sandbox_config : Optional (List { sandbox_type : Text })
                       , shielded_instance_config :
                           Optional
                             ( List

@@ -30,7 +30,6 @@
                   List
                     { age : Optional Natural
                     , created_before : Optional Text
-                    , is_live : Optional Bool
                     , matches_storage_class : Optional (List Text)
                     , num_newer_versions : Optional Natural
                     , with_state : Optional Text
@@ -82,7 +81,6 @@
                 List
                   { age : Optional Natural
                   , created_before : Optional Text
-                  , is_live : Optional Bool
                   , matches_storage_class : Optional (List Text)
                   , num_newer_versions : Optional Natural
                   , with_state : Optional Text
