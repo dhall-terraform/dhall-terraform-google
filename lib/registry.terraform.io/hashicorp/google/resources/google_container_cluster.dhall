@@ -1,5 +1,6 @@
 { Type =
     { cluster_ipv4_cidr : Optional Text
+    , datapath_provider : Optional Text
     , default_max_pods_per_node : Optional Natural
     , description : Optional Text
     , enable_binary_authorization : Optional Bool
@@ -29,6 +30,7 @@
     , self_link : Optional Text
     , services_ipv4_cidr : Optional Text
     , subnetwork : Optional Text
+    , tpu_ipv4_cidr_block : Optional Text
     , addons_config :
         Optional
           ( List
@@ -66,6 +68,7 @@
           )
     , database_encryption :
         Optional (List { key_name : Optional Text, state : Text })
+    , default_snat_status : Optional (List { disabled : Bool })
     , ip_allocation_policy :
         Optional
           ( List
@@ -222,6 +225,7 @@
               , peering_name : Optional Text
               , private_endpoint : Optional Text
               , public_endpoint : Optional Text
+              , master_global_access_config : Optional (List { enabled : Bool })
               }
           )
     , release_channel : Optional (List { channel : Text })
@@ -245,6 +249,7 @@
     }
 , default =
   { cluster_ipv4_cidr = None Text
+  , datapath_provider = None Text
   , default_max_pods_per_node = None Natural
   , description = None Text
   , enable_binary_authorization = None Bool
@@ -273,6 +278,7 @@
   , self_link = None Text
   , services_ipv4_cidr = None Text
   , subnetwork = None Text
+  , tpu_ipv4_cidr_block = None Text
   , addons_config =
       None
         ( List
@@ -307,6 +313,7 @@
             }
         )
   , database_encryption = None (List { key_name : Optional Text, state : Text })
+  , default_snat_status = None (List { disabled : Bool })
   , ip_allocation_policy =
       None
         ( List
@@ -456,6 +463,7 @@
             , peering_name : Optional Text
             , private_endpoint : Optional Text
             , public_endpoint : Optional Text
+            , master_global_access_config : Optional (List { enabled : Bool })
             }
         )
   , release_channel = None (List { channel : Text })

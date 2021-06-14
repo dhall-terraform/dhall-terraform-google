@@ -83,6 +83,7 @@
 , google_projects = ./google_projects.dhall
 , google_pubsub_topic = ./google_pubsub_topic.dhall
 , google_redis_instance = ./google_redis_instance.dhall
+, google_runtimeconfig_config = ./google_runtimeconfig_config.dhall
 , google_secret_manager_secret_version =
     ./google_secret_manager_secret_version.dhall
 , google_service_account_access_token =

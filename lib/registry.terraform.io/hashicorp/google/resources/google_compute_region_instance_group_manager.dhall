@@ -1,6 +1,7 @@
 { Type =
     { base_instance_name : Text
     , description : Optional Text
+    , distribution_policy_target_shape : Optional Text
     , distribution_policy_zones : Optional (List Text)
     , fingerprint : Optional Text
     , id : Optional Text
@@ -48,6 +49,7 @@
     }
 , default =
   { description = None Text
+  , distribution_policy_target_shape = None Text
   , distribution_policy_zones = None (List Text)
   , fingerprint = None Text
   , id = None Text

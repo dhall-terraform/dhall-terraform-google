@@ -10,6 +10,7 @@
           ( List
               { bucket : Optional Text
               , staging_bucket : Optional Text
+              , temp_bucket : Optional Text
               , autoscaling_config : Optional (List { policy_uri : Text })
               , encryption_config : Optional (List { kms_key_name : Text })
               , gce_cluster_config :
@@ -149,6 +150,7 @@
         ( List
             { bucket : Optional Text
             , staging_bucket : Optional Text
+            , temp_bucket : Optional Text
             , autoscaling_config : Optional (List { policy_uri : Text })
             , encryption_config : Optional (List { kms_key_name : Text })
             , gce_cluster_config :

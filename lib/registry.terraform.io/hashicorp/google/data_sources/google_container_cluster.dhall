@@ -26,7 +26,9 @@
           )
     , cluster_ipv4_cidr : Optional Text
     , database_encryption : Optional (List { key_name : Text, state : Text })
+    , datapath_provider : Optional Text
     , default_max_pods_per_node : Optional Natural
+    , default_snat_status : Optional (List { disabled : Bool })
     , description : Optional Text
     , enable_binary_authorization : Optional Bool
     , enable_intranode_visibility : Optional Bool
@@ -163,6 +165,7 @@
           ( List
               { enable_private_endpoint : Bool
               , enable_private_nodes : Bool
+              , master_global_access_config : List { enabled : Bool }
               , master_ipv4_cidr_block : Text
               , peering_name : Text
               , private_endpoint : Text
@@ -184,6 +187,7 @@
     , self_link : Optional Text
     , services_ipv4_cidr : Optional Text
     , subnetwork : Optional Text
+    , tpu_ipv4_cidr_block : Optional Text
     , vertical_pod_autoscaling : Optional (List { enabled : Bool })
     , workload_identity_config : Optional (List { identity_namespace : Text })
     }
@@ -212,7 +216,9 @@
         )
   , cluster_ipv4_cidr = None Text
   , database_encryption = None (List { key_name : Text, state : Text })
+  , datapath_provider = None Text
   , default_max_pods_per_node = None Natural
+  , default_snat_status = None (List { disabled : Bool })
   , description = None Text
   , enable_binary_authorization = None Bool
   , enable_intranode_visibility = None Bool
@@ -343,6 +349,7 @@
         ( List
             { enable_private_endpoint : Bool
             , enable_private_nodes : Bool
+            , master_global_access_config : List { enabled : Bool }
             , master_ipv4_cidr_block : Text
             , peering_name : Text
             , private_endpoint : Text
@@ -364,6 +371,7 @@
   , self_link = None Text
   , services_ipv4_cidr = None Text
   , subnetwork = None Text
+  , tpu_ipv4_cidr_block = None Text
   , vertical_pod_autoscaling = None (List { enabled : Bool })
   , workload_identity_config = None (List { identity_namespace : Text })
   }

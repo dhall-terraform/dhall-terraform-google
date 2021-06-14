@@ -23,12 +23,22 @@
     , project : Optional Text
     , proxy_uri : Optional Text
     , service_account : Optional Text
+    , service_account_scopes : Optional (List Text)
     , state : Optional Text
     , subnet : Optional Text
+    , tags : Optional (List Text)
     , update_time : Optional Text
     , accelerator_config : Optional (List { core_count : Natural, type : Text })
     , container_image :
         Optional (List { repository : Text, tag : Optional Text })
+    , shielded_instance_config :
+        Optional
+          ( List
+              { enable_integrity_monitoring : Optional Bool
+              , enable_secure_boot : Optional Bool
+              , enable_vtpm : Optional Bool
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -66,11 +76,21 @@
   , project = None Text
   , proxy_uri = None Text
   , service_account = None Text
+  , service_account_scopes = None (List Text)
   , state = None Text
   , subnet = None Text
+  , tags = None (List Text)
   , update_time = None Text
   , accelerator_config = None (List { core_count : Natural, type : Text })
   , container_image = None (List { repository : Text, tag : Optional Text })
+  , shielded_instance_config =
+      None
+        ( List
+            { enable_integrity_monitoring : Optional Bool
+            , enable_secure_boot : Optional Bool
+            , enable_vtpm : Optional Bool
+            }
+        )
   , timeouts =
       None
         { create : Optional Text
