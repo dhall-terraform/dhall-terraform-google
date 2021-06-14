@@ -53,6 +53,10 @@
     ./google_binary_authorization_attestor_iam_policy.dhall
 , google_binary_authorization_policy =
     ./google_binary_authorization_policy.dhall
+, google_cloud_asset_folder_feed = ./google_cloud_asset_folder_feed.dhall
+, google_cloud_asset_organization_feed =
+    ./google_cloud_asset_organization_feed.dhall
+, google_cloud_asset_project_feed = ./google_cloud_asset_project_feed.dhall
 , google_cloudbuild_trigger = ./google_cloudbuild_trigger.dhall
 , google_cloudfunctions_function = ./google_cloudfunctions_function.dhall
 , google_cloudfunctions_function_iam_binding =
@@ -349,6 +353,8 @@
 , google_monitoring_custom_service = ./google_monitoring_custom_service.dhall
 , google_monitoring_dashboard = ./google_monitoring_dashboard.dhall
 , google_monitoring_group = ./google_monitoring_group.dhall
+, google_monitoring_metric_descriptor =
+    ./google_monitoring_metric_descriptor.dhall
 , google_monitoring_notification_channel =
     ./google_monitoring_notification_channel.dhall
 , google_monitoring_slo = ./google_monitoring_slo.dhall

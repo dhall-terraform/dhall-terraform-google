@@ -1,30 +1,32 @@
 { Type =
-    { create_time : Optional Text
-    , display_name : Text
+    { asset_names : Optional (List Text)
+    , asset_types : Optional (List Text)
+    , billing_project : Text
+    , content_type : Optional Text
+    , feed_id : Text
+    , folder : Text
     , folder_id : Optional Text
     , id : Optional Text
-    , lifecycle_state : Optional Text
     , name : Optional Text
-    , parent : Text
+    , feed_output_config : List { pubsub_destination : List { topic : Text } }
     , timeouts :
         Optional
           { create : Optional Text
           , delete : Optional Text
-          , read : Optional Text
           , update : Optional Text
           }
     }
 , default =
-  { create_time = None Text
+  { asset_names = None (List Text)
+  , asset_types = None (List Text)
+  , content_type = None Text
   , folder_id = None Text
   , id = None Text
-  , lifecycle_state = None Text
   , name = None Text
   , timeouts =
       None
         { create : Optional Text
         , delete : Optional Text
-        , read : Optional Text
         , update : Optional Text
         }
   }

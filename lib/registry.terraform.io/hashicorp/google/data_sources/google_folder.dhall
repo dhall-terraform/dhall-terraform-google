@@ -2,6 +2,7 @@
     { create_time : Optional Text
     , display_name : Optional Text
     , folder : Text
+    , folder_id : Optional Text
     , id : Optional Text
     , lifecycle_state : Optional Text
     , lookup_organization : Optional Bool
@@ -12,6 +13,7 @@
 , default =
   { create_time = None Text
   , display_name = None Text
+  , folder_id = None Text
   , id = None Text
   , lifecycle_state = None Text
   , lookup_organization = None Bool

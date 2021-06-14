@@ -6,6 +6,7 @@
     , bigquery_data_transfer_custom_endpoint : Optional Text
     , bigtable_custom_endpoint : Optional Text
     , binary_authorization_custom_endpoint : Optional Text
+    , cloud_asset_custom_endpoint : Optional Text
     , cloud_billing_custom_endpoint : Optional Text
     , cloud_build_custom_endpoint : Optional Text
     , cloud_functions_custom_endpoint : Optional Text
@@ -79,6 +80,7 @@
   , bigquery_data_transfer_custom_endpoint = None Text
   , bigtable_custom_endpoint = None Text
   , binary_authorization_custom_endpoint = None Text
+  , cloud_asset_custom_endpoint = None Text
   , cloud_billing_custom_endpoint = None Text
   , cloud_build_custom_endpoint = None Text
   , cloud_functions_custom_endpoint = None Text
