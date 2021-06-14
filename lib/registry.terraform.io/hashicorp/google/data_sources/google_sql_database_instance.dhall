@@ -52,6 +52,7 @@
                     { binary_log_enabled : Bool
                     , enabled : Bool
                     , location : Text
+                    , point_in_time_recovery_enabled : Bool
                     , start_time : Text
                     }
               , crash_safe_replication : Bool
@@ -132,6 +133,7 @@
                   { binary_log_enabled : Bool
                   , enabled : Bool
                   , location : Text
+                  , point_in_time_recovery_enabled : Bool
                   , start_time : Text
                   }
             , crash_safe_replication : Bool

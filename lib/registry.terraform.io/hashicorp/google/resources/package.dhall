@@ -237,6 +237,15 @@
 , google_folder_iam_member = ./google_folder_iam_member.dhall
 , google_folder_iam_policy = ./google_folder_iam_policy.dhall
 , google_folder_organization_policy = ./google_folder_organization_policy.dhall
+, google_game_services_game_server_cluster =
+    ./google_game_services_game_server_cluster.dhall
+, google_game_services_game_server_config =
+    ./google_game_services_game_server_config.dhall
+, google_game_services_game_server_deployment =
+    ./google_game_services_game_server_deployment.dhall
+, google_game_services_game_server_deployment_rollout =
+    ./google_game_services_game_server_deployment_rollout.dhall
+, google_game_services_realm = ./google_game_services_realm.dhall
 , google_healthcare_dataset = ./google_healthcare_dataset.dhall
 , google_healthcare_dataset_iam_binding =
     ./google_healthcare_dataset_iam_binding.dhall

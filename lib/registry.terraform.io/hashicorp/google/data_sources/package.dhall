@@ -41,6 +41,8 @@
 , google_dns_managed_zone = ./google_dns_managed_zone.dhall
 , google_folder = ./google_folder.dhall
 , google_folder_organization_policy = ./google_folder_organization_policy.dhall
+, google_game_services_game_server_deployment_rollout =
+    ./google_game_services_game_server_deployment_rollout.dhall
 , google_iam_policy = ./google_iam_policy.dhall
 , google_iam_role = ./google_iam_role.dhall
 , google_iam_testable_permissions = ./google_iam_testable_permissions.dhall

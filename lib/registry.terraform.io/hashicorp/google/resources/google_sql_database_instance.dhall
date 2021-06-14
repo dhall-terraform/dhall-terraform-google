@@ -61,6 +61,7 @@
                     { binary_log_enabled : Optional Bool
                     , enabled : Optional Bool
                     , location : Optional Text
+                    , point_in_time_recovery_enabled : Optional Bool
                     , start_time : Optional Text
                     }
                 )

@@ -12,6 +12,8 @@
     , project : Optional Text
     , self_link : Optional Text
     , source_disk : Optional Text
+    , source_image : Optional Text
+    , source_snapshot : Optional Text
     , guest_os_features : Optional (List { type : Text })
     , raw_disk :
         Optional
@@ -41,6 +43,8 @@
   , project = None Text
   , self_link = None Text
   , source_disk = None Text
+  , source_image = None Text
+  , source_snapshot = None Text
   , guest_os_features = None (List { type : Text })
   , raw_disk =
       None

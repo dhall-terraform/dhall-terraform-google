@@ -221,6 +221,7 @@
               , public_endpoint : Optional Text
               }
           )
+    , release_channel : Optional (List { channel : Text })
     , resource_usage_export_config :
         Optional
           ( List
@@ -452,6 +453,7 @@
             , public_endpoint : Optional Text
             }
         )
+  , release_channel = None (List { channel : Text })
   , resource_usage_export_config =
       None
         ( List

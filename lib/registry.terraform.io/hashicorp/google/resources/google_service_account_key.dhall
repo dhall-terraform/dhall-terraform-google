@@ -8,6 +8,7 @@
     , private_key_fingerprint : Optional Text
     , private_key_type : Optional Text
     , public_key : Optional Text
+    , public_key_data : Optional Text
     , public_key_type : Optional Text
     , service_account_id : Text
     , valid_after : Optional Text
@@ -23,6 +24,7 @@
   , private_key_fingerprint = None Text
   , private_key_type = None Text
   , public_key = None Text
+  , public_key_data = None Text
   , public_key_type = None Text
   , valid_after = None Text
   , valid_before = None Text

@@ -113,7 +113,7 @@
               , windows_update :
                   Optional
                     ( List
-                        { classifications : Optional Text
+                        { classifications : Optional (List Text)
                         , excludes : Optional (List Text)
                         , exclusive_patches : Optional (List Text)
                         }
@@ -275,7 +275,7 @@
             , windows_update :
                 Optional
                   ( List
-                      { classifications : Optional Text
+                      { classifications : Optional (List Text)
                       , excludes : Optional (List Text)
                       , exclusive_patches : Optional (List Text)
                       }

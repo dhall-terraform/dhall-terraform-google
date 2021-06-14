@@ -9,13 +9,56 @@
     , name : Optional Text
     , project : Optional Text
     , substitutions : Optional (List { mapKey : Text, mapValue : Text })
+    , tags : Optional (List Text)
     , trigger_id : Optional Text
     , build :
         Optional
           ( List
               { images : Optional (List Text)
+              , logs_bucket : Optional Text
+              , queue_ttl : Optional Text
+              , substitutions :
+                  Optional (List { mapKey : Text, mapValue : Text })
               , tags : Optional (List Text)
               , timeout : Optional Text
+              , secret :
+                  Optional
+                    ( List
+                        { kms_key_name : Text
+                        , secret_env :
+                            Optional (List { mapKey : Text, mapValue : Text })
+                        }
+                    )
+              , source :
+                  Optional
+                    ( List
+                        { repo_source :
+                            Optional
+                              ( List
+                                  { branch_name : Optional Text
+                                  , commit_sha : Optional Text
+                                  , dir : Optional Text
+                                  , invert_regex : Optional Bool
+                                  , project_id : Optional Text
+                                  , repo_name : Text
+                                  , substitutions :
+                                      Optional
+                                        ( List
+                                            { mapKey : Text, mapValue : Text }
+                                        )
+                                  , tag_name : Optional Text
+                                  }
+                              )
+                        , storage_source :
+                            Optional
+                              ( List
+                                  { bucket : Text
+                                  , generation : Optional Text
+                                  , object : Text
+                                  }
+                              )
+                        }
+                    )
               , step :
                   List
                     { args : Optional (List Text)
@@ -62,13 +105,53 @@
   , name = None Text
   , project = None Text
   , substitutions = None (List { mapKey : Text, mapValue : Text })
+  , tags = None (List Text)
   , trigger_id = None Text
   , build =
       None
         ( List
             { images : Optional (List Text)
+            , logs_bucket : Optional Text
+            , queue_ttl : Optional Text
+            , substitutions : Optional (List { mapKey : Text, mapValue : Text })
             , tags : Optional (List Text)
             , timeout : Optional Text
+            , secret :
+                Optional
+                  ( List
+                      { kms_key_name : Text
+                      , secret_env :
+                          Optional (List { mapKey : Text, mapValue : Text })
+                      }
+                  )
+            , source :
+                Optional
+                  ( List
+                      { repo_source :
+                          Optional
+                            ( List
+                                { branch_name : Optional Text
+                                , commit_sha : Optional Text
+                                , dir : Optional Text
+                                , invert_regex : Optional Bool
+                                , project_id : Optional Text
+                                , repo_name : Text
+                                , substitutions :
+                                    Optional
+                                      (List { mapKey : Text, mapValue : Text })
+                                , tag_name : Optional Text
+                                }
+                            )
+                      , storage_source :
+                          Optional
+                            ( List
+                                { bucket : Text
+                                , generation : Optional Text
+                                , object : Text
+                                }
+                            )
+                      }
+                  )
             , step :
                 List
                   { args : Optional (List Text)

@@ -6,6 +6,8 @@
     , location : Optional Text
     , project : Optional Text
     , region : Optional Text
+    , release_channel_default_version :
+        Optional (List { mapKey : Text, mapValue : Text })
     , valid_master_versions : Optional (List Text)
     , valid_node_versions : Optional (List Text)
     , version_prefix : Optional Text
@@ -19,6 +21,8 @@
   , location = None Text
   , project = None Text
   , region = None Text
+  , release_channel_default_version =
+      None (List { mapKey : Text, mapValue : Text })
   , valid_master_versions = None (List Text)
   , valid_node_versions = None (List Text)
   , version_prefix = None Text

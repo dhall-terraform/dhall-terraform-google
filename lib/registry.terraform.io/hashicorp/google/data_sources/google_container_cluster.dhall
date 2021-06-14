@@ -170,6 +170,7 @@
           )
     , project : Optional Text
     , region : Optional Text
+    , release_channel : Optional (List { channel : Text })
     , remove_default_node_pool : Optional Bool
     , resource_labels : Optional (List { mapKey : Text, mapValue : Text })
     , resource_usage_export_config :
@@ -352,6 +353,7 @@
         )
   , project = None Text
   , region = None Text
+  , release_channel = None (List { channel : Text })
   , remove_default_node_pool = None Bool
   , resource_labels = None (List { mapKey : Text, mapValue : Text })
   , resource_usage_export_config =

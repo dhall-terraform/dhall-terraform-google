@@ -1,5 +1,6 @@
 { Type =
     { ack_deadline_seconds : Optional Natural
+    , filter : Optional Text
     , id : Optional Text
     , labels : Optional (List { mapKey : Text, mapValue : Text })
     , message_retention_duration : Optional Text
@@ -39,6 +40,7 @@
     }
 , default =
   { ack_deadline_seconds = None Natural
+  , filter = None Text
   , id = None Text
   , labels = None (List { mapKey : Text, mapValue : Text })
   , message_retention_duration = None Text
