@@ -77,7 +77,16 @@
         Optional
           ( List
               { daily_maintenance_window :
-                  List { duration : Optional Text, start_time : Text }
+                  Optional
+                    (List { duration : Optional Text, start_time : Text })
+              , recurring_window :
+                  Optional
+                    ( List
+                        { end_time : Text
+                        , recurrence : Text
+                        , start_time : Text
+                        }
+                    )
               }
           )
     , master_auth :
@@ -293,7 +302,12 @@
       None
         ( List
             { daily_maintenance_window :
-                List { duration : Optional Text, start_time : Text }
+                Optional (List { duration : Optional Text, start_time : Text })
+            , recurring_window :
+                Optional
+                  ( List
+                      { end_time : Text, recurrence : Text, start_time : Text }
+                  )
             }
         )
   , master_auth =

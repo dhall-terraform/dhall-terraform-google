@@ -13,6 +13,7 @@
                     { ip_subnetworks : Optional (List Text)
                     , members : Optional (List Text)
                     , negate : Optional Bool
+                    , regions : Optional (List Text)
                     , required_access_levels : Optional (List Text)
                     , device_policy :
                         Optional
@@ -55,6 +56,7 @@
                   { ip_subnetworks : Optional (List Text)
                   , members : Optional (List Text)
                   , negate : Optional Bool
+                  , regions : Optional (List Text)
                   , required_access_levels : Optional (List Text)
                   , device_policy :
                       Optional

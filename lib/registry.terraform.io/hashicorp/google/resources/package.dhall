@@ -11,6 +11,8 @@
     ./google_app_engine_application_url_dispatch_rules.dhall
 , google_app_engine_domain_mapping = ./google_app_engine_domain_mapping.dhall
 , google_app_engine_firewall_rule = ./google_app_engine_firewall_rule.dhall
+, google_app_engine_flexible_app_version =
+    ./google_app_engine_flexible_app_version.dhall
 , google_app_engine_service_split_traffic =
     ./google_app_engine_service_split_traffic.dhall
 , google_app_engine_standard_app_version =
@@ -90,6 +92,8 @@
 , google_compute_instance_group = ./google_compute_instance_group.dhall
 , google_compute_instance_group_manager =
     ./google_compute_instance_group_manager.dhall
+, google_compute_instance_group_named_port =
+    ./google_compute_instance_group_named_port.dhall
 , google_compute_instance_iam_binding =
     ./google_compute_instance_iam_binding.dhall
 , google_compute_instance_iam_member =
@@ -206,6 +210,8 @@
     ./google_iap_app_engine_version_iam_member.dhall
 , google_iap_app_engine_version_iam_policy =
     ./google_iap_app_engine_version_iam_policy.dhall
+, google_iap_brand = ./google_iap_brand.dhall
+, google_iap_client = ./google_iap_client.dhall
 , google_iap_tunnel_instance_iam_binding =
     ./google_iap_tunnel_instance_iam_binding.dhall
 , google_iap_tunnel_instance_iam_member =

@@ -7,6 +7,7 @@
     , id : Optional Text
     , load_balancing_scheme : Optional Text
     , name : Text
+    , network : Optional Text
     , project : Optional Text
     , protocol : Optional Text
     , region : Optional Text
@@ -43,6 +44,7 @@
   , fingerprint = None Text
   , id = None Text
   , load_balancing_scheme = None Text
+  , network = None Text
   , project = None Text
   , protocol = None Text
   , region = None Text
