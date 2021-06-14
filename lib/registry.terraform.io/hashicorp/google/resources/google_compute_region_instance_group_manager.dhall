@@ -7,7 +7,7 @@
     , instance_group : Optional Text
     , name : Text
     , project : Optional Text
-    , region : Text
+    , region : Optional Text
     , self_link : Optional Text
     , target_pools : Optional (List Text)
     , target_size : Optional Natural
@@ -53,6 +53,7 @@
   , id = None Text
   , instance_group = None Text
   , project = None Text
+  , region = None Text
   , self_link = None Text
   , target_pools = None (List Text)
   , target_size = None Natural

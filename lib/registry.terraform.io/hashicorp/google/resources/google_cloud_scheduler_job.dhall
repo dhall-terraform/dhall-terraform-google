@@ -63,7 +63,12 @@
               , retry_count : Optional Natural
               }
           )
-    , timeouts : Optional { create : Optional Text, delete : Optional Text }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { attempt_deadline = None Text
@@ -125,6 +130,11 @@
             , retry_count : Optional Natural
             }
         )
-  , timeouts = None { create : Optional Text, delete : Optional Text }
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , update : Optional Text
+        }
   }
 }

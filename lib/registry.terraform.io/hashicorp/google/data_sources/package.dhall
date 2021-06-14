@@ -10,6 +10,7 @@
 , google_cloud_identity_group_memberships =
     ./google_cloud_identity_group_memberships.dhall
 , google_cloud_identity_groups = ./google_cloud_identity_groups.dhall
+, google_cloud_run_locations = ./google_cloud_run_locations.dhall
 , google_cloud_run_service = ./google_cloud_run_service.dhall
 , google_composer_environment = ./google_composer_environment.dhall
 , google_composer_image_versions = ./google_composer_image_versions.dhall

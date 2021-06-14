@@ -6,7 +6,7 @@
     , name : Text
     , project : Optional Text
     , remove_instance_state_on_destroy : Optional Bool
-    , zone : Text
+    , zone : Optional Text
     , preserved_state :
         Optional
           ( List
@@ -35,6 +35,7 @@
   , most_disruptive_allowed_action = None Text
   , project = None Text
   , remove_instance_state_on_destroy = None Bool
+  , zone = None Text
   , preserved_state =
       None
         ( List

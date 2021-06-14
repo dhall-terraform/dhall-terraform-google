@@ -12,7 +12,7 @@
               { cluster_id : Text
               , num_nodes : Optional Natural
               , storage_type : Optional Text
-              , zone : Text
+              , zone : Optional Text
               }
           )
     }
@@ -29,7 +29,7 @@
             { cluster_id : Text
             , num_nodes : Optional Natural
             , storage_type : Optional Text
-            , zone : Text
+            , zone : Optional Text
             }
         )
   }
