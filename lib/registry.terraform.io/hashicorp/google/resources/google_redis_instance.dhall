@@ -11,6 +11,7 @@
     , location_id : Optional Text
     , memory_size_gb : Natural
     , name : Text
+    , persistence_iam_identity : Optional Text
     , port : Optional Natural
     , project : Optional Text
     , redis_configs : Optional (List { mapKey : Text, mapValue : Text })
@@ -36,6 +37,7 @@
   , id = None Text
   , labels = None (List { mapKey : Text, mapValue : Text })
   , location_id = None Text
+  , persistence_iam_identity = None Text
   , port = None Natural
   , project = None Text
   , redis_configs = None (List { mapKey : Text, mapValue : Text })

@@ -3,6 +3,7 @@
     , display_name : Optional Text
     , id : Optional Text
     , instance_type : Optional Text
+    , labels : Optional (List { mapKey : Text, mapValue : Text })
     , name : Text
     , project : Optional Text
     , cluster :
@@ -20,6 +21,7 @@
   , display_name = None Text
   , id = None Text
   , instance_type = None Text
+  , labels = None (List { mapKey : Text, mapValue : Text })
   , project = None Text
   , cluster =
       None

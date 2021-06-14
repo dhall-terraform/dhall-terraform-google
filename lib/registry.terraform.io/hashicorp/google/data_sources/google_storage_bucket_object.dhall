@@ -10,6 +10,7 @@
     , detect_md5hash : Optional Text
     , id : Optional Text
     , md5hash : Optional Text
+    , media_link : Optional Text
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , name : Optional Text
     , output_name : Optional Text
@@ -29,6 +30,7 @@
   , detect_md5hash = None Text
   , id = None Text
   , md5hash = None Text
+  , media_link = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })
   , name = None Text
   , output_name = None Text
