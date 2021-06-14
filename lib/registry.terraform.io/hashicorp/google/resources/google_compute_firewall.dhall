@@ -18,6 +18,7 @@
     , target_tags : Optional (List Text)
     , allow : Optional (List { ports : Optional (List Text), protocol : Text })
     , deny : Optional (List { ports : Optional (List Text), protocol : Text })
+    , log_config : Optional (List { metadata : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -43,6 +44,7 @@
   , target_tags = None (List Text)
   , allow = None (List { ports : Optional (List Text), protocol : Text })
   , deny = None (List { ports : Optional (List Text), protocol : Text })
+  , log_config = None (List { metadata : Text })
   , timeouts =
       None
         { create : Optional Text

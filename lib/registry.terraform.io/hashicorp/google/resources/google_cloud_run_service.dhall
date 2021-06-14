@@ -99,6 +99,14 @@
                                                   )
                                             }
                                         )
+                                  , ports :
+                                      Optional
+                                        ( List
+                                            { container_port : Natural
+                                            , name : Optional Text
+                                            , protocol : Optional Text
+                                            }
+                                        )
                                   , resources :
                                       Optional
                                         ( List
@@ -228,6 +236,14 @@
                                                           (List { name : Text })
                                                     }
                                                 )
+                                          }
+                                      )
+                                , ports :
+                                    Optional
+                                      ( List
+                                          { container_port : Natural
+                                          , name : Optional Text
+                                          , protocol : Optional Text
                                           }
                                       )
                                 , resources :

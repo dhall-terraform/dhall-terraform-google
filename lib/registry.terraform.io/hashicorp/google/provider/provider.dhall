@@ -1,6 +1,7 @@
 { Type =
     { access_context_manager_custom_endpoint : Optional Text
     , access_token : Optional Text
+    , active_directory_custom_endpoint : Optional Text
     , app_engine_custom_endpoint : Optional Text
     , big_query_custom_endpoint : Optional Text
     , bigquery_data_transfer_custom_endpoint : Optional Text
@@ -75,6 +76,7 @@
 , default =
   { access_context_manager_custom_endpoint = None Text
   , access_token = None Text
+  , active_directory_custom_endpoint = None Text
   , app_engine_custom_endpoint = None Text
   , big_query_custom_endpoint = None Text
   , bigquery_data_transfer_custom_endpoint = None Text
