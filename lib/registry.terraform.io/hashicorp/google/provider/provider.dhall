@@ -50,6 +50,7 @@
     , ml_engine_custom_endpoint : Optional Text
     , monitoring_custom_endpoint : Optional Text
     , network_management_custom_endpoint : Optional Text
+    , notebooks_custom_endpoint : Optional Text
     , os_config_custom_endpoint : Optional Text
     , os_login_custom_endpoint : Optional Text
     , project : Optional Text
@@ -132,6 +133,7 @@
   , ml_engine_custom_endpoint = None Text
   , monitoring_custom_endpoint = None Text
   , network_management_custom_endpoint = None Text
+  , notebooks_custom_endpoint = None Text
   , os_config_custom_endpoint = None Text
   , os_login_custom_endpoint = None Text
   , project = None Text

@@ -280,6 +280,7 @@
 , google_endpoints_service_iam_policy =
     ./google_endpoints_service_iam_policy.dhall
 , google_filestore_instance = ./google_filestore_instance.dhall
+, google_firestore_document = ./google_firestore_document.dhall
 , google_firestore_index = ./google_firestore_index.dhall
 , google_folder_access_approval_settings =
     ./google_folder_access_approval_settings.dhall
@@ -427,6 +428,15 @@
     ./google_monitoring_uptime_check_config.dhall
 , google_network_management_connectivity_test =
     ./google_network_management_connectivity_test.dhall
+, google_notebooks_environment = ./google_notebooks_environment.dhall
+, google_notebooks_instance = ./google_notebooks_instance.dhall
+, google_notebooks_instance_iam_binding =
+    ./google_notebooks_instance_iam_binding.dhall
+, google_notebooks_instance_iam_member =
+    ./google_notebooks_instance_iam_member.dhall
+, google_notebooks_instance_iam_policy =
+    ./google_notebooks_instance_iam_policy.dhall
+, google_notebooks_location = ./google_notebooks_location.dhall
 , google_organization_access_approval_settings =
     ./google_organization_access_approval_settings.dhall
 , google_organization_iam_audit_config =

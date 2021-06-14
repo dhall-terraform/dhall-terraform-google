@@ -30,7 +30,11 @@
                   List
                     { age : Optional Natural
                     , created_before : Optional Text
+                    , custom_time_before : Optional Text
+                    , days_since_custom_time : Optional Natural
+                    , days_since_noncurrent_time : Optional Natural
                     , matches_storage_class : Optional (List Text)
+                    , noncurrent_time_before : Optional Text
                     , num_newer_versions : Optional Natural
                     , with_state : Optional Text
                     }
@@ -81,7 +85,11 @@
                 List
                   { age : Optional Natural
                   , created_before : Optional Text
+                  , custom_time_before : Optional Text
+                  , days_since_custom_time : Optional Natural
+                  , days_since_noncurrent_time : Optional Natural
                   , matches_storage_class : Optional (List Text)
+                  , noncurrent_time_before : Optional Text
                   , num_newer_versions : Optional Natural
                   , with_state : Optional Text
                   }

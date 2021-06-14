@@ -3,6 +3,7 @@
     , connection_draining_timeout_sec : Optional Natural
     , creation_timestamp : Optional Text
     , description : Optional Text
+    , enable_cdn : Optional Bool
     , fingerprint : Optional Text
     , health_checks : Optional (List Text)
     , id : Optional Text
@@ -32,6 +33,22 @@
               , max_rate_per_endpoint : Optional Natural
               , max_rate_per_instance : Optional Natural
               , max_utilization : Optional Natural
+              }
+          )
+    , cdn_policy :
+        Optional
+          ( List
+              { signed_url_cache_max_age_sec : Optional Natural
+              , cache_key_policy :
+                  Optional
+                    ( List
+                        { include_host : Optional Bool
+                        , include_protocol : Optional Bool
+                        , include_query_string : Optional Bool
+                        , query_string_blacklist : Optional (List Text)
+                        , query_string_whitelist : Optional (List Text)
+                        }
+                    )
               }
           )
     , circuit_breakers :
@@ -108,6 +125,7 @@
   , connection_draining_timeout_sec = None Natural
   , creation_timestamp = None Text
   , description = None Text
+  , enable_cdn = None Bool
   , fingerprint = None Text
   , health_checks = None (List Text)
   , id = None Text
@@ -136,6 +154,22 @@
             , max_rate_per_endpoint : Optional Natural
             , max_rate_per_instance : Optional Natural
             , max_utilization : Optional Natural
+            }
+        )
+  , cdn_policy =
+      None
+        ( List
+            { signed_url_cache_max_age_sec : Optional Natural
+            , cache_key_policy :
+                Optional
+                  ( List
+                      { include_host : Optional Bool
+                      , include_protocol : Optional Bool
+                      , include_query_string : Optional Bool
+                      , query_string_blacklist : Optional (List Text)
+                      , query_string_whitelist : Optional (List Text)
+                      }
+                  )
             }
         )
   , circuit_breakers =
