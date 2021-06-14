@@ -61,6 +61,7 @@
 , google_project_organization_policy =
     ./google_project_organization_policy.dhall
 , google_projects = ./google_projects.dhall
+, google_redis_instance = ./google_redis_instance.dhall
 , google_secret_manager_secret_version =
     ./google_secret_manager_secret_version.dhall
 , google_service_account_access_token =

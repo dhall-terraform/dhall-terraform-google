@@ -12,6 +12,7 @@
           { cooldown_period : Optional Natural
           , max_replicas : Natural
           , min_replicas : Natural
+          , mode : Optional Text
           , cpu_utilization : Optional (List { target : Natural })
           , load_balancing_utilization : Optional (List { target : Natural })
           , metric :

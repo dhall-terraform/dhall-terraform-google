@@ -2,6 +2,7 @@
     { app_id : Optional Text
     , auth_domain : Optional Text
     , code_bucket : Optional Text
+    , database_type : Optional Text
     , default_bucket : Optional Text
     , default_hostname : Optional Text
     , gcr_domain : Optional Text
@@ -28,6 +29,7 @@
   { app_id = None Text
   , auth_domain = None Text
   , code_bucket = None Text
+  , database_type = None Text
   , default_bucket = None Text
   , default_hostname = None Text
   , gcr_domain = None Text
