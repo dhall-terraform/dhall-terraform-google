@@ -43,6 +43,7 @@
 , google_folder_organization_policy = ./google_folder_organization_policy.dhall
 , google_iam_policy = ./google_iam_policy.dhall
 , google_iam_role = ./google_iam_role.dhall
+, google_iam_testable_permissions = ./google_iam_testable_permissions.dhall
 , google_kms_crypto_key = ./google_kms_crypto_key.dhall
 , google_kms_crypto_key_version = ./google_kms_crypto_key_version.dhall
 , google_kms_key_ring = ./google_kms_key_ring.dhall

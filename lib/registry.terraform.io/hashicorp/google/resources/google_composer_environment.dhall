@@ -37,8 +37,10 @@
               , private_environment_config :
                   Optional
                     ( List
-                        { enable_private_endpoint : Optional Bool
+                        { cloud_sql_ipv4_cidr_block : Optional Text
+                        , enable_private_endpoint : Optional Bool
                         , master_ipv4_cidr_block : Optional Text
+                        , web_server_ipv4_cidr_block : Optional Text
                         }
                     )
               , software_config :
@@ -101,8 +103,10 @@
             , private_environment_config :
                 Optional
                   ( List
-                      { enable_private_endpoint : Optional Bool
+                      { cloud_sql_ipv4_cidr_block : Optional Text
+                      , enable_private_endpoint : Optional Bool
                       , master_ipv4_cidr_block : Optional Text
+                      , web_server_ipv4_cidr_block : Optional Text
                       }
                   )
             , software_config :

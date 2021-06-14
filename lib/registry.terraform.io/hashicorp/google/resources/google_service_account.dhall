@@ -7,6 +7,7 @@
     , name : Optional Text
     , project : Optional Text
     , unique_id : Optional Text
+    , timeouts : Optional { create : Optional Text }
     }
 , default =
   { description = None Text
@@ -16,5 +17,6 @@
   , name = None Text
   , project = None Text
   , unique_id = None Text
+  , timeouts = None { create : Optional Text }
   }
 }

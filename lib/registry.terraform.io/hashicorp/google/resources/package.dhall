@@ -325,6 +325,7 @@
 , google_ml_engine_model = ./google_ml_engine_model.dhall
 , google_monitoring_alert_policy = ./google_monitoring_alert_policy.dhall
 , google_monitoring_custom_service = ./google_monitoring_custom_service.dhall
+, google_monitoring_dashboard = ./google_monitoring_dashboard.dhall
 , google_monitoring_group = ./google_monitoring_group.dhall
 , google_monitoring_notification_channel =
     ./google_monitoring_notification_channel.dhall

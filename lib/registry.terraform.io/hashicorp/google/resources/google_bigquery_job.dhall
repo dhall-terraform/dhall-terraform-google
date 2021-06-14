@@ -17,13 +17,17 @@
               , destination_table :
                   Optional
                     ( List
-                        { dataset_id : Text
-                        , project_id : Text
+                        { dataset_id : Optional Text
+                        , project_id : Optional Text
                         , table_id : Text
                         }
                     )
               , source_tables :
-                  List { dataset_id : Text, project_id : Text, table_id : Text }
+                  List
+                    { dataset_id : Optional Text
+                    , project_id : Optional Text
+                    , table_id : Text
+                    }
               }
           )
     , extract :
@@ -46,8 +50,8 @@
               , source_table :
                   Optional
                     ( List
-                        { dataset_id : Text
-                        , project_id : Text
+                        { dataset_id : Optional Text
+                        , project_id : Optional Text
                         , table_id : Text
                         }
                     )
@@ -75,7 +79,11 @@
               , destination_encryption_configuration :
                   Optional (List { kms_key_name : Text })
               , destination_table :
-                  List { dataset_id : Text, project_id : Text, table_id : Text }
+                  List
+                    { dataset_id : Optional Text
+                    , project_id : Optional Text
+                    , table_id : Text
+                    }
               , time_partitioning :
                   Optional
                     ( List
@@ -109,8 +117,8 @@
               , destination_table :
                   Optional
                     ( List
-                        { dataset_id : Text
-                        , project_id : Text
+                        { dataset_id : Optional Text
+                        , project_id : Optional Text
                         , table_id : Text
                         }
                     )
@@ -151,10 +159,17 @@
             , destination_table :
                 Optional
                   ( List
-                      { dataset_id : Text, project_id : Text, table_id : Text }
+                      { dataset_id : Optional Text
+                      , project_id : Optional Text
+                      , table_id : Text
+                      }
                   )
             , source_tables :
-                List { dataset_id : Text, project_id : Text, table_id : Text }
+                List
+                  { dataset_id : Optional Text
+                  , project_id : Optional Text
+                  , table_id : Text
+                  }
             }
         )
   , extract =
@@ -174,7 +189,10 @@
             , source_table :
                 Optional
                   ( List
-                      { dataset_id : Text, project_id : Text, table_id : Text }
+                      { dataset_id : Optional Text
+                      , project_id : Optional Text
+                      , table_id : Text
+                      }
                   )
             }
         )
@@ -200,7 +218,11 @@
             , destination_encryption_configuration :
                 Optional (List { kms_key_name : Text })
             , destination_table :
-                List { dataset_id : Text, project_id : Text, table_id : Text }
+                List
+                  { dataset_id : Optional Text
+                  , project_id : Optional Text
+                  , table_id : Text
+                  }
             , time_partitioning :
                 Optional
                   ( List
@@ -234,7 +256,10 @@
             , destination_table :
                 Optional
                   ( List
-                      { dataset_id : Text, project_id : Text, table_id : Text }
+                      { dataset_id : Optional Text
+                      , project_id : Optional Text
+                      , table_id : Text
+                      }
                   )
             , script_options :
                 Optional
