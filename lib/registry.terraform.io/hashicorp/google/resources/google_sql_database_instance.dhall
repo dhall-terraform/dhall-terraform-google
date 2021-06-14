@@ -61,6 +61,7 @@
               , availability_type : Optional Text
               , crash_safe_replication : Optional Bool
               , disk_autoresize : Optional Bool
+              , disk_autoresize_limit : Optional Natural
               , disk_size : Optional Natural
               , disk_type : Optional Text
               , pricing_plan : Optional Text
@@ -197,6 +198,7 @@
             , availability_type : Optional Text
             , crash_safe_replication : Optional Bool
             , disk_autoresize : Optional Bool
+            , disk_autoresize_limit : Optional Natural
             , disk_size : Optional Natural
             , disk_type : Optional Text
             , pricing_plan : Optional Text

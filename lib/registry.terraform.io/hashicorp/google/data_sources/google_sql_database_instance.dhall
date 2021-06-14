@@ -68,6 +68,7 @@
               , crash_safe_replication : Bool
               , database_flags : List { name : Text, value : Text }
               , disk_autoresize : Bool
+              , disk_autoresize_limit : Natural
               , disk_size : Natural
               , disk_type : Text
               , insights_config :
@@ -164,6 +165,7 @@
             , crash_safe_replication : Bool
             , database_flags : List { name : Text, value : Text }
             , disk_autoresize : Bool
+            , disk_autoresize_limit : Natural
             , disk_size : Natural
             , disk_type : Text
             , insights_config :

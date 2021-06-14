@@ -10,6 +10,7 @@
     , name : Text
     , physical_block_size_bytes : Optional Natural
     , project : Optional Text
+    , provisioned_iops : Optional Natural
     , self_link : Optional Text
     , size : Optional Natural
     , snapshot : Optional Text
@@ -63,6 +64,7 @@
   , last_detach_timestamp = None Text
   , physical_block_size_bytes = None Natural
   , project = None Text
+  , provisioned_iops = None Natural
   , self_link = None Text
   , size = None Natural
   , snapshot = None Text
