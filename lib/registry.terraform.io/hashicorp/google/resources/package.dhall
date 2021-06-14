@@ -193,6 +193,7 @@
 , google_deployment_manager_deployment =
     ./google_deployment_manager_deployment.dhall
 , google_dialogflow_agent = ./google_dialogflow_agent.dhall
+, google_dialogflow_entity_type = ./google_dialogflow_entity_type.dhall
 , google_dialogflow_intent = ./google_dialogflow_intent.dhall
 , google_dns_managed_zone = ./google_dns_managed_zone.dhall
 , google_dns_record_set = ./google_dns_record_set.dhall

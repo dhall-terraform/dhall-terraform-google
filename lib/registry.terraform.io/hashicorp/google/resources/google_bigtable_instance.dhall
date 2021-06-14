@@ -1,5 +1,6 @@
 { Type =
-    { display_name : Optional Text
+    { deletion_protection : Optional Bool
+    , display_name : Optional Text
     , id : Optional Text
     , instance_type : Optional Text
     , name : Text
@@ -15,7 +16,8 @@
           )
     }
 , default =
-  { display_name = None Text
+  { deletion_protection = None Bool
+  , display_name = None Text
   , id = None Text
   , instance_type = None Text
   , project = None Text

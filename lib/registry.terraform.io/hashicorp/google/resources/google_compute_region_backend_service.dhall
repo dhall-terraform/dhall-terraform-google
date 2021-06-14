@@ -10,6 +10,7 @@
     , locality_lb_policy : Optional Text
     , name : Text
     , network : Optional Text
+    , port_name : Optional Text
     , project : Optional Text
     , protocol : Optional Text
     , region : Optional Text
@@ -112,6 +113,7 @@
   , load_balancing_scheme = None Text
   , locality_lb_policy = None Text
   , network = None Text
+  , port_name = None Text
   , project = None Text
   , protocol = None Text
   , region = None Text
