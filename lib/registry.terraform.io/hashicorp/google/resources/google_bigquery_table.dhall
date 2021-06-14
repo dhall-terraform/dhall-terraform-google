@@ -26,6 +26,7 @@
               , compression : Optional Text
               , ignore_unknown_values : Optional Bool
               , max_bad_records : Optional Natural
+              , schema : Optional Text
               , source_format : Text
               , source_uris : List Text
               , csv_options :
@@ -100,6 +101,7 @@
             , compression : Optional Text
             , ignore_unknown_values : Optional Bool
             , max_bad_records : Optional Natural
+            , schema : Optional Text
             , source_format : Text
             , source_uris : List Text
             , csv_options :
