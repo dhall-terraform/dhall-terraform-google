@@ -363,6 +363,7 @@
 , google_organization_iam_member = ./google_organization_iam_member.dhall
 , google_organization_iam_policy = ./google_organization_iam_policy.dhall
 , google_organization_policy = ./google_organization_policy.dhall
+, google_os_config_patch_deployment = ./google_os_config_patch_deployment.dhall
 , google_os_login_ssh_public_key = ./google_os_login_ssh_public_key.dhall
 , google_project = ./google_project.dhall
 , google_project_iam_audit_config = ./google_project_iam_audit_config.dhall

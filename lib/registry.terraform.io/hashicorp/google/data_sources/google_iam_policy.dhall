@@ -10,7 +10,21 @@
                     { exempted_members : Optional (List Text), log_type : Text }
               }
           )
-    , binding : Optional (List { members : List Text, role : Text })
+    , binding :
+        Optional
+          ( List
+              { members : List Text
+              , role : Text
+              , condition :
+                  Optional
+                    ( List
+                        { description : Optional Text
+                        , expression : Text
+                        , title : Text
+                        }
+                    )
+              }
+          )
     }
 , default =
   { id = None Text
@@ -24,6 +38,20 @@
                   { exempted_members : Optional (List Text), log_type : Text }
             }
         )
-  , binding = None (List { members : List Text, role : Text })
+  , binding =
+      None
+        ( List
+            { members : List Text
+            , role : Text
+            , condition :
+                Optional
+                  ( List
+                      { description : Optional Text
+                      , expression : Text
+                      , title : Text
+                      }
+                  )
+            }
+        )
   }
 }
