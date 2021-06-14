@@ -16,6 +16,7 @@
               , interface : Text
               , labels : List { mapKey : Text, mapValue : Text }
               , mode : Text
+              , resource_policies : List Text
               , source : Text
               , source_image : Text
               , type : Text
@@ -96,6 +97,7 @@
             , interface : Text
             , labels : List { mapKey : Text, mapValue : Text }
             , mode : Text
+            , resource_policies : List Text
             , source : Text
             , source_image : Text
             , type : Text

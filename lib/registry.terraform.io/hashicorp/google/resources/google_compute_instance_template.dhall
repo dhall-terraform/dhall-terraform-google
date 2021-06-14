@@ -30,6 +30,7 @@
           , interface : Optional Text
           , labels : Optional (List { mapKey : Text, mapValue : Text })
           , mode : Optional Text
+          , resource_policies : Optional (List Text)
           , source : Optional Text
           , source_image : Optional Text
           , type : Optional Text

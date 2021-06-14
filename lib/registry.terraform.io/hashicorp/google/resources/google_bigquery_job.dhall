@@ -6,6 +6,15 @@
     , labels : Optional (List { mapKey : Text, mapValue : Text })
     , location : Optional Text
     , project : Optional Text
+    , status :
+        Optional
+          ( List
+              { error_result :
+                  List { location : Text, message : Text, reason : Text }
+              , errors : List { location : Text, message : Text, reason : Text }
+              , state : Text
+              }
+          )
     , user_email : Optional Text
     , copy :
         Optional
@@ -148,6 +157,15 @@
   , labels = None (List { mapKey : Text, mapValue : Text })
   , location = None Text
   , project = None Text
+  , status =
+      None
+        ( List
+            { error_result :
+                List { location : Text, message : Text, reason : Text }
+            , errors : List { location : Text, message : Text, reason : Text }
+            , state : Text
+            }
+        )
   , user_email = None Text
   , copy =
       None
