@@ -222,6 +222,8 @@
 , google_data_catalog_tag = ./google_data_catalog_tag.dhall
 , google_data_catalog_tag_template = ./google_data_catalog_tag_template.dhall
 , google_dataflow_job = ./google_dataflow_job.dhall
+, google_data_loss_prevention_deidentify_template =
+    ./google_data_loss_prevention_deidentify_template.dhall
 , google_data_loss_prevention_inspect_template =
     ./google_data_loss_prevention_inspect_template.dhall
 , google_data_loss_prevention_job_trigger =
