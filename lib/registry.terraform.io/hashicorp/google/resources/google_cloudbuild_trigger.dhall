@@ -44,6 +44,7 @@
               { branch_name : Optional Text
               , commit_sha : Optional Text
               , dir : Optional Text
+              , invert_regex : Optional Bool
               , project_id : Optional Text
               , repo_name : Optional Text
               , tag_name : Optional Text
@@ -96,6 +97,7 @@
             { branch_name : Optional Text
             , commit_sha : Optional Text
             , dir : Optional Text
+            , invert_regex : Optional Bool
             , project_id : Optional Text
             , repo_name : Optional Text
             , tag_name : Optional Text

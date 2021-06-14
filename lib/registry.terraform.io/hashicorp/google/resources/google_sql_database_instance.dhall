@@ -12,6 +12,7 @@
     , project : Optional Text
     , public_ip_address : Optional Text
     , region : Optional Text
+    , root_password : Optional Text
     , self_link : Optional Text
     , server_ca_cert :
         Optional
@@ -116,6 +117,7 @@
   , project = None Text
   , public_ip_address = None Text
   , region = None Text
+  , root_password = None Text
   , self_link = None Text
   , server_ca_cert =
       None

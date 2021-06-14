@@ -56,6 +56,7 @@
                         { container_concurrency : Optional Natural
                         , service_account_name : Optional Text
                         , serving_state : Optional Text
+                        , timeout_seconds : Optional Natural
                         , containers :
                             Optional
                               ( List
@@ -190,6 +191,7 @@
                       { container_concurrency : Optional Natural
                       , service_account_name : Optional Text
                       , serving_state : Optional Text
+                      , timeout_seconds : Optional Natural
                       , containers :
                           Optional
                             ( List

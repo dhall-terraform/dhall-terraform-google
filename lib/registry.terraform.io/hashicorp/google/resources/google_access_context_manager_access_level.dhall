@@ -37,6 +37,18 @@
                     }
               }
           )
+    , custom :
+        Optional
+          ( List
+              { expr :
+                  List
+                    { description : Optional Text
+                    , expression : Text
+                    , location : Optional Text
+                    , title : Optional Text
+                    }
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -76,6 +88,18 @@
                                   )
                             }
                         )
+                  }
+            }
+        )
+  , custom =
+      None
+        ( List
+            { expr :
+                List
+                  { description : Optional Text
+                  , expression : Text
+                  , location : Optional Text
+                  , title : Optional Text
                   }
             }
         )
