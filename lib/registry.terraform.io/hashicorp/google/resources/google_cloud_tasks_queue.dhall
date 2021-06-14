@@ -30,6 +30,7 @@
               , min_backoff : Optional Text
               }
           )
+    , stackdriver_logging_config : Optional (List { sampling_ratio : Natural })
     , timeouts :
         Optional
           { create : Optional Text
@@ -68,6 +69,7 @@
             , min_backoff : Optional Text
             }
         )
+  , stackdriver_logging_config = None (List { sampling_ratio : Natural })
   , timeouts =
       None
         { create : Optional Text

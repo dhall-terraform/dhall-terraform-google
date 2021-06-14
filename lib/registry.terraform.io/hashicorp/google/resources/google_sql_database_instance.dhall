@@ -1,6 +1,7 @@
 { Type =
     { connection_name : Optional Text
     , database_version : Optional Text
+    , deletion_protection : Optional Bool
     , first_ip_address : Optional Text
     , id : Optional Text
     , ip_address :
@@ -108,6 +109,7 @@
 , default =
   { connection_name = None Text
   , database_version = None Text
+  , deletion_protection = None Bool
   , first_ip_address = None Text
   , id = None Text
   , ip_address =

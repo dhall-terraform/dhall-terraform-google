@@ -1,4 +1,6 @@
 { google_active_folder = ./google_active_folder.dhall
+, google_app_engine_default_service_account =
+    ./google_app_engine_default_service_account.dhall
 , google_bigquery_default_service_account =
     ./google_bigquery_default_service_account.dhall
 , google_billing_account = ./google_billing_account.dhall

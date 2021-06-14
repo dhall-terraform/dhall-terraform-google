@@ -3,6 +3,7 @@
     , fingerprint : Optional Text
     , id : Optional Text
     , key : Text
+    , project : Optional Text
     , user : Text
     , timeouts :
         Optional
@@ -15,6 +16,7 @@
   { expiration_time_usec = None Text
   , fingerprint = None Text
   , id = None Text
+  , project = None Text
   , timeouts =
       None
         { create : Optional Text

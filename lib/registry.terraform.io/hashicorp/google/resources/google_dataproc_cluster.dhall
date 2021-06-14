@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { graceful_decommission_timeout : Optional Text
+    , id : Optional Text
     , labels : Optional (List { mapKey : Text, mapValue : Text })
     , name : Text
     , project : Optional Text
@@ -138,7 +139,8 @@
           }
     }
 , default =
-  { id = None Text
+  { graceful_decommission_timeout = None Text
+  , id = None Text
   , labels = None (List { mapKey : Text, mapValue : Text })
   , project = None Text
   , region = None Text

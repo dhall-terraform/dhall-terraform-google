@@ -2,12 +2,21 @@
     { creation_timestamp : Optional Text
     , description : Optional Text
     , id : Optional Text
+    , maintenance_policy : Optional Text
     , name : Optional Text
     , node_template : Text
     , project : Optional Text
     , self_link : Optional Text
     , size : Natural
     , zone : Optional Text
+    , autoscaling_policy :
+        Optional
+          ( List
+              { max_nodes : Optional Natural
+              , min_nodes : Optional Natural
+              , mode : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -19,10 +28,19 @@
   { creation_timestamp = None Text
   , description = None Text
   , id = None Text
+  , maintenance_policy = None Text
   , name = None Text
   , project = None Text
   , self_link = None Text
   , zone = None Text
+  , autoscaling_policy =
+      None
+        ( List
+            { max_nodes : Optional Natural
+            , min_nodes : Optional Natural
+            , mode : Optional Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

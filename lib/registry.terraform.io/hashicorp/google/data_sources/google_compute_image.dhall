@@ -4,6 +4,7 @@
     , description : Optional Text
     , disk_size_gb : Optional Natural
     , family : Optional Text
+    , filter : Optional Text
     , id : Optional Text
     , image_encryption_key_sha256 : Optional Text
     , image_id : Optional Text
@@ -25,6 +26,7 @@
   , description = None Text
   , disk_size_gb = None Natural
   , family = None Text
+  , filter = None Text
   , id = None Text
   , image_encryption_key_sha256 = None Text
   , image_id = None Text
