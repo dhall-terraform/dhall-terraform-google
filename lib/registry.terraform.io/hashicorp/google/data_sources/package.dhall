@@ -23,6 +23,7 @@
 , google_compute_global_address = ./google_compute_global_address.dhall
 , google_compute_global_forwarding_rule =
     ./google_compute_global_forwarding_rule.dhall
+, google_compute_health_check = ./google_compute_health_check.dhall
 , google_compute_image = ./google_compute_image.dhall
 , google_compute_instance = ./google_compute_instance.dhall
 , google_compute_instance_group = ./google_compute_instance_group.dhall
@@ -64,6 +65,7 @@
 , google_kms_crypto_key = ./google_kms_crypto_key.dhall
 , google_kms_crypto_key_version = ./google_kms_crypto_key_version.dhall
 , google_kms_key_ring = ./google_kms_key_ring.dhall
+, google_kms_secret_asymmetric = ./google_kms_secret_asymmetric.dhall
 , google_kms_secret_ciphertext = ./google_kms_secret_ciphertext.dhall
 , google_kms_secret = ./google_kms_secret.dhall
 , google_monitoring_app_engine_service =

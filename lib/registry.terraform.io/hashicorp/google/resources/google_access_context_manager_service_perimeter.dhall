@@ -14,6 +14,77 @@
               { access_levels : Optional (List Text)
               , resources : Optional (List Text)
               , restricted_services : Optional (List Text)
+              , egress_policies :
+                  Optional
+                    ( List
+                        { egress_from :
+                            Optional
+                              ( List
+                                  { identities : Optional (List Text)
+                                  , identity_type : Optional Text
+                                  }
+                              )
+                        , egress_to :
+                            Optional
+                              ( List
+                                  { resources : Optional (List Text)
+                                  , operations :
+                                      Optional
+                                        ( List
+                                            { service_name : Optional Text
+                                            , method_selectors :
+                                                Optional
+                                                  ( List
+                                                      { method : Optional Text
+                                                      , permission :
+                                                          Optional Text
+                                                      }
+                                                  )
+                                            }
+                                        )
+                                  }
+                              )
+                        }
+                    )
+              , ingress_policies :
+                  Optional
+                    ( List
+                        { ingress_from :
+                            Optional
+                              ( List
+                                  { identities : Optional (List Text)
+                                  , identity_type : Optional Text
+                                  , sources :
+                                      Optional
+                                        ( List
+                                            { access_level : Optional Text
+                                            , resource : Optional Text
+                                            }
+                                        )
+                                  }
+                              )
+                        , ingress_to :
+                            Optional
+                              ( List
+                                  { resources : Optional (List Text)
+                                  , operations :
+                                      Optional
+                                        ( List
+                                            { service_name : Optional Text
+                                            , method_selectors :
+                                                Optional
+                                                  ( List
+                                                      { method : Optional Text
+                                                      , permission :
+                                                          Optional Text
+                                                      }
+                                                  )
+                                            }
+                                        )
+                                  }
+                              )
+                        }
+                    )
               , vpc_accessible_services :
                   Optional
                     ( List
@@ -29,6 +100,77 @@
               { access_levels : Optional (List Text)
               , resources : Optional (List Text)
               , restricted_services : Optional (List Text)
+              , egress_policies :
+                  Optional
+                    ( List
+                        { egress_from :
+                            Optional
+                              ( List
+                                  { identities : Optional (List Text)
+                                  , identity_type : Optional Text
+                                  }
+                              )
+                        , egress_to :
+                            Optional
+                              ( List
+                                  { resources : Optional (List Text)
+                                  , operations :
+                                      Optional
+                                        ( List
+                                            { service_name : Optional Text
+                                            , method_selectors :
+                                                Optional
+                                                  ( List
+                                                      { method : Optional Text
+                                                      , permission :
+                                                          Optional Text
+                                                      }
+                                                  )
+                                            }
+                                        )
+                                  }
+                              )
+                        }
+                    )
+              , ingress_policies :
+                  Optional
+                    ( List
+                        { ingress_from :
+                            Optional
+                              ( List
+                                  { identities : Optional (List Text)
+                                  , identity_type : Optional Text
+                                  , sources :
+                                      Optional
+                                        ( List
+                                            { access_level : Optional Text
+                                            , resource : Optional Text
+                                            }
+                                        )
+                                  }
+                              )
+                        , ingress_to :
+                            Optional
+                              ( List
+                                  { resources : Optional (List Text)
+                                  , operations :
+                                      Optional
+                                        ( List
+                                            { service_name : Optional Text
+                                            , method_selectors :
+                                                Optional
+                                                  ( List
+                                                      { method : Optional Text
+                                                      , permission :
+                                                          Optional Text
+                                                      }
+                                                  )
+                                            }
+                                        )
+                                  }
+                              )
+                        }
+                    )
               , vpc_accessible_services :
                   Optional
                     ( List
@@ -58,6 +200,75 @@
             { access_levels : Optional (List Text)
             , resources : Optional (List Text)
             , restricted_services : Optional (List Text)
+            , egress_policies :
+                Optional
+                  ( List
+                      { egress_from :
+                          Optional
+                            ( List
+                                { identities : Optional (List Text)
+                                , identity_type : Optional Text
+                                }
+                            )
+                      , egress_to :
+                          Optional
+                            ( List
+                                { resources : Optional (List Text)
+                                , operations :
+                                    Optional
+                                      ( List
+                                          { service_name : Optional Text
+                                          , method_selectors :
+                                              Optional
+                                                ( List
+                                                    { method : Optional Text
+                                                    , permission : Optional Text
+                                                    }
+                                                )
+                                          }
+                                      )
+                                }
+                            )
+                      }
+                  )
+            , ingress_policies :
+                Optional
+                  ( List
+                      { ingress_from :
+                          Optional
+                            ( List
+                                { identities : Optional (List Text)
+                                , identity_type : Optional Text
+                                , sources :
+                                    Optional
+                                      ( List
+                                          { access_level : Optional Text
+                                          , resource : Optional Text
+                                          }
+                                      )
+                                }
+                            )
+                      , ingress_to :
+                          Optional
+                            ( List
+                                { resources : Optional (List Text)
+                                , operations :
+                                    Optional
+                                      ( List
+                                          { service_name : Optional Text
+                                          , method_selectors :
+                                              Optional
+                                                ( List
+                                                    { method : Optional Text
+                                                    , permission : Optional Text
+                                                    }
+                                                )
+                                          }
+                                      )
+                                }
+                            )
+                      }
+                  )
             , vpc_accessible_services :
                 Optional
                   ( List
@@ -73,6 +284,75 @@
             { access_levels : Optional (List Text)
             , resources : Optional (List Text)
             , restricted_services : Optional (List Text)
+            , egress_policies :
+                Optional
+                  ( List
+                      { egress_from :
+                          Optional
+                            ( List
+                                { identities : Optional (List Text)
+                                , identity_type : Optional Text
+                                }
+                            )
+                      , egress_to :
+                          Optional
+                            ( List
+                                { resources : Optional (List Text)
+                                , operations :
+                                    Optional
+                                      ( List
+                                          { service_name : Optional Text
+                                          , method_selectors :
+                                              Optional
+                                                ( List
+                                                    { method : Optional Text
+                                                    , permission : Optional Text
+                                                    }
+                                                )
+                                          }
+                                      )
+                                }
+                            )
+                      }
+                  )
+            , ingress_policies :
+                Optional
+                  ( List
+                      { ingress_from :
+                          Optional
+                            ( List
+                                { identities : Optional (List Text)
+                                , identity_type : Optional Text
+                                , sources :
+                                    Optional
+                                      ( List
+                                          { access_level : Optional Text
+                                          , resource : Optional Text
+                                          }
+                                      )
+                                }
+                            )
+                      , ingress_to :
+                          Optional
+                            ( List
+                                { resources : Optional (List Text)
+                                , operations :
+                                    Optional
+                                      ( List
+                                          { service_name : Optional Text
+                                          , method_selectors :
+                                              Optional
+                                                ( List
+                                                    { method : Optional Text
+                                                    , permission : Optional Text
+                                                    }
+                                                )
+                                          }
+                                      )
+                                }
+                            )
+                      }
+                  )
             , vpc_accessible_services :
                 Optional
                   ( List

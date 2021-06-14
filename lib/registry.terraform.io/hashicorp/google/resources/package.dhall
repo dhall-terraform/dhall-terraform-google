@@ -251,6 +251,12 @@
     ./google_data_catalog_entry_group_iam_policy.dhall
 , google_data_catalog_tag = ./google_data_catalog_tag.dhall
 , google_data_catalog_tag_template = ./google_data_catalog_tag_template.dhall
+, google_data_catalog_tag_template_iam_binding =
+    ./google_data_catalog_tag_template_iam_binding.dhall
+, google_data_catalog_tag_template_iam_member =
+    ./google_data_catalog_tag_template_iam_member.dhall
+, google_data_catalog_tag_template_iam_policy =
+    ./google_data_catalog_tag_template_iam_policy.dhall
 , google_dataflow_job = ./google_dataflow_job.dhall
 , google_data_loss_prevention_deidentify_template =
     ./google_data_loss_prevention_deidentify_template.dhall
