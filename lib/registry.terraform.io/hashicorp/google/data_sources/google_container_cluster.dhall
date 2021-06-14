@@ -143,6 +143,8 @@
                     , workload_metadata_config : List { node_metadata : Text }
                     }
               , node_count : Natural
+              , upgrade_settings :
+                  List { max_surge : Natural, max_unavailable : Natural }
               , version : Text
               }
           )
@@ -308,6 +310,8 @@
                   , workload_metadata_config : List { node_metadata : Text }
                   }
             , node_count : Natural
+            , upgrade_settings :
+                List { max_surge : Natural, max_unavailable : Natural }
             , version : Text
             }
         )

@@ -2,6 +2,7 @@
     { allow_stopping_for_update : Optional Bool
     , can_ip_forward : Optional Bool
     , cpu_platform : Optional Text
+    , current_status : Optional Text
     , deletion_protection : Optional Bool
     , description : Optional Text
     , desired_status : Optional Text
@@ -110,6 +111,7 @@
   { allow_stopping_for_update = None Bool
   , can_ip_forward = None Bool
   , cpu_platform = None Text
+  , current_status = None Text
   , deletion_protection = None Bool
   , description = None Text
   , desired_status = None Text

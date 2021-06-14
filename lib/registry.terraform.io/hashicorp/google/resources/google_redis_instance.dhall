@@ -1,6 +1,7 @@
 { Type =
     { alternative_location_id : Optional Text
     , authorized_network : Optional Text
+    , connect_mode : Optional Text
     , create_time : Optional Text
     , current_location_id : Optional Text
     , display_name : Optional Text
@@ -27,6 +28,7 @@
 , default =
   { alternative_location_id = None Text
   , authorized_network = None Text
+  , connect_mode = None Text
   , create_time = None Text
   , current_location_id = None Text
   , display_name = None Text

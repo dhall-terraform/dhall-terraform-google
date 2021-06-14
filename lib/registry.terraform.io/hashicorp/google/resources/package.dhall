@@ -123,6 +123,8 @@
     ./google_compute_region_health_check.dhall
 , google_compute_region_instance_group_manager =
     ./google_compute_region_instance_group_manager.dhall
+, google_compute_region_ssl_certificate =
+    ./google_compute_region_ssl_certificate.dhall
 , google_compute_reservation = ./google_compute_reservation.dhall
 , google_compute_resource_policy = ./google_compute_resource_policy.dhall
 , google_compute_route = ./google_compute_route.dhall

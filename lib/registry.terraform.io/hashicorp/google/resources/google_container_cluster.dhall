@@ -190,6 +190,9 @@
                             Optional (List { node_metadata : Text })
                         }
                     )
+              , upgrade_settings :
+                  Optional
+                    (List { max_surge : Natural, max_unavailable : Natural })
               }
           )
     , pod_security_policy_config : Optional (List { enabled : Bool })
@@ -399,6 +402,9 @@
                           Optional (List { node_metadata : Text })
                       }
                   )
+            , upgrade_settings :
+                Optional
+                  (List { max_surge : Natural, max_unavailable : Natural })
             }
         )
   , pod_security_policy_config = None (List { enabled : Bool })

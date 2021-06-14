@@ -54,6 +54,8 @@
           , delete : Optional Text
           , update : Optional Text
           }
+    , upgrade_settings :
+        Optional (List { max_surge : Natural, max_unavailable : Natural })
     }
 , default =
   { id = None Text
@@ -109,5 +111,7 @@
         , delete : Optional Text
         , update : Optional Text
         }
+  , upgrade_settings =
+      None (List { max_surge : Natural, max_unavailable : Natural })
   }
 }

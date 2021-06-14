@@ -1,5 +1,6 @@
 { Type =
     { all_ports : Optional Bool
+    , allow_global_access : Optional Bool
     , backend_service : Optional Text
     , creation_timestamp : Optional Text
     , description : Optional Text
@@ -29,6 +30,7 @@
     }
 , default =
   { all_ports = None Bool
+  , allow_global_access = None Bool
   , backend_service = None Text
   , creation_timestamp = None Text
   , description = None Text
