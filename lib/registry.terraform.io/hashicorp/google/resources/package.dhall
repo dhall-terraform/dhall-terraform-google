@@ -175,6 +175,14 @@
 , google_container_cluster = ./google_container_cluster.dhall
 , google_container_node_pool = ./google_container_node_pool.dhall
 , google_container_registry = ./google_container_registry.dhall
+, google_data_catalog_entry = ./google_data_catalog_entry.dhall
+, google_data_catalog_entry_group = ./google_data_catalog_entry_group.dhall
+, google_data_catalog_entry_group_iam_binding =
+    ./google_data_catalog_entry_group_iam_binding.dhall
+, google_data_catalog_entry_group_iam_member =
+    ./google_data_catalog_entry_group_iam_member.dhall
+, google_data_catalog_entry_group_iam_policy =
+    ./google_data_catalog_entry_group_iam_policy.dhall
 , google_dataflow_job = ./google_dataflow_job.dhall
 , google_dataproc_autoscaling_policy =
     ./google_dataproc_autoscaling_policy.dhall
@@ -196,6 +204,7 @@
 , google_dialogflow_entity_type = ./google_dialogflow_entity_type.dhall
 , google_dialogflow_intent = ./google_dialogflow_intent.dhall
 , google_dns_managed_zone = ./google_dns_managed_zone.dhall
+, google_dns_policy = ./google_dns_policy.dhall
 , google_dns_record_set = ./google_dns_record_set.dhall
 , google_endpoints_service = ./google_endpoints_service.dhall
 , google_endpoints_service_iam_binding =
@@ -374,6 +383,15 @@
     ./google_runtimeconfig_config_iam_policy.dhall
 , google_runtimeconfig_variable = ./google_runtimeconfig_variable.dhall
 , google_scc_source = ./google_scc_source.dhall
+, google_secret_manager_secret = ./google_secret_manager_secret.dhall
+, google_secret_manager_secret_iam_binding =
+    ./google_secret_manager_secret_iam_binding.dhall
+, google_secret_manager_secret_iam_member =
+    ./google_secret_manager_secret_iam_member.dhall
+, google_secret_manager_secret_iam_policy =
+    ./google_secret_manager_secret_iam_policy.dhall
+, google_secret_manager_secret_version =
+    ./google_secret_manager_secret_version.dhall
 , google_service_account = ./google_service_account.dhall
 , google_service_account_iam_binding =
     ./google_service_account_iam_binding.dhall

@@ -104,6 +104,30 @@
               }
           )
     , entrypoint : Optional (List { shell : Text })
+    , handlers :
+        Optional
+          ( List
+              { auth_fail_action : Optional Text
+              , login : Optional Text
+              , redirect_http_response_code : Optional Text
+              , security_level : Optional Text
+              , url_regex : Optional Text
+              , script : Optional (List { script_path : Text })
+              , static_files :
+                  Optional
+                    ( List
+                        { application_readable : Optional Bool
+                        , expiration : Optional Text
+                        , http_headers :
+                            Optional (List { mapKey : Text, mapValue : Text })
+                        , mime_type : Optional Text
+                        , path : Optional Text
+                        , require_matching_file : Optional Bool
+                        , upload_path_regex : Optional Text
+                        }
+                    )
+              }
+          )
     , liveness_check :
         List
           { check_interval : Optional Text
@@ -261,6 +285,30 @@
             }
         )
   , entrypoint = None (List { shell : Text })
+  , handlers =
+      None
+        ( List
+            { auth_fail_action : Optional Text
+            , login : Optional Text
+            , redirect_http_response_code : Optional Text
+            , security_level : Optional Text
+            , url_regex : Optional Text
+            , script : Optional (List { script_path : Text })
+            , static_files :
+                Optional
+                  ( List
+                      { application_readable : Optional Bool
+                      , expiration : Optional Text
+                      , http_headers :
+                          Optional (List { mapKey : Text, mapValue : Text })
+                      , mime_type : Optional Text
+                      , path : Optional Text
+                      , require_matching_file : Optional Bool
+                      , upload_path_regex : Optional Text
+                      }
+                  )
+            }
+        )
   , manual_scaling = None (List { instances : Natural })
   , network =
       None

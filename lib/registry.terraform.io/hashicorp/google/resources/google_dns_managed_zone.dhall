@@ -24,6 +24,15 @@
                     )
               }
           )
+    , forwarding_config :
+        Optional
+          ( List
+              { target_name_servers :
+                  List { forwarding_path : Optional Text, ipv4_address : Text }
+              }
+          )
+    , peering_config :
+        Optional (List { target_network : List { network_url : Text } })
     , private_visibility_config :
         Optional (List { networks : List { network_url : Text } })
     , timeouts :
@@ -57,6 +66,15 @@
                   )
             }
         )
+  , forwarding_config =
+      None
+        ( List
+            { target_name_servers :
+                List { forwarding_path : Optional Text, ipv4_address : Text }
+            }
+        )
+  , peering_config =
+      None (List { target_network : List { network_url : Text } })
   , private_visibility_config =
       None (List { networks : List { network_url : Text } })
   , timeouts =

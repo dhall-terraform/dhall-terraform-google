@@ -20,6 +20,7 @@
     , container_beta_custom_endpoint : Optional Text
     , container_custom_endpoint : Optional Text
     , credentials : Optional Text
+    , data_catalog_custom_endpoint : Optional Text
     , dataflow_custom_endpoint : Optional Text
     , dataproc_beta_custom_endpoint : Optional Text
     , dataproc_custom_endpoint : Optional Text
@@ -50,6 +51,7 @@
     , runtime_config_custom_endpoint : Optional Text
     , runtimeconfig_custom_endpoint : Optional Text
     , scopes : Optional (List Text)
+    , secret_manager_custom_endpoint : Optional Text
     , security_center_custom_endpoint : Optional Text
     , service_management_custom_endpoint : Optional Text
     , service_networking_custom_endpoint : Optional Text
@@ -89,6 +91,7 @@
   , container_beta_custom_endpoint = None Text
   , container_custom_endpoint = None Text
   , credentials = None Text
+  , data_catalog_custom_endpoint = None Text
   , dataflow_custom_endpoint = None Text
   , dataproc_beta_custom_endpoint = None Text
   , dataproc_custom_endpoint = None Text
@@ -119,6 +122,7 @@
   , runtime_config_custom_endpoint = None Text
   , runtimeconfig_custom_endpoint = None Text
   , scopes = None (List Text)
+  , secret_manager_custom_endpoint = None Text
   , security_center_custom_endpoint = None Text
   , service_management_custom_endpoint = None Text
   , service_networking_custom_endpoint = None Text
