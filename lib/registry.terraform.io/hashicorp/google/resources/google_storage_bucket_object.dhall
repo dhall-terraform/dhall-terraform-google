@@ -9,6 +9,7 @@
     , crc32c : Optional Text
     , detect_md5hash : Optional Text
     , id : Optional Text
+    , kms_key_name : Optional Text
     , md5hash : Optional Text
     , media_link : Optional Text
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
@@ -28,6 +29,7 @@
   , crc32c = None Text
   , detect_md5hash = None Text
   , id = None Text
+  , kms_key_name = None Text
   , md5hash = None Text
   , media_link = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })

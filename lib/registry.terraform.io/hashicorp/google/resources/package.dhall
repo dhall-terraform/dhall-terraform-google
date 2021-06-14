@@ -17,6 +17,8 @@
 , google_active_directory_domain = ./google_active_directory_domain.dhall
 , google_active_directory_domain_trust =
     ./google_active_directory_domain_trust.dhall
+, google_apigee_envgroup = ./google_apigee_envgroup.dhall
+, google_apigee_environment = ./google_apigee_environment.dhall
 , google_apigee_instance = ./google_apigee_instance.dhall
 , google_apigee_organization = ./google_apigee_organization.dhall
 , google_app_engine_application = ./google_app_engine_application.dhall

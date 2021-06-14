@@ -36,7 +36,6 @@
     , datastore_custom_endpoint : Optional Text
     , deployment_manager_custom_endpoint : Optional Text
     , dialogflow_custom_endpoint : Optional Text
-    , dns_beta_custom_endpoint : Optional Text
     , dns_custom_endpoint : Optional Text
     , eventarc_custom_endpoint : Optional Text
     , filestore_custom_endpoint : Optional Text
@@ -64,7 +63,7 @@
     , region : Optional Text
     , request_timeout : Optional Text
     , resource_manager_custom_endpoint : Optional Text
-    , resource_manager_v2beta1_custom_endpoint : Optional Text
+    , resource_manager_v2_custom_endpoint : Optional Text
     , runtime_config_custom_endpoint : Optional Text
     , runtimeconfig_custom_endpoint : Optional Text
     , scopes : Optional (List Text)
@@ -125,7 +124,6 @@
   , datastore_custom_endpoint = None Text
   , deployment_manager_custom_endpoint = None Text
   , dialogflow_custom_endpoint = None Text
-  , dns_beta_custom_endpoint = None Text
   , dns_custom_endpoint = None Text
   , eventarc_custom_endpoint = None Text
   , filestore_custom_endpoint = None Text
@@ -153,7 +151,7 @@
   , region = None Text
   , request_timeout = None Text
   , resource_manager_custom_endpoint = None Text
-  , resource_manager_v2beta1_custom_endpoint = None Text
+  , resource_manager_v2_custom_endpoint = None Text
   , runtime_config_custom_endpoint = None Text
   , runtimeconfig_custom_endpoint = None Text
   , scopes = None (List Text)

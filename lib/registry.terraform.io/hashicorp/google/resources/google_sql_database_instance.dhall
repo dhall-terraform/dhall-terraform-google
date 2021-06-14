@@ -75,6 +75,14 @@
                         , location : Optional Text
                         , point_in_time_recovery_enabled : Optional Bool
                         , start_time : Optional Text
+                        , transaction_log_retention_days : Optional Natural
+                        , backup_retention_settings :
+                            Optional
+                              ( List
+                                  { retained_backups : Natural
+                                  , retention_unit : Optional Text
+                                  }
+                              )
                         }
                     )
               , database_flags : Optional (List { name : Text, value : Text })
@@ -202,6 +210,14 @@
                       , location : Optional Text
                       , point_in_time_recovery_enabled : Optional Bool
                       , start_time : Optional Text
+                      , transaction_log_retention_days : Optional Natural
+                      , backup_retention_settings :
+                          Optional
+                            ( List
+                                { retained_backups : Natural
+                                , retention_unit : Optional Text
+                                }
+                            )
                       }
                   )
             , database_flags : Optional (List { name : Text, value : Text })

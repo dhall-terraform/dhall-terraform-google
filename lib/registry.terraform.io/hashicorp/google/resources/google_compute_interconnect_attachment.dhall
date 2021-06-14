@@ -10,6 +10,7 @@
     , google_reference_id : Optional Text
     , id : Optional Text
     , interconnect : Optional Text
+    , mtu : Optional Text
     , name : Text
     , pairing_key : Optional Text
     , partner_asn : Optional Text
@@ -40,6 +41,7 @@
   , google_reference_id = None Text
   , id = None Text
   , interconnect = None Text
+  , mtu = None Text
   , pairing_key = None Text
   , partner_asn = None Text
   , private_interconnect_info = None (List { tag8021q : Natural })

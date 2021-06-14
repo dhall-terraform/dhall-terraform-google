@@ -55,11 +55,15 @@
               , availability_type : Text
               , backup_configuration :
                   List
-                    { binary_log_enabled : Bool
+                    { backup_retention_settings :
+                        List
+                          { retained_backups : Natural, retention_unit : Text }
+                    , binary_log_enabled : Bool
                     , enabled : Bool
                     , location : Text
                     , point_in_time_recovery_enabled : Bool
                     , start_time : Text
+                    , transaction_log_retention_days : Natural
                     }
               , crash_safe_replication : Bool
               , database_flags : List { name : Text, value : Text }
@@ -148,11 +152,14 @@
             , availability_type : Text
             , backup_configuration :
                 List
-                  { binary_log_enabled : Bool
+                  { backup_retention_settings :
+                      List { retained_backups : Natural, retention_unit : Text }
+                  , binary_log_enabled : Bool
                   , enabled : Bool
                   , location : Text
                   , point_in_time_recovery_enabled : Bool
                   , start_time : Text
+                  , transaction_log_retention_days : Natural
                   }
             , crash_safe_replication : Bool
             , database_flags : List { name : Text, value : Text }

@@ -63,6 +63,7 @@
           { name : Optional Text
           , network : Optional Text
           , network_ip : Optional Text
+          , nic_type : Optional Text
           , subnetwork : Optional Text
           , subnetwork_project : Optional Text
           , access_config :
