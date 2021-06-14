@@ -2,6 +2,7 @@
     { delete_service_on_destroy : Optional Bool
     , env_variables : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , inbound_services : Optional (List Text)
     , instance_class : Optional Text
     , name : Optional Text
     , noop_on_destroy : Optional Bool
@@ -83,6 +84,7 @@
   { delete_service_on_destroy = None Bool
   , env_variables = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , inbound_services = None (List Text)
   , instance_class = None Text
   , name = None Text
   , noop_on_destroy = None Bool

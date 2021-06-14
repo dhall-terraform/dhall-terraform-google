@@ -235,6 +235,7 @@
           , update : Optional Text
           }
     , vertical_pod_autoscaling : Optional (List { enabled : Bool })
+    , workload_identity_config : Optional (List { identity_namespace : Text })
     }
 , default =
   { additional_zones = None (List Text)
@@ -464,5 +465,6 @@
         , update : Optional Text
         }
   , vertical_pod_autoscaling = None (List { enabled : Bool })
+  , workload_identity_config = None (List { identity_namespace : Text })
   }
 }

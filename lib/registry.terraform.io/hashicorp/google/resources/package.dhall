@@ -172,6 +172,8 @@
 , google_compute_vpn_gateway = ./google_compute_vpn_gateway.dhall
 , google_compute_vpn_tunnel = ./google_compute_vpn_tunnel.dhall
 , google_container_analysis_note = ./google_container_analysis_note.dhall
+, google_container_analysis_occurrence =
+    ./google_container_analysis_occurrence.dhall
 , google_container_cluster = ./google_container_cluster.dhall
 , google_container_node_pool = ./google_container_node_pool.dhall
 , google_container_registry = ./google_container_registry.dhall
@@ -183,6 +185,7 @@
     ./google_data_catalog_entry_group_iam_member.dhall
 , google_data_catalog_entry_group_iam_policy =
     ./google_data_catalog_entry_group_iam_policy.dhall
+, google_data_catalog_tag_template = ./google_data_catalog_tag_template.dhall
 , google_dataflow_job = ./google_dataflow_job.dhall
 , google_dataproc_autoscaling_policy =
     ./google_dataproc_autoscaling_policy.dhall

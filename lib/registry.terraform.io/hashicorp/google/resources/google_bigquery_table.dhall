@@ -46,6 +46,21 @@
                         , skip_leading_rows : Optional Natural
                         }
                     )
+              , hive_partitioning_options :
+                  Optional
+                    ( List
+                        { mode : Optional Text
+                        , source_uri_prefix : Optional Text
+                        }
+                    )
+              }
+          )
+    , range_partitioning :
+        Optional
+          ( List
+              { field : Text
+              , range :
+                  List { end : Natural, interval : Natural, start : Natural }
               }
           )
     , time_partitioning :
@@ -105,6 +120,21 @@
                       , skip_leading_rows : Optional Natural
                       }
                   )
+            , hive_partitioning_options :
+                Optional
+                  ( List
+                      { mode : Optional Text
+                      , source_uri_prefix : Optional Text
+                      }
+                  )
+            }
+        )
+  , range_partitioning =
+      None
+        ( List
+            { field : Text
+            , range :
+                List { end : Natural, interval : Natural, start : Natural }
             }
         )
   , time_partitioning =

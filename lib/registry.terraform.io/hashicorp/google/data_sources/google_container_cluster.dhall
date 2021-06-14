@@ -182,6 +182,7 @@
     , services_ipv4_cidr : Optional Text
     , subnetwork : Optional Text
     , vertical_pod_autoscaling : Optional (List { enabled : Bool })
+    , workload_identity_config : Optional (List { identity_namespace : Text })
     , zone : Optional Text
     }
 , default =
@@ -362,6 +363,7 @@
   , services_ipv4_cidr = None Text
   , subnetwork = None Text
   , vertical_pod_autoscaling = None (List { enabled : Bool })
+  , workload_identity_config = None (List { identity_namespace : Text })
   , zone = None Text
   }
 }
