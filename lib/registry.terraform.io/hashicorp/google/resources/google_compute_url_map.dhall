@@ -8,6 +8,17 @@
     , name : Text
     , project : Optional Text
     , self_link : Optional Text
+    , default_url_redirect :
+        Optional
+          ( List
+              { host_redirect : Optional Text
+              , https_redirect : Optional Bool
+              , path_redirect : Optional Text
+              , prefix_redirect : Optional Text
+              , redirect_response_code : Optional Text
+              , strip_query : Bool
+              }
+          )
     , header_action :
         Optional
           ( List
@@ -45,6 +56,17 @@
               { default_service : Optional Text
               , description : Optional Text
               , name : Text
+              , default_url_redirect :
+                  Optional
+                    ( List
+                        { host_redirect : Optional Text
+                        , https_redirect : Optional Bool
+                        , path_redirect : Optional Text
+                        , prefix_redirect : Optional Text
+                        , redirect_response_code : Optional Text
+                        , strip_query : Bool
+                        }
+                    )
               , header_action :
                   Optional
                     ( List
@@ -438,6 +460,17 @@
   , map_id = None Natural
   , project = None Text
   , self_link = None Text
+  , default_url_redirect =
+      None
+        ( List
+            { host_redirect : Optional Text
+            , https_redirect : Optional Bool
+            , path_redirect : Optional Text
+            , prefix_redirect : Optional Text
+            , redirect_response_code : Optional Text
+            , strip_query : Bool
+            }
+        )
   , header_action =
       None
         ( List
@@ -475,6 +508,17 @@
             { default_service : Optional Text
             , description : Optional Text
             , name : Text
+            , default_url_redirect :
+                Optional
+                  ( List
+                      { host_redirect : Optional Text
+                      , https_redirect : Optional Bool
+                      , path_redirect : Optional Text
+                      , prefix_redirect : Optional Text
+                      , redirect_response_code : Optional Text
+                      , strip_query : Bool
+                      }
+                  )
             , header_action :
                 Optional
                   ( List

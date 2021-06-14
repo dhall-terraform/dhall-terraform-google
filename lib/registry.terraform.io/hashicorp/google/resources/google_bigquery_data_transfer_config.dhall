@@ -10,6 +10,7 @@
     , params : List { mapKey : Text, mapValue : Text }
     , project : Optional Text
     , schedule : Optional Text
+    , service_account_name : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -25,6 +26,7 @@
   , name = None Text
   , project = None Text
   , schedule = None Text
+  , service_account_name = None Text
   , timeouts =
       None
         { create : Optional Text

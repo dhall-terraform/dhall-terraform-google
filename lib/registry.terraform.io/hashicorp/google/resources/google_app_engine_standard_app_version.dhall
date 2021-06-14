@@ -11,22 +11,39 @@
     , service : Optional Text
     , threadsafe : Optional Bool
     , version_id : Optional Text
-    , deployment :
+    , automatic_scaling :
         Optional
           ( List
-              { files :
+              { max_concurrent_requests : Optional Natural
+              , max_idle_instances : Optional Natural
+              , max_pending_latency : Optional Text
+              , min_idle_instances : Optional Natural
+              , min_pending_latency : Optional Text
+              , standard_scheduler_settings :
                   Optional
                     ( List
-                        { name : Text
-                        , sha1_sum : Optional Text
-                        , source_url : Text
+                        { max_instances : Optional Natural
+                        , min_instances : Optional Natural
+                        , target_cpu_utilization : Optional Natural
+                        , target_throughput_utilization : Optional Natural
                         }
                     )
-              , zip :
-                  Optional
-                    (List { files_count : Optional Natural, source_url : Text })
               }
           )
+    , basic_scaling :
+        Optional
+          (List { idle_timeout : Optional Text, max_instances : Natural })
+    , deployment :
+        List
+          { files :
+              Optional
+                ( List
+                    { name : Text, sha1_sum : Optional Text, source_url : Text }
+                )
+          , zip :
+              Optional
+                (List { files_count : Optional Natural, source_url : Text })
+          }
     , entrypoint : Optional (List { shell : Text })
     , handlers :
         Optional
@@ -54,6 +71,7 @@
           )
     , libraries :
         Optional (List { name : Optional Text, version : Optional Text })
+    , manual_scaling : Optional (List { instances : Natural })
     , timeouts :
         Optional
           { create : Optional Text
@@ -73,22 +91,27 @@
   , service = None Text
   , threadsafe = None Bool
   , version_id = None Text
-  , deployment =
+  , automatic_scaling =
       None
         ( List
-            { files :
+            { max_concurrent_requests : Optional Natural
+            , max_idle_instances : Optional Natural
+            , max_pending_latency : Optional Text
+            , min_idle_instances : Optional Natural
+            , min_pending_latency : Optional Text
+            , standard_scheduler_settings :
                 Optional
                   ( List
-                      { name : Text
-                      , sha1_sum : Optional Text
-                      , source_url : Text
+                      { max_instances : Optional Natural
+                      , min_instances : Optional Natural
+                      , target_cpu_utilization : Optional Natural
+                      , target_throughput_utilization : Optional Natural
                       }
                   )
-            , zip :
-                Optional
-                  (List { files_count : Optional Natural, source_url : Text })
             }
         )
+  , basic_scaling =
+      None (List { idle_timeout : Optional Text, max_instances : Natural })
   , entrypoint = None (List { shell : Text })
   , handlers =
       None
@@ -115,6 +138,7 @@
             }
         )
   , libraries = None (List { name : Optional Text, version : Optional Text })
+  , manual_scaling = None (List { instances : Natural })
   , timeouts =
       None
         { create : Optional Text

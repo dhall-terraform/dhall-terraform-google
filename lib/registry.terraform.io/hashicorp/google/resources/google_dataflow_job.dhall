@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { additional_experiments : Optional (List Text)
+    , id : Optional Text
     , ip_configuration : Optional Text
     , job_id : Optional Text
     , labels : Optional (List { mapKey : Text, mapValue : Text })
@@ -20,7 +21,8 @@
     , zone : Optional Text
     }
 , default =
-  { id = None Text
+  { additional_experiments = None (List Text)
+  , id = None Text
   , ip_configuration = None Text
   , job_id = None Text
   , labels = None (List { mapKey : Text, mapValue : Text })

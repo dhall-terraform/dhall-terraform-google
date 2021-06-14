@@ -30,6 +30,7 @@
     , dns_custom_endpoint : Optional Text
     , filestore_custom_endpoint : Optional Text
     , firestore_custom_endpoint : Optional Text
+    , healthcare_custom_endpoint : Optional Text
     , iam_credentials_custom_endpoint : Optional Text
     , iam_custom_endpoint : Optional Text
     , iap_custom_endpoint : Optional Text
@@ -98,6 +99,7 @@
   , dns_custom_endpoint = None Text
   , filestore_custom_endpoint = None Text
   , firestore_custom_endpoint = None Text
+  , healthcare_custom_endpoint = None Text
   , iam_credentials_custom_endpoint = None Text
   , iam_custom_endpoint = None Text
   , iap_custom_endpoint = None Text

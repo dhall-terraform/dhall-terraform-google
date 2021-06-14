@@ -205,6 +205,34 @@
 , google_folder_iam_member = ./google_folder_iam_member.dhall
 , google_folder_iam_policy = ./google_folder_iam_policy.dhall
 , google_folder_organization_policy = ./google_folder_organization_policy.dhall
+, google_healthcare_dataset = ./google_healthcare_dataset.dhall
+, google_healthcare_dataset_iam_binding =
+    ./google_healthcare_dataset_iam_binding.dhall
+, google_healthcare_dataset_iam_member =
+    ./google_healthcare_dataset_iam_member.dhall
+, google_healthcare_dataset_iam_policy =
+    ./google_healthcare_dataset_iam_policy.dhall
+, google_healthcare_dicom_store = ./google_healthcare_dicom_store.dhall
+, google_healthcare_dicom_store_iam_binding =
+    ./google_healthcare_dicom_store_iam_binding.dhall
+, google_healthcare_dicom_store_iam_member =
+    ./google_healthcare_dicom_store_iam_member.dhall
+, google_healthcare_dicom_store_iam_policy =
+    ./google_healthcare_dicom_store_iam_policy.dhall
+, google_healthcare_fhir_store = ./google_healthcare_fhir_store.dhall
+, google_healthcare_fhir_store_iam_binding =
+    ./google_healthcare_fhir_store_iam_binding.dhall
+, google_healthcare_fhir_store_iam_member =
+    ./google_healthcare_fhir_store_iam_member.dhall
+, google_healthcare_fhir_store_iam_policy =
+    ./google_healthcare_fhir_store_iam_policy.dhall
+, google_healthcare_hl7_v2_store = ./google_healthcare_hl7_v2_store.dhall
+, google_healthcare_hl7_v2_store_iam_binding =
+    ./google_healthcare_hl7_v2_store_iam_binding.dhall
+, google_healthcare_hl7_v2_store_iam_member =
+    ./google_healthcare_hl7_v2_store_iam_member.dhall
+, google_healthcare_hl7_v2_store_iam_policy =
+    ./google_healthcare_hl7_v2_store_iam_policy.dhall
 , google_iap_app_engine_service_iam_binding =
     ./google_iap_app_engine_service_iam_binding.dhall
 , google_iap_app_engine_service_iam_member =
@@ -268,16 +296,24 @@
 , google_kms_key_ring_iam_member = ./google_kms_key_ring_iam_member.dhall
 , google_kms_key_ring_iam_policy = ./google_kms_key_ring_iam_policy.dhall
 , google_kms_secret_ciphertext = ./google_kms_secret_ciphertext.dhall
+, google_logging_billing_account_bucket_config =
+    ./google_logging_billing_account_bucket_config.dhall
 , google_logging_billing_account_exclusion =
     ./google_logging_billing_account_exclusion.dhall
 , google_logging_billing_account_sink =
     ./google_logging_billing_account_sink.dhall
+, google_logging_folder_bucket_config =
+    ./google_logging_folder_bucket_config.dhall
 , google_logging_folder_exclusion = ./google_logging_folder_exclusion.dhall
 , google_logging_folder_sink = ./google_logging_folder_sink.dhall
 , google_logging_metric = ./google_logging_metric.dhall
+, google_logging_organization_bucket_config =
+    ./google_logging_organization_bucket_config.dhall
 , google_logging_organization_exclusion =
     ./google_logging_organization_exclusion.dhall
 , google_logging_organization_sink = ./google_logging_organization_sink.dhall
+, google_logging_project_bucket_config =
+    ./google_logging_project_bucket_config.dhall
 , google_logging_project_exclusion = ./google_logging_project_exclusion.dhall
 , google_logging_project_sink = ./google_logging_project_sink.dhall
 , google_ml_engine_model = ./google_ml_engine_model.dhall
