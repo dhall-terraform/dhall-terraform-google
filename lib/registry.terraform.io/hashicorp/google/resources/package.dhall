@@ -17,6 +17,7 @@
 , google_active_directory_domain = ./google_active_directory_domain.dhall
 , google_active_directory_domain_trust =
     ./google_active_directory_domain_trust.dhall
+, google_apigee_instance = ./google_apigee_instance.dhall
 , google_apigee_organization = ./google_apigee_organization.dhall
 , google_app_engine_application = ./google_app_engine_application.dhall
 , google_app_engine_application_url_dispatch_rules =
@@ -558,4 +559,5 @@
 , google_storage_transfer_job = ./google_storage_transfer_job.dhall
 , google_tpu_node = ./google_tpu_node.dhall
 , google_vpc_access_connector = ./google_vpc_access_connector.dhall
+, google_workflows_workflow = ./google_workflows_workflow.dhall
 }

@@ -9,6 +9,7 @@
     , name_prefix : Optional Text
     , node_count : Optional Natural
     , node_locations : Optional (List Text)
+    , operation : Optional Text
     , project : Optional Text
     , version : Optional Text
     , autoscaling :
@@ -65,6 +66,7 @@
   , name_prefix = None Text
   , node_count = None Natural
   , node_locations = None (List Text)
+  , operation = None Text
   , project = None Text
   , version = None Text
   , autoscaling =

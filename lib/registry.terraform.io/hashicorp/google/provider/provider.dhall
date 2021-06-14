@@ -38,6 +38,7 @@
     , dialogflow_custom_endpoint : Optional Text
     , dns_beta_custom_endpoint : Optional Text
     , dns_custom_endpoint : Optional Text
+    , eventarc_custom_endpoint : Optional Text
     , filestore_custom_endpoint : Optional Text
     , firestore_custom_endpoint : Optional Text
     , game_services_custom_endpoint : Optional Text
@@ -80,6 +81,7 @@
     , tpu_custom_endpoint : Optional Text
     , user_project_override : Optional Bool
     , vpc_access_custom_endpoint : Optional Text
+    , workflows_custom_endpoint : Optional Text
     , zone : Optional Text
     , batching :
         Optional
@@ -125,6 +127,7 @@
   , dialogflow_custom_endpoint = None Text
   , dns_beta_custom_endpoint = None Text
   , dns_custom_endpoint = None Text
+  , eventarc_custom_endpoint = None Text
   , filestore_custom_endpoint = None Text
   , firestore_custom_endpoint = None Text
   , game_services_custom_endpoint = None Text
@@ -167,6 +170,7 @@
   , tpu_custom_endpoint = None Text
   , user_project_override = None Bool
   , vpc_access_custom_endpoint = None Text
+  , workflows_custom_endpoint = None Text
   , zone = None Text
   , batching =
       None
