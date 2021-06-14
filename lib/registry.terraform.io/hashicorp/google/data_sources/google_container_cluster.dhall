@@ -26,6 +26,7 @@
               }
           )
     , cluster_ipv4_cidr : Optional Text
+    , database_encryption : Optional (List { key_name : Text, state : Text })
     , default_max_pods_per_node : Optional Natural
     , description : Optional Text
     , enable_binary_authorization : Optional Bool
@@ -210,6 +211,7 @@
             }
         )
   , cluster_ipv4_cidr = None Text
+  , database_encryption = None (List { key_name : Text, state : Text })
   , default_max_pods_per_node = None Natural
   , description = None Text
   , enable_binary_authorization = None Bool

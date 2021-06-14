@@ -226,6 +226,7 @@
 , google_filestore_instance = ./google_filestore_instance.dhall
 , google_firestore_index = ./google_firestore_index.dhall
 , google_folder = ./google_folder.dhall
+, google_folder_iam_audit_config = ./google_folder_iam_audit_config.dhall
 , google_folder_iam_binding = ./google_folder_iam_binding.dhall
 , google_folder_iam_member = ./google_folder_iam_member.dhall
 , google_folder_iam_policy = ./google_folder_iam_policy.dhall
@@ -320,6 +321,7 @@
 , google_kms_key_ring_iam_binding = ./google_kms_key_ring_iam_binding.dhall
 , google_kms_key_ring_iam_member = ./google_kms_key_ring_iam_member.dhall
 , google_kms_key_ring_iam_policy = ./google_kms_key_ring_iam_policy.dhall
+, google_kms_key_ring_import_job = ./google_kms_key_ring_import_job.dhall
 , google_kms_secret_ciphertext = ./google_kms_secret_ciphertext.dhall
 , google_logging_billing_account_bucket_config =
     ./google_logging_billing_account_bucket_config.dhall

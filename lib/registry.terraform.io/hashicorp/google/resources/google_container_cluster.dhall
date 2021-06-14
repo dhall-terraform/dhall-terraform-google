@@ -64,6 +64,8 @@
                     )
               }
           )
+    , database_encryption :
+        Optional (List { key_name : Optional Text, state : Text })
     , ip_allocation_policy :
         Optional
           ( List
@@ -302,6 +304,7 @@
                   )
             }
         )
+  , database_encryption = None (List { key_name : Optional Text, state : Text })
   , ip_allocation_policy =
       None
         ( List

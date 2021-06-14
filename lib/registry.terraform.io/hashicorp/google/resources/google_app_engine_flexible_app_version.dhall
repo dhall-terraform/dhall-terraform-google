@@ -14,7 +14,7 @@
     , runtime_api_version : Optional Text
     , runtime_channel : Optional Text
     , runtime_main_executable_path : Optional Text
-    , service : Optional Text
+    , service : Text
     , serving_status : Optional Text
     , version_id : Optional Text
     , api_config :
@@ -195,7 +195,6 @@
   , runtime_api_version = None Text
   , runtime_channel = None Text
   , runtime_main_executable_path = None Text
-  , service = None Text
   , serving_status = None Text
   , version_id = None Text
   , api_config =

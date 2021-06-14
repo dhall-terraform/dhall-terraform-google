@@ -9,7 +9,7 @@
     , project : Optional Text
     , runtime : Text
     , runtime_api_version : Optional Text
-    , service : Optional Text
+    , service : Text
     , threadsafe : Optional Bool
     , version_id : Optional Text
     , automatic_scaling :
@@ -90,7 +90,6 @@
   , noop_on_destroy = None Bool
   , project = None Text
   , runtime_api_version = None Text
-  , service = None Text
   , threadsafe = None Bool
   , version_id = None Text
   , automatic_scaling =

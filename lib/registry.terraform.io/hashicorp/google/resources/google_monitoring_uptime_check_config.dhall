@@ -13,10 +13,13 @@
     , http_check :
         Optional
           ( List
-              { headers : Optional (List { mapKey : Text, mapValue : Text })
+              { body : Optional Text
+              , content_type : Optional Text
+              , headers : Optional (List { mapKey : Text, mapValue : Text })
               , mask_headers : Optional Bool
               , path : Optional Text
               , port : Optional Natural
+              , request_method : Optional Text
               , use_ssl : Optional Bool
               , validate_ssl : Optional Bool
               , auth_info : Optional (List { password : Text, username : Text })
@@ -60,10 +63,13 @@
   , http_check =
       None
         ( List
-            { headers : Optional (List { mapKey : Text, mapValue : Text })
+            { body : Optional Text
+            , content_type : Optional Text
+            , headers : Optional (List { mapKey : Text, mapValue : Text })
             , mask_headers : Optional Bool
             , path : Optional Text
             , port : Optional Natural
+            , request_method : Optional Text
             , use_ssl : Optional Bool
             , validate_ssl : Optional Bool
             , auth_info : Optional (List { password : Text, username : Text })
