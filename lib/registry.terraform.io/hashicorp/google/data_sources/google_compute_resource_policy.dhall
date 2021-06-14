@@ -1,5 +1,6 @@
 { Type =
-    { group_placement_policy :
+    { description : Optional Text
+    , group_placement_policy :
         Optional
           ( List
               { availability_domain_count : Natural
@@ -8,6 +9,16 @@
               }
           )
     , id : Optional Text
+    , instance_schedule_policy :
+        Optional
+          ( List
+              { expiration_time : Text
+              , start_time : Text
+              , time_zone : Text
+              , vm_start_schedule : List { schedule : Text }
+              , vm_stop_schedule : List { schedule : Text }
+              }
+          )
     , name : Text
     , project : Optional Text
     , region : Optional Text
@@ -42,7 +53,8 @@
           )
     }
 , default =
-  { group_placement_policy =
+  { description = None Text
+  , group_placement_policy =
       None
         ( List
             { availability_domain_count : Natural
@@ -51,6 +63,16 @@
             }
         )
   , id = None Text
+  , instance_schedule_policy =
+      None
+        ( List
+            { expiration_time : Text
+            , start_time : Text
+            , time_zone : Text
+            , vm_start_schedule : List { schedule : Text }
+            , vm_stop_schedule : List { schedule : Text }
+            }
+        )
   , project = None Text
   , region = None Text
   , self_link = None Text

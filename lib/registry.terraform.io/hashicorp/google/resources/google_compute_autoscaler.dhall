@@ -13,7 +13,9 @@
           , max_replicas : Natural
           , min_replicas : Natural
           , mode : Optional Text
-          , cpu_utilization : Optional (List { target : Natural })
+          , cpu_utilization :
+              Optional
+                (List { predictive_method : Optional Text, target : Natural })
           , load_balancing_utilization : Optional (List { target : Natural })
           , metric :
               Optional
@@ -34,6 +36,18 @@
                               , percent : Optional Natural
                               }
                           )
+                    }
+                )
+          , scaling_schedules :
+              Optional
+                ( List
+                    { description : Optional Text
+                    , disabled : Optional Bool
+                    , duration_sec : Natural
+                    , min_required_replicas : Natural
+                    , name : Text
+                    , schedule : Text
+                    , time_zone : Optional Text
                     }
                 )
           }

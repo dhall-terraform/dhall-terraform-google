@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { description : Optional Text
+    , id : Optional Text
     , name : Text
     , project : Optional Text
     , region : Optional Text
@@ -10,6 +11,16 @@
               { availability_domain_count : Optional Natural
               , collocation : Optional Text
               , vm_count : Optional Natural
+              }
+          )
+    , instance_schedule_policy :
+        Optional
+          ( List
+              { expiration_time : Optional Text
+              , start_time : Optional Text
+              , time_zone : Text
+              , vm_start_schedule : Optional (List { schedule : Text })
+              , vm_stop_schedule : Optional (List { schedule : Text })
               }
           )
     , snapshot_schedule_policy :
@@ -52,7 +63,8 @@
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
-  { id = None Text
+  { description = None Text
+  , id = None Text
   , project = None Text
   , region = None Text
   , self_link = None Text
@@ -62,6 +74,16 @@
             { availability_domain_count : Optional Natural
             , collocation : Optional Text
             , vm_count : Optional Natural
+            }
+        )
+  , instance_schedule_policy =
+      None
+        ( List
+            { expiration_time : Optional Text
+            , start_time : Optional Text
+            , time_zone : Text
+            , vm_start_schedule : Optional (List { schedule : Text })
+            , vm_stop_schedule : Optional (List { schedule : Text })
             }
         )
   , snapshot_schedule_policy =
