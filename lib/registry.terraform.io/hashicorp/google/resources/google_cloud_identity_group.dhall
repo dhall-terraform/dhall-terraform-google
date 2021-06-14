@@ -3,6 +3,7 @@
     , description : Optional Text
     , display_name : Optional Text
     , id : Optional Text
+    , initial_group_config : Optional Text
     , labels : List { mapKey : Text, mapValue : Text }
     , name : Optional Text
     , parent : Text
@@ -20,6 +21,7 @@
   , description = None Text
   , display_name = None Text
   , id = None Text
+  , initial_group_config = None Text
   , name = None Text
   , update_time = None Text
   , timeouts =

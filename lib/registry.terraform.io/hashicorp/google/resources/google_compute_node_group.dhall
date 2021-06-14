@@ -2,12 +2,13 @@
     { creation_timestamp : Optional Text
     , description : Optional Text
     , id : Optional Text
+    , initial_size : Optional Natural
     , maintenance_policy : Optional Text
     , name : Optional Text
     , node_template : Text
     , project : Optional Text
     , self_link : Optional Text
-    , size : Natural
+    , size : Optional Natural
     , zone : Optional Text
     , autoscaling_policy :
         Optional
@@ -29,10 +30,12 @@
   { creation_timestamp = None Text
   , description = None Text
   , id = None Text
+  , initial_size = None Natural
   , maintenance_policy = None Text
   , name = None Text
   , project = None Text
   , self_link = None Text
+  , size = None Natural
   , zone = None Text
   , autoscaling_policy =
       None

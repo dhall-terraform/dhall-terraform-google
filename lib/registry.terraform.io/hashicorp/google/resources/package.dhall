@@ -441,6 +441,7 @@
     ./google_logging_project_bucket_config.dhall
 , google_logging_project_exclusion = ./google_logging_project_exclusion.dhall
 , google_logging_project_sink = ./google_logging_project_sink.dhall
+, google_memcache_instance = ./google_memcache_instance.dhall
 , google_ml_engine_model = ./google_ml_engine_model.dhall
 , google_monitoring_alert_policy = ./google_monitoring_alert_policy.dhall
 , google_monitoring_custom_service = ./google_monitoring_custom_service.dhall

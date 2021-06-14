@@ -50,6 +50,7 @@
     , impersonate_service_account_delegates : Optional (List Text)
     , kms_custom_endpoint : Optional Text
     , logging_custom_endpoint : Optional Text
+    , memcache_custom_endpoint : Optional Text
     , ml_engine_custom_endpoint : Optional Text
     , monitoring_custom_endpoint : Optional Text
     , network_management_custom_endpoint : Optional Text
@@ -139,6 +140,7 @@
   , impersonate_service_account_delegates = None (List Text)
   , kms_custom_endpoint = None Text
   , logging_custom_endpoint = None Text
+  , memcache_custom_endpoint = None Text
   , ml_engine_custom_endpoint = None Text
   , monitoring_custom_endpoint = None Text
   , network_management_custom_endpoint = None Text

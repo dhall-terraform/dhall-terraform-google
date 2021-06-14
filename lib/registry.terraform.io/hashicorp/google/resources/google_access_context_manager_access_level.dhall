@@ -30,6 +30,8 @@
                                     ( List
                                         { minimum_version : Optional Text
                                         , os_type : Text
+                                        , require_verified_chrome_os :
+                                            Optional Bool
                                         }
                                     )
                               }
@@ -84,6 +86,8 @@
                                   ( List
                                       { minimum_version : Optional Text
                                       , os_type : Text
+                                      , require_verified_chrome_os :
+                                          Optional Bool
                                       }
                                   )
                             }

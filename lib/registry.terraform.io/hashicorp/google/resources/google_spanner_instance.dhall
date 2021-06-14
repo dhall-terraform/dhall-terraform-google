@@ -1,6 +1,7 @@
 { Type =
     { config : Text
     , display_name : Text
+    , force_destroy : Optional Bool
     , id : Optional Text
     , labels : Optional (List { mapKey : Text, mapValue : Text })
     , name : Optional Text
@@ -15,7 +16,8 @@
           }
     }
 , default =
-  { id = None Text
+  { force_destroy = None Bool
+  , id = None Text
   , labels = None (List { mapKey : Text, mapValue : Text })
   , name = None Text
   , num_nodes = None Natural

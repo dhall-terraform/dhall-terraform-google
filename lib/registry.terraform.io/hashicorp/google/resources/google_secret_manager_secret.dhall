@@ -9,7 +9,16 @@
         List
           { automatic : Optional Bool
           , user_managed :
-              Optional (List { replicas : List { location : Text } })
+              Optional
+                ( List
+                    { replicas :
+                        List
+                          { location : Text
+                          , customer_managed_encryption :
+                              Optional (List { kms_key_name : Text })
+                          }
+                    }
+                )
           }
     , timeouts :
         Optional
