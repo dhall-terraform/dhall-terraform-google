@@ -13,6 +13,13 @@
               { access_levels : Optional (List Text)
               , resources : Optional (List Text)
               , restricted_services : Optional (List Text)
+              , vpc_accessible_services :
+                  Optional
+                    ( List
+                        { allowed_services : Optional (List Text)
+                        , enable_restriction : Optional Bool
+                        }
+                    )
               }
           )
     , timeouts :
@@ -34,6 +41,13 @@
             { access_levels : Optional (List Text)
             , resources : Optional (List Text)
             , restricted_services : Optional (List Text)
+            , vpc_accessible_services :
+                Optional
+                  ( List
+                      { allowed_services : Optional (List Text)
+                      , enable_restriction : Optional Bool
+                      }
+                  )
             }
         )
   , timeouts =

@@ -5,6 +5,7 @@
     , environment_variables : Optional (List { mapKey : Text, mapValue : Text })
     , https_trigger_url : Optional Text
     , id : Optional Text
+    , ingress_settings : Optional Text
     , labels : Optional (List { mapKey : Text, mapValue : Text })
     , max_instances : Optional Natural
     , name : Text
@@ -17,6 +18,7 @@
     , timeout : Optional Natural
     , trigger_http : Optional Bool
     , vpc_connector : Optional Text
+    , vpc_connector_egress_settings : Optional Text
     , event_trigger :
         Optional
           ( List
@@ -42,6 +44,7 @@
   , environment_variables = None (List { mapKey : Text, mapValue : Text })
   , https_trigger_url = None Text
   , id = None Text
+  , ingress_settings = None Text
   , labels = None (List { mapKey : Text, mapValue : Text })
   , max_instances = None Natural
   , project = None Text
@@ -52,6 +55,7 @@
   , timeout = None Natural
   , trigger_http = None Bool
   , vpc_connector = None Text
+  , vpc_connector_egress_settings = None Text
   , event_trigger =
       None
         ( List

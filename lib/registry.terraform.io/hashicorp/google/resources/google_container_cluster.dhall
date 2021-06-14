@@ -216,6 +216,14 @@
               , public_endpoint : Optional Text
               }
           )
+    , resource_usage_export_config :
+        Optional
+          ( List
+              { enable_network_egress_metering : Optional Bool
+              , enable_resource_consumption_metering : Optional Bool
+              , bigquery_destination : List { dataset_id : Text }
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -431,6 +439,14 @@
             , peering_name : Optional Text
             , private_endpoint : Optional Text
             , public_endpoint : Optional Text
+            }
+        )
+  , resource_usage_export_config =
+      None
+        ( List
+            { enable_network_egress_metering : Optional Bool
+            , enable_resource_consumption_metering : Optional Bool
+            , bigquery_destination : List { dataset_id : Text }
             }
         )
   , timeouts =

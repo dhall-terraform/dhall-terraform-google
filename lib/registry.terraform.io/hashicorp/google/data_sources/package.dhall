@@ -50,6 +50,8 @@
 , google_kms_secret = ./google_kms_secret.dhall
 , google_monitoring_notification_channel =
     ./google_monitoring_notification_channel.dhall
+, google_monitoring_uptime_check_ips =
+    ./google_monitoring_uptime_check_ips.dhall
 , google_netblock_ip_ranges = ./google_netblock_ip_ranges.dhall
 , google_organization = ./google_organization.dhall
 , google_project = ./google_project.dhall

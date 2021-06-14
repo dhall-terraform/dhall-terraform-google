@@ -31,7 +31,12 @@
                       )
                 }
           }
-    , timeouts : Optional { create : Optional Text, delete : Optional Text }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { commitment = None Text
@@ -42,6 +47,11 @@
   , self_link = None Text
   , specific_reservation_required = None Bool
   , status = None Text
-  , timeouts = None { create : Optional Text, delete : Optional Text }
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , update : Optional Text
+        }
   }
 }

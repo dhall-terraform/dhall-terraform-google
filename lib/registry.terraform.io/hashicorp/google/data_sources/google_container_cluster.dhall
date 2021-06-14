@@ -168,6 +168,14 @@
     , region : Optional Text
     , remove_default_node_pool : Optional Bool
     , resource_labels : Optional (List { mapKey : Text, mapValue : Text })
+    , resource_usage_export_config :
+        Optional
+          ( List
+              { bigquery_destination : List { dataset_id : Text }
+              , enable_network_egress_metering : Bool
+              , enable_resource_consumption_metering : Bool
+              }
+          )
     , services_ipv4_cidr : Optional Text
     , subnetwork : Optional Text
     , vertical_pod_autoscaling : Optional (List { enabled : Bool })
@@ -337,6 +345,14 @@
   , region = None Text
   , remove_default_node_pool = None Bool
   , resource_labels = None (List { mapKey : Text, mapValue : Text })
+  , resource_usage_export_config =
+      None
+        ( List
+            { bigquery_destination : List { dataset_id : Text }
+            , enable_network_egress_metering : Bool
+            , enable_resource_consumption_metering : Bool
+            }
+        )
   , services_ipv4_cidr = None Text
   , subnetwork = None Text
   , vertical_pod_autoscaling = None (List { enabled : Bool })

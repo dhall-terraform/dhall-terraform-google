@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { autogenerate_revision_name : Optional Bool
+    , id : Optional Text
     , location : Text
     , name : Text
     , project : Optional Text
@@ -138,7 +139,8 @@
           )
     }
 , default =
-  { id = None Text
+  { autogenerate_revision_name = None Bool
+  , id = None Text
   , project = None Text
   , status =
       None

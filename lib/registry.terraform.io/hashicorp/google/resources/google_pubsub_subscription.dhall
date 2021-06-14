@@ -8,6 +8,13 @@
     , project : Optional Text
     , retain_acked_messages : Optional Bool
     , topic : Text
+    , dead_letter_policy :
+        Optional
+          ( List
+              { dead_letter_topic : Optional Text
+              , max_delivery_attempts : Optional Natural
+              }
+          )
     , expiration_policy : Optional (List { ttl : Text })
     , push_config :
         Optional
@@ -38,6 +45,13 @@
   , path = None Text
   , project = None Text
   , retain_acked_messages = None Bool
+  , dead_letter_policy =
+      None
+        ( List
+            { dead_letter_topic : Optional Text
+            , max_delivery_attempts : Optional Natural
+            }
+        )
   , expiration_policy = None (List { ttl : Text })
   , push_config =
       None
