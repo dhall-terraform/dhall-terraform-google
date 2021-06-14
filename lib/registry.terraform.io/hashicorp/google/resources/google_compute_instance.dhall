@@ -86,6 +86,7 @@
         Optional
           ( List
               { automatic_restart : Optional Bool
+              , min_node_cpus : Optional Natural
               , on_host_maintenance : Optional Text
               , preemptible : Optional Bool
               , node_affinities :
@@ -153,6 +154,7 @@
       None
         ( List
             { automatic_restart : Optional Bool
+            , min_node_cpus : Optional Natural
             , on_host_maintenance : Optional Text
             , preemptible : Optional Bool
             , node_affinities :

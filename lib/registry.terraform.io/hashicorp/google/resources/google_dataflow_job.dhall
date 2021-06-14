@@ -1,5 +1,6 @@
 { Type =
     { additional_experiments : Optional (List Text)
+    , enable_streaming_engine : Optional Bool
     , id : Optional Text
     , ip_configuration : Optional Text
     , job_id : Optional Text
@@ -26,6 +27,7 @@
     }
 , default =
   { additional_experiments = None (List Text)
+  , enable_streaming_engine = None Bool
   , id = None Text
   , ip_configuration = None Text
   , job_id = None Text

@@ -1,10 +1,10 @@
 { Type =
     { id : Optional Text
-    , ip_cidr_range : Text
+    , ip_cidr_range : Optional Text
     , max_throughput : Optional Natural
     , min_throughput : Optional Natural
     , name : Text
-    , network : Text
+    , network : Optional Text
     , project : Optional Text
     , region : Optional Text
     , self_link : Optional Text
@@ -13,8 +13,10 @@
     }
 , default =
   { id = None Text
+  , ip_cidr_range = None Text
   , max_throughput = None Natural
   , min_throughput = None Natural
+  , network = None Text
   , project = None Text
   , region = None Text
   , self_link = None Text

@@ -309,6 +309,13 @@
 , google_game_services_game_server_deployment_rollout =
     ./google_game_services_game_server_deployment_rollout.dhall
 , google_game_services_realm = ./google_game_services_realm.dhall
+, google_healthcare_consent_store = ./google_healthcare_consent_store.dhall
+, google_healthcare_consent_store_iam_binding =
+    ./google_healthcare_consent_store_iam_binding.dhall
+, google_healthcare_consent_store_iam_member =
+    ./google_healthcare_consent_store_iam_member.dhall
+, google_healthcare_consent_store_iam_policy =
+    ./google_healthcare_consent_store_iam_policy.dhall
 , google_healthcare_dataset = ./google_healthcare_dataset.dhall
 , google_healthcare_dataset_iam_binding =
     ./google_healthcare_dataset_iam_binding.dhall

@@ -4,6 +4,7 @@
     , id : Optional Text
     , name : Text
     , project : Optional Text
+    , proxy_bind : Optional Bool
     , proxy_id : Optional Natural
     , quic_override : Optional Text
     , self_link : Optional Text
@@ -22,6 +23,7 @@
   , description = None Text
   , id = None Text
   , project = None Text
+  , proxy_bind = None Bool
   , proxy_id = None Natural
   , quic_override = None Text
   , self_link = None Text

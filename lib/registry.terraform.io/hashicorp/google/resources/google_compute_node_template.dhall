@@ -1,5 +1,6 @@
 { Type =
-    { creation_timestamp : Optional Text
+    { cpu_overcommit_type : Optional Text
+    , creation_timestamp : Optional Text
     , description : Optional Text
     , id : Optional Text
     , name : Optional Text
@@ -16,10 +17,12 @@
               , memory : Optional Text
               }
           )
+    , server_binding : Optional (List { type : Text })
     , timeouts : Optional { create : Optional Text, delete : Optional Text }
     }
 , default =
-  { creation_timestamp = None Text
+  { cpu_overcommit_type = None Text
+  , creation_timestamp = None Text
   , description = None Text
   , id = None Text
   , name = None Text
@@ -36,6 +39,7 @@
             , memory : Optional Text
             }
         )
+  , server_binding = None (List { type : Text })
   , timeouts = None { create : Optional Text, delete : Optional Text }
   }
 }
