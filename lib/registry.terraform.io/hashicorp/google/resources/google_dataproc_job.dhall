@@ -86,7 +86,11 @@
               }
           )
     , reference : Optional (List { job_id : Optional Text })
-    , scheduling : Optional (List { max_failures_per_hour : Natural })
+    , scheduling :
+        Optional
+          ( List
+              { max_failures_per_hour : Natural, max_failures_total : Natural }
+          )
     , spark_config :
         Optional
           ( List
@@ -213,7 +217,9 @@
             }
         )
   , reference = None (List { job_id : Optional Text })
-  , scheduling = None (List { max_failures_per_hour : Natural })
+  , scheduling =
+      None
+        (List { max_failures_per_hour : Natural, max_failures_total : Natural })
   , spark_config =
       None
         ( List

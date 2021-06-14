@@ -2,6 +2,7 @@
     { clustering : Optional (List Text)
     , creation_time : Optional Natural
     , dataset_id : Text
+    , deletion_protection : Optional Bool
     , description : Optional Text
     , etag : Optional Text
     , expiration_time : Optional Natural
@@ -86,6 +87,7 @@
 , default =
   { clustering = None (List Text)
   , creation_time = None Natural
+  , deletion_protection = None Bool
   , description = None Text
   , etag = None Text
   , expiration_time = None Natural

@@ -66,6 +66,13 @@
               , disk_autoresize : Bool
               , disk_size : Natural
               , disk_type : Text
+              , insights_config :
+                  List
+                    { query_insights_enabled : Bool
+                    , query_string_length : Natural
+                    , record_application_tags : Bool
+                    , record_client_address : Bool
+                    }
               , ip_configuration :
                   List
                     { authorized_networks :
@@ -152,6 +159,13 @@
             , disk_autoresize : Bool
             , disk_size : Natural
             , disk_type : Text
+            , insights_config :
+                List
+                  { query_insights_enabled : Bool
+                  , query_string_length : Natural
+                  , record_application_tags : Bool
+                  , record_client_address : Bool
+                  }
             , ip_configuration :
                 List
                   { authorized_networks :

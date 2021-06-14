@@ -78,6 +78,15 @@
                         }
                     )
               , database_flags : Optional (List { name : Text, value : Text })
+              , insights_config :
+                  Optional
+                    ( List
+                        { query_insights_enabled : Optional Bool
+                        , query_string_length : Optional Natural
+                        , record_application_tags : Optional Bool
+                        , record_client_address : Optional Bool
+                        }
+                    )
               , ip_configuration :
                   Optional
                     ( List
@@ -196,6 +205,15 @@
                       }
                   )
             , database_flags : Optional (List { name : Text, value : Text })
+            , insights_config :
+                Optional
+                  ( List
+                      { query_insights_enabled : Optional Bool
+                      , query_string_length : Optional Natural
+                      , record_application_tags : Optional Bool
+                      , record_client_address : Optional Bool
+                      }
+                  )
             , ip_configuration :
                 Optional
                   ( List
