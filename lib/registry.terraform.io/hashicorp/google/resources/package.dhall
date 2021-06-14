@@ -436,6 +436,8 @@
 , google_os_login_ssh_public_key = ./google_os_login_ssh_public_key.dhall
 , google_project_access_approval_settings =
     ./google_project_access_approval_settings.dhall
+, google_project_default_service_accounts =
+    ./google_project_default_service_accounts.dhall
 , google_project = ./google_project.dhall
 , google_project_iam_audit_config = ./google_project_iam_audit_config.dhall
 , google_project_iam_binding = ./google_project_iam_binding.dhall
