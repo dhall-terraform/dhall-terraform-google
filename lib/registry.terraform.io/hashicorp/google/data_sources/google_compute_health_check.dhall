@@ -49,6 +49,7 @@
               }
           )
     , id : Optional Text
+    , log_config : Optional (List { enable : Bool })
     , name : Text
     , project : Optional Text
     , self_link : Optional Text
@@ -129,6 +130,7 @@
             }
         )
   , id = None Text
+  , log_config = None (List { enable : Bool })
   , project = None Text
   , self_link = None Text
   , ssl_health_check =

@@ -55,6 +55,7 @@
               , response : Optional Text
               }
           )
+    , log_config : Optional (List { enable : Optional Bool })
     , ssl_health_check :
         Optional
           ( List
@@ -140,6 +141,7 @@
             , response : Optional Text
             }
         )
+  , log_config = None (List { enable : Optional Bool })
   , ssl_health_check =
       None
         ( List

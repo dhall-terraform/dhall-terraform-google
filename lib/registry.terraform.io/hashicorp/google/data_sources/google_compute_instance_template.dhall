@@ -57,6 +57,13 @@
           )
     , project : Text
     , region : Optional Text
+    , reservation_affinity :
+        Optional
+          ( List
+              { specific_reservation : List { key : Text, values : List Text }
+              , type : Text
+              }
+          )
     , scheduling :
         Optional
           ( List
@@ -139,6 +146,13 @@
             }
         )
   , region = None Text
+  , reservation_affinity =
+      None
+        ( List
+            { specific_reservation : List { key : Text, values : List Text }
+            , type : Text
+            }
+        )
   , scheduling =
       None
         ( List

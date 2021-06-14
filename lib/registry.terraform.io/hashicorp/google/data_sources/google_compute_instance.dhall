@@ -71,6 +71,13 @@
               }
           )
     , project : Optional Text
+    , reservation_affinity :
+        Optional
+          ( List
+              { specific_reservation : List { key : Text, values : List Text }
+              , type : Text
+              }
+          )
     , resource_policies : Optional (List Text)
     , scheduling :
         Optional
@@ -171,6 +178,13 @@
             }
         )
   , project = None Text
+  , reservation_affinity =
+      None
+        ( List
+            { specific_reservation : List { key : Text, values : List Text }
+            , type : Text
+            }
+        )
   , resource_policies = None (List Text)
   , scheduling =
       None

@@ -87,6 +87,14 @@
               , subnetwork_project : Optional Text
               }
           )
+    , reservation_affinity :
+        Optional
+          ( List
+              { type : Text
+              , specific_reservation :
+                  Optional (List { key : Text, values : List Text })
+              }
+          )
     , scheduling :
         Optional
           ( List
@@ -197,6 +205,14 @@
             , nic_type : Optional Text
             , subnetwork : Optional Text
             , subnetwork_project : Optional Text
+            }
+        )
+  , reservation_affinity =
+      None
+        ( List
+            { type : Text
+            , specific_reservation :
+                Optional (List { key : Text, values : List Text })
             }
         )
   , scheduling =

@@ -63,6 +63,14 @@
                     )
               }
           )
+    , reservation_affinity :
+        Optional
+          ( List
+              { type : Text
+              , specific_reservation :
+                  Optional (List { key : Text, values : List Text })
+              }
+          )
     , scheduling :
         Optional
           ( List
@@ -132,6 +140,14 @@
                       , subnetwork_range_name : Optional Text
                       }
                   )
+            }
+        )
+  , reservation_affinity =
+      None
+        ( List
+            { type : Text
+            , specific_reservation :
+                Optional (List { key : Text, values : List Text })
             }
         )
   , scheduling =

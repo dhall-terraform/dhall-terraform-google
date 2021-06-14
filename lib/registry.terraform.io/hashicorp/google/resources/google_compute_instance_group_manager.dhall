@@ -8,9 +8,22 @@
     , operation : Optional Text
     , project : Optional Text
     , self_link : Optional Text
+    , status :
+        Optional
+          ( List
+              { is_stable : Bool
+              , stateful :
+                  List
+                    { has_stateful_config : Bool
+                    , per_instance_configs : List { all_effective : Bool }
+                    }
+              , version_target : List { is_reached : Bool }
+              }
+          )
     , target_pools : Optional (List Text)
     , target_size : Optional Natural
     , wait_for_instances : Optional Bool
+    , wait_for_instances_status : Optional Text
     , zone : Optional Text
     , auto_healing_policies :
         Optional (List { health_check : Text, initial_delay_sec : Natural })
@@ -53,9 +66,22 @@
   , operation = None Text
   , project = None Text
   , self_link = None Text
+  , status =
+      None
+        ( List
+            { is_stable : Bool
+            , stateful :
+                List
+                  { has_stateful_config : Bool
+                  , per_instance_configs : List { all_effective : Bool }
+                  }
+            , version_target : List { is_reached : Bool }
+            }
+        )
   , target_pools = None (List Text)
   , target_size = None Natural
   , wait_for_instances = None Bool
+  , wait_for_instances_status = None Text
   , zone = None Text
   , auto_healing_policies =
       None (List { health_check : Text, initial_delay_sec : Natural })
