@@ -16,7 +16,8 @@
     , iap :
         Optional
           ( List
-              { oauth2_client_id : Text
+              { enabled : Optional Bool
+              , oauth2_client_id : Text
               , oauth2_client_secret : Text
               , oauth2_client_secret_sha256 : Optional Text
               }
@@ -39,7 +40,8 @@
   , iap =
       None
         ( List
-            { oauth2_client_id : Text
+            { enabled : Optional Bool
+            , oauth2_client_id : Text
             , oauth2_client_secret : Text
             , oauth2_client_secret_sha256 : Optional Text
             }

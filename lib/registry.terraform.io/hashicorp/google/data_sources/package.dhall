@@ -48,6 +48,8 @@
 , google_kms_key_ring = ./google_kms_key_ring.dhall
 , google_kms_secret_ciphertext = ./google_kms_secret_ciphertext.dhall
 , google_kms_secret = ./google_kms_secret.dhall
+, google_monitoring_app_engine_service =
+    ./google_monitoring_app_engine_service.dhall
 , google_monitoring_notification_channel =
     ./google_monitoring_notification_channel.dhall
 , google_monitoring_uptime_check_ips =

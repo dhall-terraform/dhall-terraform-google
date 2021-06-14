@@ -1,6 +1,6 @@
 { Type =
     { description : Optional Text
-    , display_name : Text
+    , display_name : Optional Text
     , enabled : Optional Bool
     , id : Optional Text
     , labels : Optional (List { mapKey : Text, mapValue : Text })
@@ -26,6 +26,7 @@
     }
 , default =
   { description = None Text
+  , display_name = None Text
   , enabled = None Bool
   , id = None Text
   , labels = None (List { mapKey : Text, mapValue : Text })

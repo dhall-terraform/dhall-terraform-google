@@ -83,6 +83,10 @@
 , google_compute_global_address = ./google_compute_global_address.dhall
 , google_compute_global_forwarding_rule =
     ./google_compute_global_forwarding_rule.dhall
+, google_compute_global_network_endpoint =
+    ./google_compute_global_network_endpoint.dhall
+, google_compute_global_network_endpoint_group =
+    ./google_compute_global_network_endpoint_group.dhall
 , google_compute_health_check = ./google_compute_health_check.dhall
 , google_compute_http_health_check = ./google_compute_http_health_check.dhall
 , google_compute_https_health_check = ./google_compute_https_health_check.dhall
@@ -277,9 +281,11 @@
 , google_logging_project_sink = ./google_logging_project_sink.dhall
 , google_ml_engine_model = ./google_ml_engine_model.dhall
 , google_monitoring_alert_policy = ./google_monitoring_alert_policy.dhall
+, google_monitoring_custom_service = ./google_monitoring_custom_service.dhall
 , google_monitoring_group = ./google_monitoring_group.dhall
 , google_monitoring_notification_channel =
     ./google_monitoring_notification_channel.dhall
+, google_monitoring_slo = ./google_monitoring_slo.dhall
 , google_monitoring_uptime_check_config =
     ./google_monitoring_uptime_check_config.dhall
 , google_organization_iam_audit_config =
