@@ -31,6 +31,8 @@
               }
           )
     , can_ip_forward : Optional Bool
+    , confidential_instance_config :
+        Optional (List { enable_confidential_compute : Bool })
     , cpu_platform : Optional Text
     , current_status : Optional Text
     , deletion_protection : Optional Bool
@@ -127,6 +129,8 @@
             }
         )
   , can_ip_forward = None Bool
+  , confidential_instance_config =
+      None (List { enable_confidential_compute : Bool })
   , cpu_platform = None Text
   , current_status = None Text
   , deletion_protection = None Bool

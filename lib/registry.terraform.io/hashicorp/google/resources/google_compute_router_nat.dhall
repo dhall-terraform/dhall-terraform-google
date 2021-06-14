@@ -1,5 +1,6 @@
 { Type =
     { drain_nat_ips : Optional (List Text)
+    , enable_endpoint_independent_mapping : Optional Bool
     , icmp_idle_timeout_sec : Optional Natural
     , id : Optional Text
     , min_ports_per_vm : Optional Natural
@@ -31,6 +32,7 @@
     }
 , default =
   { drain_nat_ips = None (List Text)
+  , enable_endpoint_independent_mapping = None Bool
   , icmp_idle_timeout_sec = None Natural
   , id = None Text
   , min_ports_per_vm = None Natural

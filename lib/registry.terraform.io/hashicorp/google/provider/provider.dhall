@@ -6,7 +6,9 @@
     , app_engine_custom_endpoint : Optional Text
     , big_query_custom_endpoint : Optional Text
     , bigquery_data_transfer_custom_endpoint : Optional Text
+    , bigquery_reservation_custom_endpoint : Optional Text
     , bigtable_custom_endpoint : Optional Text
+    , billing_custom_endpoint : Optional Text
     , billing_project : Optional Text
     , binary_authorization_custom_endpoint : Optional Text
     , cloud_asset_custom_endpoint : Optional Text
@@ -55,6 +57,7 @@
     , os_login_custom_endpoint : Optional Text
     , project : Optional Text
     , pubsub_custom_endpoint : Optional Text
+    , pubsub_lite_custom_endpoint : Optional Text
     , redis_custom_endpoint : Optional Text
     , region : Optional Text
     , request_timeout : Optional Text
@@ -89,7 +92,9 @@
   , app_engine_custom_endpoint = None Text
   , big_query_custom_endpoint = None Text
   , bigquery_data_transfer_custom_endpoint = None Text
+  , bigquery_reservation_custom_endpoint = None Text
   , bigtable_custom_endpoint = None Text
+  , billing_custom_endpoint = None Text
   , billing_project = None Text
   , binary_authorization_custom_endpoint = None Text
   , cloud_asset_custom_endpoint = None Text
@@ -138,6 +143,7 @@
   , os_login_custom_endpoint = None Text
   , project = None Text
   , pubsub_custom_endpoint = None Text
+  , pubsub_lite_custom_endpoint = None Text
   , redis_custom_endpoint = None Text
   , region = None Text
   , request_timeout = None Text

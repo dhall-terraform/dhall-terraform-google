@@ -7,6 +7,7 @@
     , id : Optional Text
     , ip_address : Optional Text
     , ip_protocol : Optional Text
+    , is_mirroring_collector : Optional Bool
     , load_balancing_scheme : Optional Text
     , name : Text
     , network : Optional Text
@@ -36,6 +37,7 @@
   , id = None Text
   , ip_address = None Text
   , ip_protocol = None Text
+  , is_mirroring_collector = None Bool
   , load_balancing_scheme = None Text
   , network = None Text
   , network_tier = None Text

@@ -1,5 +1,7 @@
 { Type =
     { alternative_location_id : Optional Text
+    , auth_enabled : Optional Bool
+    , auth_string : Optional Text
     , authorized_network : Optional Text
     , connect_mode : Optional Text
     , create_time : Optional Text
@@ -22,6 +24,8 @@
     }
 , default =
   { alternative_location_id = None Text
+  , auth_enabled = None Bool
+  , auth_string = None Text
   , authorized_network = None Text
   , connect_mode = None Text
   , create_time = None Text

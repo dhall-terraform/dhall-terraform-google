@@ -3,6 +3,7 @@
     , id : Optional Text
     , ip_configuration : Optional Text
     , job_id : Optional Text
+    , kms_key_name : Optional Text
     , labels : Optional (List { mapKey : Text, mapValue : Text })
     , machine_type : Optional Text
     , max_workers : Optional Natural
@@ -28,6 +29,7 @@
   , id = None Text
   , ip_configuration = None Text
   , job_id = None Text
+  , kms_key_name = None Text
   , labels = None (List { mapKey : Text, mapValue : Text })
   , machine_type = None Text
   , max_workers = None Natural

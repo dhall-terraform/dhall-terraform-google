@@ -37,6 +37,7 @@
 , google_bigquery_data_transfer_config =
     ./google_bigquery_data_transfer_config.dhall
 , google_bigquery_job = ./google_bigquery_job.dhall
+, google_bigquery_reservation = ./google_bigquery_reservation.dhall
 , google_bigquery_routine = ./google_bigquery_routine.dhall
 , google_bigquery_table = ./google_bigquery_table.dhall
 , google_bigquery_table_iam_binding = ./google_bigquery_table_iam_binding.dhall
@@ -59,6 +60,8 @@
     ./google_billing_account_iam_binding.dhall
 , google_billing_account_iam_member = ./google_billing_account_iam_member.dhall
 , google_billing_account_iam_policy = ./google_billing_account_iam_policy.dhall
+, google_billing_budget = ./google_billing_budget.dhall
+, google_billing_subaccount = ./google_billing_subaccount.dhall
 , google_binary_authorization_attestor =
     ./google_binary_authorization_attestor.dhall
 , google_binary_authorization_attestor_iam_binding =
@@ -159,6 +162,7 @@
     ./google_compute_network_peering_routes_config.dhall
 , google_compute_node_group = ./google_compute_node_group.dhall
 , google_compute_node_template = ./google_compute_node_template.dhall
+, google_compute_packet_mirroring = ./google_compute_packet_mirroring.dhall
 , google_compute_per_instance_config =
     ./google_compute_per_instance_config.dhall
 , google_compute_project_default_network_tier =
@@ -464,6 +468,8 @@
 , google_project_service = ./google_project_service.dhall
 , google_project_usage_export_bucket =
     ./google_project_usage_export_bucket.dhall
+, google_pubsub_lite_subscription = ./google_pubsub_lite_subscription.dhall
+, google_pubsub_lite_topic = ./google_pubsub_lite_topic.dhall
 , google_pubsub_subscription = ./google_pubsub_subscription.dhall
 , google_pubsub_subscription_iam_binding =
     ./google_pubsub_subscription_iam_binding.dhall

@@ -1,12 +1,10 @@
 { Type =
-    { deletion_policy : Optional Text
-    , host : Optional Text
-    , id : Optional Text
-    , instance : Text
+    { id : Optional Text
+    , ignore_idle_slots : Optional Bool
+    , location : Optional Text
     , name : Text
-    , password : Optional Text
     , project : Optional Text
-    , type : Optional Text
+    , slot_capacity : Natural
     , timeouts :
         Optional
           { create : Optional Text
@@ -15,12 +13,10 @@
           }
     }
 , default =
-  { deletion_policy = None Text
-  , host = None Text
-  , id = None Text
-  , password = None Text
+  { id = None Text
+  , ignore_idle_slots = None Bool
+  , location = None Text
   , project = None Text
-  , type = None Text
   , timeouts =
       None
         { create : Optional Text

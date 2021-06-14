@@ -31,7 +31,7 @@
     , path_matcher :
         Optional
           ( List
-              { default_service : Text
+              { default_service : Optional Text
               , description : Optional Text
               , name : Text
               , default_url_redirect :
@@ -438,7 +438,7 @@
   , path_matcher =
       None
         ( List
-            { default_service : Text
+            { default_service : Optional Text
             , description : Optional Text
             , name : Text
             , default_url_redirect :

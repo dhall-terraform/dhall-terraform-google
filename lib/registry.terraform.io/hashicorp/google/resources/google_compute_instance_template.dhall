@@ -17,6 +17,8 @@
     , self_link : Optional Text
     , tags : Optional (List Text)
     , tags_fingerprint : Optional Text
+    , confidential_instance_config :
+        Optional (List { enable_confidential_compute : Bool })
     , disk :
         List
           { auto_delete : Optional Bool
@@ -100,6 +102,8 @@
   , self_link = None Text
   , tags = None (List Text)
   , tags_fingerprint = None Text
+  , confidential_instance_config =
+      None (List { enable_confidential_compute : Bool })
   , guest_accelerator = None (List { count : Natural, type : Text })
   , network_interface =
       None

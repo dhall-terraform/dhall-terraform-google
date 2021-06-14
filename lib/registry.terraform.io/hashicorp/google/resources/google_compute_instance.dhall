@@ -56,6 +56,8 @@
                     }
                 )
           }
+    , confidential_instance_config :
+        Optional (List { enable_confidential_compute : Bool })
     , network_interface :
         List
           { name : Optional Text
@@ -144,6 +146,8 @@
             , source : Text
             }
         )
+  , confidential_instance_config =
+      None (List { enable_confidential_compute : Bool })
   , scheduling =
       None
         ( List

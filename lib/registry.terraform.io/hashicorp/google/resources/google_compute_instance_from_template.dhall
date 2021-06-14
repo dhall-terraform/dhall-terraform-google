@@ -61,6 +61,8 @@
                     )
               }
           )
+    , confidential_instance_config :
+        Optional (List { enable_confidential_compute : Bool })
     , network_interface :
         Optional
           ( List
@@ -171,6 +173,8 @@
                   )
             }
         )
+  , confidential_instance_config =
+      None (List { enable_confidential_compute : Bool })
   , network_interface =
       None
         ( List

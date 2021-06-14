@@ -1,12 +1,11 @@
 { Type =
-    { deletion_policy : Optional Text
-    , host : Optional Text
-    , id : Optional Text
-    , instance : Text
+    { id : Optional Text
     , name : Text
-    , password : Optional Text
     , project : Optional Text
-    , type : Optional Text
+    , region : Optional Text
+    , topic : Text
+    , zone : Optional Text
+    , delivery_config : Optional (List { delivery_requirement : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -15,12 +14,11 @@
           }
     }
 , default =
-  { deletion_policy = None Text
-  , host = None Text
-  , id = None Text
-  , password = None Text
+  { id = None Text
   , project = None Text
-  , type = None Text
+  , region = None Text
+  , zone = None Text
+  , delivery_config = None (List { delivery_requirement : Text })
   , timeouts =
       None
         { create : Optional Text
